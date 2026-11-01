@@ -647,7 +647,7 @@
         </div>
         <div class="ai-actions">
           <button class="btn btn-emerald" onclick="copyAiDirective()">
-            📋 Copy 7 Core AI Laws (System Prompt)
+            📋 Copy 8 Core AI Laws (System Prompt)
           </button>
           <button class="btn btn-blue" onclick="copyLlmsUrl()">
             🔗 Copy llms.txt URL
@@ -1043,7 +1043,7 @@
       <div class="section-title-wrap">
         <div>
           <h2 class="section-title">Live BrainCert LMS HTML Component Builder</h2>
-          <p class="section-desc">8 canonical inline HTML templates for BrainCert WYSIWYG lessons (zero &lt;style&gt; dependencies).</p>
+          <p class="section-desc">10 canonical inline HTML templates for BrainCert WYSIWYG lessons (zero &lt;style&gt; or &lt;script&gt; dependencies).</p>
         </div>
       </div>
 
@@ -1246,14 +1246,14 @@
       <div class="template-box">
         <div class="template-header">
           <div class="template-header-info">
-            <h3>Block 8: Key Takeaway Box + Mandatory Legal Disclaimer Footer</h3>
-            <p>Emerald takeaway card + mandatory statutory notice.</p>
+            <h3>Block 8: Key Floor Takeaway Summary Box</h3>
+            <p>Emerald takeaway card highlighting core floor behavior.</p>
           </div>
           <button class="btn btn-emerald btn-sm" onclick="copyTemplate('tpl-8')">📋 Copy Inline HTML</button>
         </div>
         <div class="template-preview" id="preview-8">
           <div style="max-width: 840px; margin: 10px auto;">
-            <div style="background-color: #FFFFFF; border: 2px solid #6DC082; border-left: 8px solid #6DC082; border-radius: 16px; padding: 18px 20px; margin-bottom: 20px; font-family: 'Roboto', Arial, sans-serif;">
+            <div style="background-color: #FFFFFF; border: 2px solid #6DC082; border-left: 8px solid #6DC082; border-radius: 16px; padding: 18px 20px; font-family: 'Roboto', Arial, sans-serif;">
               <div style="font-size: 13px; font-weight: 900; text-transform: uppercase; color: #1E7E34; letter-spacing: 0.6px; margin-bottom: 4px;">
                 ✓ Key Floor Takeaway
               </div>
@@ -1261,9 +1261,94 @@
                 Your signature is a legal receipt. Never sign a delivery note until you have physically counted the stock yourself.
               </div>
             </div>
-            <div style="background-color: #F4F8FB; border: 1px solid #D5E3EF; border-radius: 8px; padding: 10px 16px; font-family: 'Roboto', Arial, sans-serif; font-size: 12.5px; color: #696969; text-align: center;">
-              <strong style="color: #4682B4;">Learn:Blended Notice:</strong> Training content, not formal legal advice.
+          </div>
+        </div>
+      </div>
+
+      <!-- TEMPLATE 9 (INTERACTIVE SCENARIO CHECK) -->
+      <div class="template-box">
+        <div class="template-header">
+          <div class="template-header-info">
+            <h3>Interactive Block 9: Multi-Option Scenario Check (Zero-JS Click-to-Reveal)</h3>
+            <p>Pure HTML5 &lt;details&gt; and &lt;summary&gt; interactive quiz checking Option A, B, or C with color-coded feedback.</p>
+          </div>
+          <button class="btn btn-blue btn-sm" onclick="copyTemplate('tpl-9')">📋 Copy Inline HTML</button>
+        </div>
+        <div class="template-preview" id="preview-9">
+          <div style="background-color: #FFFFFF; border: 2px solid #4682B4; border-radius: 16px; padding: 22px; margin: 10px auto; max-width: 840px; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+              <img src="./symbols/Assessment.png" alt="Quick Check" style="width: 48px; height: 48px; flex-shrink: 0; display: block;" onerror="this.src='https://obronie.github.io/learnblended-brand/symbols/Assessment.png'" />
+              <div>
+                <div style="font-size: 12px; font-weight: 900; text-transform: uppercase; color: #4682B4; letter-spacing: 0.6px;">
+                  Interactive Floor Check • Click an Option to Check Your Answer
+                </div>
+                <div style="font-size: 17px; font-weight: 700; color: #222222; line-height: 1.35;">
+                  A courier arrives at 16:45 with 12 sealed cartons, but 2 cartons have crushed, wet corners. The driver asks you to sign a clean POD now because he is running late. What should you do?
+                </div>
+              </div>
             </div>
+
+            <!-- Option A: Incorrect -->
+            <details style="margin-bottom: 10px; border: 1.5px solid #83ADCF; border-radius: 12px; background-color: #F4F8FB; overflow: hidden;">
+              <summary style="padding: 14px 16px; font-size: 15.5px; font-weight: 700; color: #222222; cursor: pointer; outline: none;">
+                Option A: Sign the POD so the driver can leave, then email the supplier tomorrow morning with photos.
+              </summary>
+              <div style="background-color: #FDF2F2; border-top: 2px solid #D9534F; padding: 14px 16px; font-size: 15px; color: #222222; line-height: 1.55;">
+                <strong style="color: #D9534F; text-transform: uppercase; font-size: 13px; display: block; margin-bottom: 4px;">
+                  ✗ Incorrect — Why This Puts the Store at Risk
+                </strong>
+                Signing a clean Proof of Delivery (POD) confirms the stock arrived in good condition. The supplier can reject a damage claim tomorrow because you signed off without noting the wet boxes.
+              </div>
+            </details>
+
+            <!-- Option B: Correct -->
+            <details style="margin-bottom: 10px; border: 1.5px solid #83ADCF; border-radius: 12px; background-color: #F4F8FB; overflow: hidden;">
+              <summary style="padding: 14px 16px; font-size: 15.5px; font-weight: 700; color: #222222; cursor: pointer; outline: none;">
+                Option B: Write "2 cartons crushed/wet — subject to check" on both copies of the POD and GRV, and get the driver to counter-sign before signing.
+              </summary>
+              <div style="background-color: #EAF6ED; border-top: 2px solid #6DC082; padding: 14px 16px; font-size: 15px; color: #222222; line-height: 1.55;">
+                <strong style="color: #1E7E34; text-transform: uppercase; font-size: 13px; display: block; margin-bottom: 4px;">
+                  ✓ Correct — Audit-Ready Floor Practice
+                </strong>
+                Recording the exact variance on the delivery note and Goods Received Voucher (GRV) with the driver's counter-signature gives Procurement solid proof for a credit note.
+              </div>
+            </details>
+
+            <!-- Option C: Incorrect -->
+            <details style="border: 1.5px solid #83ADCF; border-radius: 12px; background-color: #F4F8FB; overflow: hidden;">
+              <summary style="padding: 14px 16px; font-size: 15.5px; font-weight: 700; color: #222222; cursor: pointer; outline: none;">
+                Option C: Accept all 12 cartons quietly and throw the 2 damaged cartons in the skip.
+              </summary>
+              <div style="background-color: #FDF2F2; border-top: 2px solid #D9534F; padding: 14px 16px; font-size: 15px; color: #222222; line-height: 1.55;">
+                <strong style="color: #D9534F; text-transform: uppercase; font-size: 13px; display: block; margin-bottom: 4px;">
+                  ✗ Incorrect — Never Destroy Stock Evidence
+                </strong>
+                Throwing away damaged goods causes an unexplained stock shrinkage variance. Always quarantine damaged items in the returns cage and record them on the GRV.
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEMPLATE 10 (CLICK-TO-REVEAL FAQ ACCORDION) -->
+      <div class="template-box">
+        <div class="template-header">
+          <div class="template-header-info">
+            <h3>Interactive Block 10: Click-to-Reveal Coaching / FAQ Accordion Card</h3>
+            <p>Single collapsible accordion for questions, frontline hints, or supervisor notes.</p>
+          </div>
+          <button class="btn btn-emerald btn-sm" onclick="copyTemplate('tpl-10')">📋 Copy Inline HTML</button>
+        </div>
+        <div class="template-preview" id="preview-10">
+          <div style="max-width: 840px; margin: 10px auto;">
+            <details style="background-color: #FFFFFF; border: 2px solid #6DC082; border-radius: 16px; font-family: 'Roboto', Arial, sans-serif; overflow: hidden; box-sizing: border-box;">
+              <summary style="background-color: #EAF6ED; padding: 16px 20px; font-size: 16px; font-weight: 700; color: #1E7E34; cursor: pointer; outline: none;">
+                💡 Click to Reveal: What should you do if the truck seal number does not match the manifest?
+              </summary>
+              <div style="padding: 18px 20px; background-color: #FFFFFF; color: #222222; font-size: 15.5px; line-height: 1.6; border-top: 1px solid #6DC082;">
+                <strong>Stop off-loading immediately and do not break the seal.</strong> Take a clear photo of the seal on the truck door, call your supervisor to witness it, and record the seal mismatch on the gate register before opening the doors.
+              </div>
+            </details>
           </div>
         </div>
       </div>
@@ -1296,6 +1381,7 @@
             <li><strong>Stage Background:</strong> Solid Steel Blue <code>#4682B4</code> carrying optional organic corner blobs in <code>#D5E3EF</code> and <code>#6DC082</code>.</li>
             <li><strong>Dominant White Card:</strong> Centered <code>1860×1020px</code> rounded rectangle, <code>30px</code> inset from all screen edges, <code>20px</code> corner radius, strictly flat with zero drop shadow.</li>
             <li><strong>The 5px Nesting Rule:</strong> Nested internal panels obey <code>16px</code> corner radius, <code>5px</code> outer perimeter gap facing the card edge, and a flush <code>5px</code> white divider between sibling panels.</li>
+            <li><strong>Footer Governance:</strong> Clean margin space (no legal disclaimers).</li>
           </ul>
         </div>
 
@@ -1332,9 +1418,6 @@
                   <span style="color: #1E7E34; font-size: 10px; font-weight: 900;">
                     ✓ Core Payoff: Never accept legal liability for supplier shortages on the receiving floor.
                   </span>
-                </div>
-                <div style="text-align: right; font-size: 8px; color: #696969; margin-top: 2px;">
-                  Training content, not formal legal advice.
                 </div>
               </div>
             </div>
@@ -1381,9 +1464,7 @@
               <p>Solid Steel Blue outer card with 4px white border, 15px blue frame, and 50/50 red vs. green cards.</p>
             </div>
             <div class="wireframe-stage" style="padding: 6px;">
-              <!-- Outer card override -->
               <div style="background-color: #4682B4; border: 2px solid #FFFFFF; border-radius: 8px; width: 100%; height: 100%; padding: 6px; display: flex; gap: 5px; box-sizing: border-box;">
-                <!-- Left Mistake -->
                 <div style="flex: 1; background: #FFFFFF; border: 1.5px solid #D9534F; border-radius: 6px; padding: 8px; display: flex; flex-direction: column;">
                   <div style="background: #FDF2F2; color: #D9534F; font-size: 8.5px; font-weight: 900; padding: 3px 6px; border-radius: 4px; margin-bottom: 6px; text-transform: uppercase;">
                     ✗ Common Floor Mistake
@@ -1394,7 +1475,6 @@
                     <li>Failing to record damaged corners immediately.</li>
                   </ul>
                 </div>
-                <!-- Right Audit -->
                 <div style="flex: 1; background: #FFFFFF; border: 1.5px solid #6DC082; border-radius: 6px; padding: 8px; display: flex; flex-direction: column;">
                   <div style="background: #EAF6ED; color: #1E7E34; font-size: 8.5px; font-weight: 900; padding: 3px 6px; border-radius: 4px; margin-bottom: 6px; text-transform: uppercase;">
                     ✓ Audit-Ready Practice
@@ -1417,7 +1497,6 @@
             </div>
             <div class="wireframe-stage">
               <div class="wireframe-dominant-card" style="padding: 6px; display: flex; flex-direction: row; gap: 5px;">
-                <!-- Left Quote (55%) -->
                 <div style="flex: 0 0 55%; background: #D5E3EF; border-left: 4px solid #4682B4; border-radius: 6px; padding: 10px; display: flex; flex-direction: column; justify-content: center;">
                   <p style="font-size: 8.5px; font-style: italic; color: #4682B4; font-weight: 500; line-height: 1.35; margin-bottom: 6px;">
                     "Every employer shall provide and maintain, as far as is reasonably practicable, a working environment that is safe and without risk to the health of his employees."
@@ -1426,7 +1505,6 @@
                     — OHS Act 85 of 1993, Section 8(1)
                   </div>
                 </div>
-                <!-- Right Translation (45%) -->
                 <div style="flex: 1; background: #FFFFFF; border: 1px solid #83ADCF; border-radius: 6px; padding: 8px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
                   <img src="./symbols/Information.png" alt="Info" style="width: 28px; height: 28px; margin-bottom: 4px;" onerror="this.src='https://obronie.github.io/learnblended-brand/symbols/Information.png'">
                   <div style="font-size: 8px; font-weight: 900; color: #1E7E34; text-transform: uppercase; margin-bottom: 3px;">
@@ -1448,7 +1526,6 @@
             </div>
             <div class="wireframe-stage">
               <div class="wireframe-dominant-card" style="padding: 6px; display: flex; flex-direction: row; gap: 5px;">
-                <!-- Left 35% Activity Banner -->
                 <div style="flex: 0 0 35%; background: #F4F8FB; border: 1.5px solid #4682B4; border-radius: 6px; padding: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
                   <img src="./symbols/Practical.png" alt="Practical" style="width: 34px; height: 34px; margin-bottom: 4px;" onerror="this.src='https://obronie.github.io/learnblended-brand/symbols/Practical.png'">
                   <div style="font-size: 9px; font-weight: 900; color: #4682B4; text-transform: uppercase;">Workplace Drill</div>
@@ -1456,7 +1533,6 @@
                     ⏱ 15 MINUTES
                   </div>
                 </div>
-                <!-- Right 65% Workspace -->
                 <div style="flex: 1; padding: 6px; display: flex; flex-direction: column; justify-content: space-between;">
                   <div>
                     <div style="font-size: 8.5px; font-weight: 900; color: #4682B4; margin-bottom: 2px;">Your Syndicate Task:</div>
@@ -1488,7 +1564,7 @@
             <li><strong>The 5px Nesting Rule:</strong> Nested internal panels have <code>16px</code> corner radius, <code>5px</code> perimeter gap facing the card edge, and <code>5px</code> flush white dividers between sibling panels.</li>
             <li><strong>Block B Exception:</strong> Solid blue card with <code>4px</code> crisp white border and <code>15px</code> blue frame around ~50% nested white panel.</li>
             <li><strong>Transitions:</strong> Silent directional panel morphs (top/bottom ±15px, kinetic fires +40px right). Inter-scene morphs are silent (no whooshes, no BGM).</li>
-            <li><strong>Disclaimer Ruling:</strong> Mandatory disclaimer is <strong>REMOVED from final video slide</strong> to prevent viewer drop-off.</li>
+            <li><strong>Disclaimer Rule:</strong> Zero legal disclaimers in any video block or slide.</li>
           </ul>
         </div>
 
@@ -1593,7 +1669,7 @@
               <tr>
                 <td><strong>Segment 8</strong></td>
                 <td><strong>Block A (Single Hero Close)</strong></td>
-                <td>Full-width white card with Steel Blue headline and Emerald payoff statement + exit whoosh (zero disclaimer on final slide).</td>
+                <td>Full-width white card with Steel Blue headline and Emerald payoff statement + exit whoosh (zero disclaimers).</td>
               </tr>
             </tbody>
           </table>
@@ -1617,7 +1693,6 @@
             <div class="wireframe-stage">
               <div class="wireframe-dominant-card" style="padding: 6px; display: flex; flex-direction: column; justify-content: space-between;">
                 <div style="display: flex; gap: 5px; flex: 1;">
-                  <!-- Left Avatar Holder -->
                   <div style="flex: 0 0 32%; display: flex; flex-direction: column; gap: 4px;">
                     <div style="flex: 1; background: #4682B4; border-radius: 6px; padding: 6px; color: #fff; font-size: 7.5px;">
                       <strong>Facilitator Script:</strong><br>"Welcome back team! Let's examine what happens..."
@@ -1626,7 +1701,6 @@
                       <div style="width: 26px; height: 26px; border-radius: 50%; background: #4682B4; border: 1.5px solid #fff;"></div>
                     </div>
                   </div>
-                  <!-- Right Content Area -->
                   <div style="flex: 1; background: #FFFFFF; border: 1px solid #83ADCF; border-radius: 6px; padding: 8px;">
                     <div style="font-size: 9px; font-weight: 900; color: #4682B4; margin-bottom: 4px;">The Receiving Trap</div>
                     <p style="font-size: 7.5px; color: #222; line-height: 1.35;">
@@ -1634,7 +1708,6 @@
                     </p>
                   </div>
                 </div>
-                <!-- Caption Bar -->
                 <div style="background: #4682B4; color: #fff; border-radius: 4px; padding: 3px 8px; font-size: 7.5px; text-align: center; margin-top: 5px;">
                   Always count every carton <span style="color: #6DC082; font-weight: 900; text-decoration: underline;">before</span> you sign.
                 </div>
@@ -1683,7 +1756,6 @@
                     <p style="font-size: 7px; color: #222; line-height: 1.3;">Matching PO quantity against physical inventory before ink touches paper.</p>
                   </div>
                 </div>
-                <!-- Inverted Caption Bar -->
                 <div style="background: #FFFFFF; color: #4682B4; border-radius: 4px; padding: 3px 8px; font-size: 7.5px; text-align: center; margin-top: 4px;">
                   Blind signatures mean <span style="color: #1E7E34; font-weight: 900; text-decoration: underline;">your</span> business pays the loss.
                 </div>
@@ -1708,7 +1780,6 @@
                     <div style="background: #F4F8FB; border: 1px solid #83ADCF; border-radius: 4px; padding: 3px 6px; font-size: 7.5px; color: #4A4A4A;">
                       2. Inspect carton seals and outer shrink-wrap
                     </div>
-                    <!-- Active Kinetic Item Firing -->
                     <div style="background: #EAF6ED; border: 1.5px solid #6DC082; border-radius: 4px; padding: 3px 6px; font-size: 7.5px; color: #1E7E34; font-weight: 900; transform: translateX(8px);">
                       🔥 3. Count physical boxes against delivery note
                     </div>
@@ -1758,7 +1829,6 @@
             <div class="wireframe-stage">
               <div class="wireframe-dominant-card" style="padding: 6px; display: flex; flex-direction: column; justify-content: space-between;">
                 <div style="display: flex; gap: 5px; flex: 1;">
-                  <!-- Diagram Left -->
                   <div style="flex: 1; background: #FFFFFF; border: 1px solid #83ADCF; border-radius: 6px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
                     <div style="font-size: 8px; font-weight: 900; color: #4682B4; margin-bottom: 6px;">Receiving Flow Archetype</div>
                     <div style="display: flex; align-items: center; gap: 4px; font-size: 7px;">
@@ -1767,7 +1837,6 @@
                       <span style="background: #EAF6ED; color: #1E7E34; padding: 2px 4px; border-radius: 3px; font-weight: 700;">Sign GRV</span>
                     </div>
                   </div>
-                  <!-- Blue Summary Right -->
                   <div style="flex: 0 0 38%; background: #4682B4; color: #fff; border-radius: 6px; padding: 6px; font-size: 7.5px;">
                     <strong>Framework Point:</strong><br>The flow never skips the verification stage.
                   </div>
@@ -1790,6 +1859,7 @@
             <li><strong>Formats:</strong> A4 (210×297mm) for Learner Guides and PoE Portfolios; A5 (148×210mm) for Laminated Pocket Cards.</li>
             <li><strong>Margins:</strong> Top/Bottom 20mm, Outer 18mm, <strong>Inner Gutter 25mm</strong> (18mm margin + 7mm ring-binder punch clearance).</li>
             <li><strong>Bleed:</strong> 3mm on full-bleed cover spreads (216×303mm), exported PDF/X-1a at 300 DPI.</li>
+            <li><strong>Footer Governance:</strong> Print footers contain strictly: <em>Left: Qualification / Module Code & Version | Right: Page X of Y + Learn:Blended Monogram</em> (no legal disclaimers).</li>
           </ul>
         </div>
         <div class="gov-rule-box">
@@ -1817,7 +1887,7 @@
       <!-- TAB: AI DIRECTIVES -->
       <div id="tab-ai" class="tab-content">
         <div class="gov-rule-box">
-          <h4>The 7 Core Laws for All AI Models</h4>
+          <h4>The 8 Core Laws for All AI Models</h4>
           <ol style="margin-left: 20px; font-size: 14px; line-height: 1.6;">
             <li><strong>Clean White Canvas:</strong> Long-form content must use #FFFFFF background with #222222 reading ink.</li>
             <li><strong>Strict Flatness:</strong> <code>box-shadow: none</code> across all mediums. Zero exceptions.</li>
@@ -1826,6 +1896,7 @@
             <li><strong>Dual-Color Semantics:</strong> Steel Blue for structure/law; Emerald Green for action/takeaways; Validation Red for errors only.</li>
             <li><strong>WCAG Contrast Law:</strong> Never use light emerald #6DC082 for small/medium body text. Use #1E7E34 for green headings and #222222 for reading body text.</li>
             <li><strong>South African Voice:</strong> Direct, floor-level SA English (Grade 7-8 reading level), coach tone ("you/your").</li>
+            <li><strong>No Legal Disclaimer Law:</strong> Never insert legal disclaimers (such as "Training content, not formal legal advice") in videos, BrainCert HTML lessons, PowerPoint slides, or printed manuals.</li>
           </ol>
         </div>
       </div>
@@ -1835,7 +1906,6 @@
     <!-- FOOTER -->
     <footer>
       <p><strong>Learn:Blended Master Brand Portal V8.2</strong> • Ratified Governance Manual</p>
-      <p style="margin-top: 4px;">Notice: Training content, not formal legal advice.</p>
     </footer>
 
   </div>
@@ -1957,23 +2027,79 @@
   </tbody>
 </table>`,
 
-      'tpl-8': `<!-- KEY TAKEAWAY SUMMARY -->
-<div style="background-color: #FFFFFF; border: 2px solid #6DC082; border-left: 8px solid #6DC082; border-radius: 16px; padding: 18px 20px; margin: 24px 0; font-family: 'Roboto', Arial, sans-serif;">
+      'tpl-8': `<div style="background-color: #FFFFFF; border: 2px solid #6DC082; border-left: 8px solid #6DC082; border-radius: 16px; padding: 18px 20px; margin: 24px 0; font-family: 'Roboto', Arial, sans-serif;">
   <div style="font-size: 13px; font-weight: 900; text-transform: uppercase; color: #1E7E34; letter-spacing: 0.6px; margin-bottom: 4px;">
     ✓ Key Floor Takeaway
   </div>
   <div style="font-size: 16px; font-weight: 500; color: #222222;">
     Your signature is a legal receipt. Never sign a delivery note until you have physically counted the stock yourself.
   </div>
-</div>
+</div>`,
 
-<!-- MANDATORY V8.2 LEGAL DISCLAIMER FOOTER -->
-<div style="background-color: #F4F8FB; border: 1px solid #D5E3EF; border-radius: 8px; padding: 10px 16px; margin-top: 32px; font-family: 'Roboto', Arial, sans-serif; font-size: 12.5px; color: #696969; text-align: center;">
-  <strong style="color: #4682B4;">Learn:Blended Notice:</strong> Training content, not formal legal advice.
-</div>`
+      'tpl-9': `<div style="background-color: #FFFFFF; border: 2px solid #4682B4; border-radius: 16px; padding: 22px; margin: 24px 0; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
+  <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+    <img src="${ASSETS_BASE}Assessment.png" alt="Quick Check" style="width: 48px; height: 48px; flex-shrink: 0; display: block;" />
+    <div>
+      <div style="font-size: 12px; font-weight: 900; text-transform: uppercase; color: #4682B4; letter-spacing: 0.6px;">
+        Interactive Floor Check • Click an Option to Check Your Answer
+      </div>
+      <div style="font-size: 17px; font-weight: 700; color: #222222; line-height: 1.35;">
+        A courier arrives at 16:45 with 12 sealed cartons, but 2 cartons have crushed, wet corners. The driver asks you to sign a clean POD now because he is running late. What should you do?
+      </div>
+    </div>
+  </div>
+
+  <!-- Option A: Incorrect -->
+  <details style="margin-bottom: 10px; border: 1.5px solid #83ADCF; border-radius: 12px; background-color: #F4F8FB; overflow: hidden;">
+    <summary style="padding: 14px 16px; font-size: 15.5px; font-weight: 700; color: #222222; cursor: pointer; outline: none;">
+      Option A: Sign the POD so the driver can leave, then email the supplier tomorrow morning with photos.
+    </summary>
+    <div style="background-color: #FDF2F2; border-top: 2px solid #D9534F; padding: 14px 16px; font-size: 15px; color: #222222; line-height: 1.55;">
+      <strong style="color: #D9534F; text-transform: uppercase; font-size: 13px; display: block; margin-bottom: 4px;">
+        ✗ Incorrect — Why This Puts the Store at Risk
+      </strong>
+      Signing a clean Proof of Delivery (POD) confirms the stock arrived in good condition. The supplier can reject a damage claim tomorrow because you signed off without noting the wet boxes.
+    </div>
+  </details>
+
+  <!-- Option B: Correct -->
+  <details style="margin-bottom: 10px; border: 1.5px solid #83ADCF; border-radius: 12px; background-color: #F4F8FB; overflow: hidden;">
+    <summary style="padding: 14px 16px; font-size: 15.5px; font-weight: 700; color: #222222; cursor: pointer; outline: none;">
+      Option B: Write "2 cartons crushed/wet — subject to check" on both copies of the POD and GRV, and get the driver to counter-sign before signing.
+    </summary>
+    <div style="background-color: #EAF6ED; border-top: 2px solid #6DC082; padding: 14px 16px; font-size: 15px; color: #222222; line-height: 1.55;">
+      <strong style="color: #1E7E34; text-transform: uppercase; font-size: 13px; display: block; margin-bottom: 4px;">
+        ✓ Correct — Audit-Ready Floor Practice
+      </strong>
+      Recording the exact variance on the delivery note and Goods Received Voucher (GRV) with the driver's counter-signature gives Procurement solid proof for a credit note.
+    </div>
+  </details>
+
+  <!-- Option C: Incorrect -->
+  <details style="border: 1.5px solid #83ADCF; border-radius: 12px; background-color: #F4F8FB; overflow: hidden;">
+    <summary style="padding: 14px 16px; font-size: 15.5px; font-weight: 700; color: #222222; cursor: pointer; outline: none;">
+      Option C: Accept all 12 cartons quietly and throw the 2 damaged cartons in the skip.
+    </summary>
+    <div style="background-color: #FDF2F2; border-top: 2px solid #D9534F; padding: 14px 16px; font-size: 15px; color: #222222; line-height: 1.55;">
+      <strong style="color: #D9534F; text-transform: uppercase; font-size: 13px; display: block; margin-bottom: 4px;">
+        ✗ Incorrect — Never Destroy Stock Evidence
+      </strong>
+      Throwing away damaged goods causes an unexplained stock shrinkage variance. Always quarantine damaged items in the returns cage and record them on the GRV.
+    </div>
+  </details>
+</div>`,
+
+      'tpl-10': `<details style="background-color: #FFFFFF; border: 2px solid #6DC082; border-radius: 16px; margin: 20px 0; font-family: 'Roboto', Arial, sans-serif; overflow: hidden; box-sizing: border-box;">
+  <summary style="background-color: #EAF6ED; padding: 16px 20px; font-size: 16px; font-weight: 700; color: #1E7E34; cursor: pointer; outline: none;">
+    💡 Click to Reveal: What should you do if the truck seal number does not match the manifest?
+  </summary>
+  <div style="padding: 18px 20px; background-color: #FFFFFF; color: #222222; font-size: 15.5px; line-height: 1.6; border-top: 1px solid #6DC082;">
+    <strong>Stop off-loading immediately and do not break the seal.</strong> Take a clear photo of the seal on the truck door, call your supervisor to witness it, and record the seal mismatch on the gate register before opening the doors.
+  </div>
+</details>`
     };
 
-    const AI_DIRECTIVE_TEXT = `When generating course content, HTML, CSS, React apps, MS Word templates, PowerPoint decks, or video blueprints for Learn:Blended, strictly enforce these 7 Core Laws:
+    const AI_DIRECTIVE_TEXT = `When generating course content, HTML, CSS, React apps, MS Word templates, PowerPoint decks, or video blueprints for Learn:Blended, strictly enforce these 8 Core Laws:
 
 1. The Clean White Reading Canvas Law: Long-form learning content MUST use a Pure White (#FFFFFF) background with crisp Dark Reading Ink (#222222) body text. Never place multi-sentence paragraphs inside heavy dark or colored boxes. Use brand colors (#4682B4 Steel Blue, #6DC082 Emerald Green, #D5E3EF Soft Ice Blue, #EAF6ED Mint Ice) strictly as structured visual enhancement blocks, callout borders, section headers, symbol cards, and summary tables.
 2. The Strict Flatness Law: box-shadow: none across all mediums. Never use drop shadows, text shadows, 3D bevels, skeuomorphic gradients, or neon glows.
@@ -1981,7 +2107,8 @@
 4. The Single Font Law: Roboto ('Roboto', Arial, sans-serif) is the exclusive typeface.
 5. The Dual-Color Semantic Law: Steel Blue (#4682B4) for Structure, Authority, Navigation, Law, Practical Tasks, and Assessment; Emerald Green (#6DC082 graphics / #1E7E34 text) for Action, Payoff, Takeaways, Learner Guide references, Discussion, and LMS portal tasks; Validation Red (#D9534F) for Errors/Mistakes only.
 6. The WCAG Contrast Law: Never render body text in light Emerald #6DC082 on white. Pair #6DC082 graphics/borders with #1E7E34 for green headings and #222222 for reading body text.
-7. The South African Floor-Level Voice Law: Direct, honest South African English (UK/SA spelling) at a Grade 7-8 reading level, using a supportive workplace coach tone ("you/your").`;
+7. The South African Floor-Level Voice Law: Direct, honest South African English (UK/SA spelling) at a Grade 7-8 reading level, using a supportive workplace coach tone ("you/your").
+8. The No Legal Disclaimer Law: Never insert legal disclaimers (such as "Training content, not formal legal advice") in videos, BrainCert HTML lessons, PowerPoint slides, or printed manuals.`;
 
     function showToast(message) {
       const toast = document.getElementById('toast');
@@ -2002,7 +2129,7 @@
 
     function copyAiDirective() {
       navigator.clipboard.writeText(AI_DIRECTIVE_TEXT).then(() => {
-        showToast('Copied Master AI Directive (7 Core Laws)!');
+        showToast('Copied Master AI Directive (8 Core Laws)!');
       });
     }
 

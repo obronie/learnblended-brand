@@ -10,7 +10,7 @@
 
 ## 0. AI MODEL DIRECTIVE (SYSTEM PROMPT FOR ALL AI AGENTS)
 
-When any AI model (Gemini, Claude, ChatGPT, Antigravity, or Google AI Studio) generates course content, HTML, CSS, React apps, MS Word templates, PowerPoint decks, or video blueprints for **Learn:Blended**, it MUST strictly enforce these **7 Core Laws**:
+When any AI model (Gemini, Claude, ChatGPT, Antigravity, or Google AI Studio) generates course content, HTML, CSS, React apps, MS Word templates, PowerPoint decks, or video blueprints for **Learn:Blended**, it MUST strictly enforce these **8 Core Laws**:
 
 1. **The Clean White Reading Canvas Law (LMS, Word & Print):** Long-form learning content MUST use a **Pure White (`#FFFFFF`) background with crisp Dark Reading Ink (`#222222`) body text**. Never place multi-sentence paragraphs inside heavy dark or colored boxes. Use brand colors (`#4682B4` Steel Blue, `#6DC082` Emerald Green, `#D5E3EF` Soft Ice Blue, `#EAF6ED` Mint Ice) strictly as **structured visual enhancement blocks, callout borders, section headers, symbol cards, and summary tables** that break up the white page and guide the learner's eye.
 2. **The Strict Flatness Law:** `box-shadow: none` across all mediums. Never use drop shadows, text shadows, 3D bevels, skeuomorphic gradients, or neon glows in HTML, CSS, PowerPoint, Word, or Video. Depth and hierarchy are created strictly through solid borders (`1px` to `6px`), soft tint fills (`#F4F8FB`, `#D5E3EF`, `#EAF6ED`), and nested container spacing.
@@ -25,6 +25,7 @@ When any AI model (Gemini, Claude, ChatGPT, Antigravity, or Google AI Studio) ge
    * **Validation Red (`#D9534F`)** is restricted strictly to **Error States, "Wrong Way" contrast blocks, and Quiz Feedback**—never decorative.
 6. **The WCAG Contrast Law:** Never render small or medium text in `#6DC082` (Emerald Green) on a white background (contrast is 2.35:1). Always use `#6DC082` for **borders, badges, and graphical icons**, and pair it with **`#1E7E34` (Dark Emerald)** for green headings/labels and **`#222222` (Reading Ink)** for body copy.
 7. **The South African Floor-Level Voice Law:** Write in direct, honest South African English (UK/SA spelling: *programme, organisation, labour, practise/practice*) at a **Grade 7–8 reading level**. Address the learner as *"you/your"* using a supportive workplace coach tone, never an academic examiner tone.
+8. **The No Legal Disclaimer Law:** Never insert legal disclaimers (such as *"Training content, not formal legal advice"*) in videos, BrainCert HTML lessons, PowerPoint slides, or printed manuals. The brand maintains authoritative, defensible training content without cluttering learning surfaces with disclaimers.
 
 ---
 
@@ -40,13 +41,6 @@ Learn:Blended provides affordable, legally grounded, and highly engaging microle
 
 ### 1.3 Localized South African Reality Anchors
 Every training scenario, case study, and practical drill must reflect authentic South African workplace conditions: taxi strikes and public transport delays, load reduction/cable theft, warehouse receiving bay bottlenecks, scanner/equipment failure, CCMA disputes, LRA/BCEA procedures, and SETA/WSP deadline season.
-
-### 1.4 Mandatory Legal Disclaimer (V8.1/V8.2 Ratification)
-* **Verbatim Text:** *"Training content, not formal legal advice."*
-* **Channel Placement Rule:**
-  * **Video (Hyperframes):** **OMITTED** from the final video slide sequence to prevent viewer drop-off.
-  * **BrainCert LMS:** Placed permanently in the portal footer chrome, course overview page, and the bottom disclaimer block of every HTML lesson.
-  * **Print / MS Word / PDF / PowerPoint:** Placed permanently in the master document footer on every page/slide and in the *Theoretical Defense Shield* whitepaper.
 
 ---
 
@@ -105,10 +99,10 @@ All instructional symbols share the V8.2 Unified Frame: a flat white rounded squ
 ### 4.1 Pedagogical Layout Rhythm for BrainCert Lessons
 When authoring HTML lessons for BrainCert Enterprise LMS, AI models must never output unstyled walls of text or dark/heavy full-page backgrounds. Follow this strict **White-Canvas Rhythm**:
 1. **Base Canvas:** Pure White (`#FFFFFF`) container (`max-width: 840px`), `16px` Roboto Regular body copy in crisp Dark Reading Ink (`#222222`), line-height `1.65`.
-2. **Pacing Rule:** After every **2 short paragraphs (max 80–100 words)** of black-on-white reading text, insert a **Visual Enhancement Block** (Symbol Callout, Numbered Step Grid, Wrong/Right Contrast, Statutory Quote, or Comparison Table) to anchor comprehension visually.
-3. **BrainCert Editor Survival Rule:** BrainCert's rich-text editor strips `<style>` tags inside lessons. **All HTML lesson code MUST use 100% self-contained inline CSS (`style="..."`)** exactly as structured in the 8 canonical templates below.
+2. **Pacing Rule:** After every **2 short paragraphs (max 80–100 words)** of black-on-white reading text, insert a **Visual Enhancement Block** (Symbol Callout, Numbered Step Grid, Wrong/Right Contrast, Statutory Quote, Comparison Table, or Interactive Click-to-Reveal Check) to anchor comprehension visually.
+3. **BrainCert Editor Survival Rule:** BrainCert's rich-text editor strips `<style>`, `<script>`, and `onclick` tags inside lessons. **All HTML lesson code MUST use 100% self-contained inline CSS (`style="..."`) and pure HTML5 interactive tags (`<details>` and `<summary>`)** exactly as structured in the canonical templates below.
 
-### 4.2 The 8 Canonical BrainCert Inline HTML Templates
+### 4.2 The Canonical BrainCert Inline HTML Templates
 
 #### Block 1: Lesson Wrapper & Module Title Banner
 ```html
@@ -250,9 +244,8 @@ When authoring HTML lessons for BrainCert Enterprise LMS, AI models must never o
 </table>
 ```
 
-#### Block 8: Key Takeaway Box + Mandatory Legal Footer Disclaimer
+#### Block 8: Key Floor Takeaway Summary Box
 ```html
-<!-- KEY TAKEAWAY SUMMARY -->
 <div style="background-color: #FFFFFF; border: 2px solid #6DC082; border-left: 8px solid #6DC082; border-radius: 16px; padding: 18px 20px; margin: 24px 0; font-family: 'Roboto', Arial, sans-serif;">
   <div style="font-size: 13px; font-weight: 900; text-transform: uppercase; color: #1E7E34; letter-spacing: 0.6px; margin-bottom: 4px;">
     ✓ Key Floor Takeaway
@@ -261,11 +254,74 @@ When authoring HTML lessons for BrainCert Enterprise LMS, AI models must never o
     Your signature is a legal receipt. Never sign a delivery note until you have physically counted the stock yourself.
   </div>
 </div>
+```
 
-<!-- MANDATORY V8.2 LEGAL DISCLAIMER FOOTER -->
-<div style="background-color: #F4F8FB; border: 1px solid #D5E3EF; border-radius: 8px; padding: 10px 16px; margin-top: 32px; font-family: 'Roboto', Arial, sans-serif; font-size: 12.5px; color: #696969; text-align: center;">
-  <strong style="color: #4682B4;">Learn:Blended Notice:</strong> Training content, not formal legal advice.
+#### Interactive Block 9: Multi-Option Scenario Check (Click Option to Reveal Incorrect `#D9534F` vs. Correct `#1E7E34` Explanation)
+```html
+<div style="background-color: #FFFFFF; border: 2px solid #4682B4; border-radius: 16px; padding: 22px; margin: 24px 0; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
+  <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+    <img src="https://obronie.github.io/learnblended-brand/symbols/Assessment.png" alt="Quick Check" style="width: 48px; height: 48px; flex-shrink: 0; display: block;" />
+    <div>
+      <div style="font-size: 12px; font-weight: 900; text-transform: uppercase; color: #4682B4; letter-spacing: 0.6px;">
+        Interactive Floor Check • Click an Option to Check Your Answer
+      </div>
+      <div style="font-size: 17px; font-weight: 700; color: #222222; line-height: 1.35;">
+        A courier arrives at 16:45 with 12 sealed cartons, but 2 cartons have crushed, wet corners. The driver asks you to sign a clean POD now because he is running late. What should you do?
+      </div>
+    </div>
+  </div>
+
+  <!-- Option A: Incorrect -->
+  <details style="margin-bottom: 10px; border: 1.5px solid #83ADCF; border-radius: 12px; background-color: #F4F8FB; overflow: hidden;">
+    <summary style="padding: 14px 16px; font-size: 15.5px; font-weight: 700; color: #222222; cursor: pointer; outline: none;">
+      Option A: Sign the POD so the driver can leave, then email the supplier tomorrow morning with photos.
+    </summary>
+    <div style="background-color: #FDF2F2; border-top: 2px solid #D9534F; padding: 14px 16px; font-size: 15px; color: #222222; line-height: 1.55;">
+      <strong style="color: #D9534F; text-transform: uppercase; font-size: 13px; display: block; margin-bottom: 4px;">
+        ✗ Incorrect — Why This Puts the Store at Risk
+      </strong>
+      Signing a clean Proof of Delivery (POD) confirms the stock arrived in good condition. The supplier can reject a damage claim tomorrow because you signed off without noting the wet boxes.
+    </div>
+  </details>
+
+  <!-- Option B: Correct -->
+  <details style="margin-bottom: 10px; border: 1.5px solid #83ADCF; border-radius: 12px; background-color: #F4F8FB; overflow: hidden;">
+    <summary style="padding: 14px 16px; font-size: 15.5px; font-weight: 700; color: #222222; cursor: pointer; outline: none;">
+      Option B: Write "2 cartons crushed/wet — subject to check" on both copies of the POD and GRV, and get the driver to counter-sign before signing.
+    </summary>
+    <div style="background-color: #EAF6ED; border-top: 2px solid #6DC082; padding: 14px 16px; font-size: 15px; color: #222222; line-height: 1.55;">
+      <strong style="color: #1E7E34; text-transform: uppercase; font-size: 13px; display: block; margin-bottom: 4px;">
+        ✓ Correct — Audit-Ready Floor Practice
+      </strong>
+      Recording the exact variance on the delivery note and Goods Received Voucher (GRV) with the driver's counter-signature gives Procurement solid proof for a credit note.
+    </div>
+  </details>
+
+  <!-- Option C: Incorrect -->
+  <details style="border: 1.5px solid #83ADCF; border-radius: 12px; background-color: #F4F8FB; overflow: hidden;">
+    <summary style="padding: 14px 16px; font-size: 15.5px; font-weight: 700; color: #222222; cursor: pointer; outline: none;">
+      Option C: Accept all 12 cartons quietly and throw the 2 damaged cartons in the skip.
+    </summary>
+    <div style="background-color: #FDF2F2; border-top: 2px solid #D9534F; padding: 14px 16px; font-size: 15px; color: #222222; line-height: 1.55;">
+      <strong style="color: #D9534F; text-transform: uppercase; font-size: 13px; display: block; margin-bottom: 4px;">
+        ✗ Incorrect — Never Destroy Stock Evidence
+      </strong>
+      Throwing away damaged goods causes an unexplained stock shrinkage variance. Always quarantine damaged items in the returns cage and record them on the GRV.
+    </div>
+  </details>
 </div>
+```
+
+#### Interactive Block 10: Click-to-Reveal Coaching / FAQ Accordion Card
+```html
+<details style="background-color: #FFFFFF; border: 2px solid #6DC082; border-radius: 16px; margin: 20px 0; font-family: 'Roboto', Arial, sans-serif; overflow: hidden; box-sizing: border-box;">
+  <summary style="background-color: #EAF6ED; padding: 16px 20px; font-size: 16px; font-weight: 700; color: #1E7E34; cursor: pointer; outline: none;">
+    💡 Click to Reveal: What should you do if the truck seal number does not match the manifest?
+  </summary>
+  <div style="padding: 18px 20px; background-color: #FFFFFF; color: #222222; font-size: 15.5px; line-height: 1.6; border-top: 1px solid #6DC082;">
+    <strong>Stop off-loading immediately and do not break the seal.</strong> Take a clear photo of the seal on the truck door, call your supervisor to witness it, and record the seal mismatch on the gate register before opening the doors.
+  </div>
+</details>
 ```
 
 ---
@@ -287,7 +343,7 @@ When generating `.docx` files programmatically (via `python-docx`, `docx-js`, or
 * `Heading 2 (Unit Sub-heading)`: Roboto Bold `14pt`, Color `#4682B4`, Space Before `14pt`, Space After `4pt`, `Keep with next = True`.
 * `Heading 3 (Activity Heading)`: Roboto Bold `11.5pt`, Color `#1E7E34` (or `#222222`), Space Before `8pt`, Space After `2pt`, `Keep with next = True`.
 * `Header`: `8.5pt` Roboto Regular `#696969`. Left: Qualification / Module Title. Right: `LB-Logo.png` (`9mm` height). Bottom border `0.75pt` solid `#83ADCF`.
-* `Footer`: `8.5pt` Roboto Regular `#696969`. Left: Document Code & Version. Center: *"Training content, not formal legal advice."* Right: `Page X of Y`.
+* `Footer`: `8.5pt` Roboto Regular `#696969`. Left: Qualification / Module Code & Version. Right: `Page X of Y` + Learn:Blended Monogram (no legal disclaimer).
 
 ### 5.3 MS Word Callout Box Construction (Non-Breaking 2-Column Table Rule)
 Never use floating Word textboxes (they shift and break across pages). Always build symbol callout boxes in MS Word as a **1-Row, 2-Column Table** with `CantSplit` (*"Allow row to break across pages" = OFF*):
@@ -312,7 +368,7 @@ Never use floating Word textboxes (they shift and break across pages). Always bu
 * **Top Bar:** `LB-Logo.png` (`90×90px`) top-left; Module/SAQA Qualification Pill (`#D5E3EF` background, `#4682B4` bold `14pt` uppercase text, `8px` radius) top-right.
 * **Center Hero:** Module Title in `44pt` Roboto Black (`900`) Steel Blue (`#4682B4`), maximum 2 lines.
 * **Payoff Banner:** Nested bottom panel (`#EAF6ED` fill, `2px` `#6DC082` border, `16px` radius) containing the core workplace payoff statement in `22pt` Roboto Bold Dark Emerald (`#1E7E34`).
-* **Footer:** `10pt` Muted Gray (`#696969`): *"Training content, not formal legal advice."*
+* **Footer:** Clean margin space (no legal disclaimers).
 
 #### Layout 2: Core Concept & 4-Step Teaching Slide (Mirrors Block F Kinetic Workhorse)
 * **Header Zone:** Top-left H1 (`32pt` Roboto Bold `#4682B4`) + concise 1-line context sub-header (`18pt` Roboto Regular `#4A4A4A`).
@@ -371,7 +427,7 @@ Never use floating Word textboxes (they shift and break across pages). Always bu
   * Blue dominant panels enter/exit from bottom (`y: +15px`).
   * Kinetic items fire horizontally (`+40px` right, scale `1.1`, Emerald `#6DC082` fire).
   * Inter-scene morphs are silent (no whooshes, no BGM).
-* **Stage Close:** Lesson ends cleanly on **Block A (Consequence Payoff & Hand-off to Quiz)** with a final exit whoosh SFX.
+* **Stage Close:** Lesson ends cleanly on **Block A (Consequence Payoff & Hand-off to Quiz)** with a final exit whoosh SFX (no legal disclaimers).
 
 ### 7.5 The Mandatory 8-Segment Pedagogical Lesson Arc & Slide Blocks Catalog
 
@@ -384,7 +440,7 @@ Never use floating Word textboxes (they shift and break across pages). Always bu
 | **Segment 5** | **Block QUOTE (Statutory Authority)** | 85% translucent Soft Ice Blue (`#D5E3EF`) panel on left, `#4682B4` italic quote + citation, plain-English translation on right. No caption bar. *Job: Verbatim statutory legal anchor.* |
 | **Segment 6** | **Block C (Split + Diagram)** | White-dominant left panel rendering **1 of 4 strict archetypes (`flow`, `comparison`, `matrix`, `loop`)**, blue panel right, nested caption bar. *Job: Conceptual framework visualization.* |
 | **Segment 7** | **Block F (Kinetic Workhorse)** | Kinetic list replay with standard caption bar. *Job: Practical South African workplace scenario replay.* |
-| **Segment 8** | **Block A (Single Hero Close)** | Full-width white card with `#4682B4` headline and `#6DC082` consequence payoff statement + final exit whoosh SFX (and hand-off to BrainCert quiz; **zero legal disclaimer on final slide**). |
+| **Segment 8** | **Block A (Single Hero Close)** | Full-width white card with `#4682B4` headline and `#6DC082` consequence payoff statement + final exit whoosh SFX (and hand-off to BrainCert quiz; zero legal disclaimers). |
 
 ### 7.6 Deterministic JSON Blueprint Contract
 The AI Studio app generates a strictly validated JSON `Blueprint` where each segment specifies `block: "A" | "B" | "C" | "D" | "F" | "QUOTE"` and populates only the permitted slots:
