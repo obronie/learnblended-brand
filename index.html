@@ -1,0 +1,1514 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn:Blended Master Brand Portal V8.2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    /* ==========================================================================
+       Learn:Blended V8.2 Brand Portal Stylesheet
+       Strict Flatness: box-shadow: none !important
+       ========================================================================== */
+    :root {
+      --lb-white: #FFFFFF;
+      --lb-ink: #222222;
+      --lb-charcoal: #4A4A4A;
+      --lb-muted: #696969;
+      --lb-blue: #4682B4;
+      --lb-light-blue: #83ADCF;
+      --lb-ice: #D5E3EF;
+      --lb-ice-tint: #F4F8FB;
+      --lb-emerald: #6DC082;
+      --lb-dark-emerald: #1E7E34;
+      --lb-mint-tint: #EAF6ED;
+      --lb-red: #D9534F;
+      --lb-red-tint: #FDF2F2;
+      --lb-border-card: 2px solid #83ADCF;
+      --lb-border-blue: 2px solid #4682B4;
+      --lb-border-green: 2px solid #6DC082;
+      --lb-radius-lg: 16px;
+      --lb-radius-md: 12px;
+      --lb-radius-sm: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      box-shadow: none !important;
+    }
+
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background-color: #F4F8FB;
+      color: var(--lb-ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 60px;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    header {
+      background-color: var(--lb-white);
+      border-bottom: 3px solid var(--lb-blue);
+      padding: 24px 0;
+      margin-bottom: 30px;
+    }
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .brand-id {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .brand-logo {
+      height: 52px;
+      width: auto;
+      display: block;
+    }
+    .brand-title h1 {
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--lb-blue);
+      letter-spacing: -0.2px;
+      margin-bottom: 2px;
+    }
+    .brand-title p {
+      font-size: 13.5px;
+      color: var(--lb-muted);
+      font-style: italic;
+    }
+    .badge-v82 {
+      display: inline-flex;
+      align-items: center;
+      background-color: var(--lb-ice);
+      color: var(--lb-blue);
+      font-weight: 700;
+      font-size: 12.5px;
+      padding: 6px 14px;
+      border-radius: var(--lb-radius-sm);
+      border: 1px solid var(--lb-light-blue);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Navigation Bar */
+    .quick-nav {
+      background-color: var(--lb-white);
+      border: 1.5px solid var(--lb-light-blue);
+      border-radius: var(--lb-radius-md);
+      padding: 10px 16px;
+      margin-bottom: 28px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .quick-nav-label {
+      font-size: 12px;
+      font-weight: 900;
+      color: var(--lb-blue);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-right: 6px;
+    }
+    .nav-btn {
+      background-color: var(--lb-ice-tint);
+      border: 1px solid var(--lb-light-blue);
+      color: var(--lb-ink);
+      font-family: inherit;
+      font-size: 13.5px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: var(--lb-radius-sm);
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+    .nav-btn:hover {
+      background-color: var(--lb-ice);
+      border-color: var(--lb-blue);
+      color: var(--lb-blue);
+    }
+
+    /* Top AI Prompt Bar */
+    .ai-prompt-bar {
+      background-color: var(--lb-white);
+      border: 2px solid var(--lb-emerald);
+      border-radius: var(--lb-radius-lg);
+      padding: 20px 24px;
+      margin-bottom: 36px;
+    }
+    .ai-bar-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .ai-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 17px;
+      font-weight: 900;
+      color: var(--lb-dark-emerald);
+    }
+    .ai-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      font-family: inherit;
+      font-size: 13.5px;
+      font-weight: 700;
+      padding: 9px 16px;
+      border-radius: var(--lb-radius-sm);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: none;
+      transition: opacity 0.15s, background 0.15s;
+    }
+    .btn-emerald {
+      background-color: var(--lb-emerald);
+      color: #114420;
+    }
+    .btn-emerald:hover {
+      background-color: #5bb371;
+    }
+    .btn-blue {
+      background-color: var(--lb-blue);
+      color: var(--lb-white);
+    }
+    .btn-blue:hover {
+      background-color: #386b99;
+    }
+    .btn-outline {
+      background-color: var(--lb-white);
+      border: 1.5px solid var(--lb-light-blue);
+      color: var(--lb-blue);
+    }
+    .btn-outline:hover {
+      background-color: var(--lb-ice-tint);
+      border-color: var(--lb-blue);
+    }
+    .ai-bar-desc {
+      font-size: 14.5px;
+      color: var(--lb-charcoal);
+      margin-bottom: 12px;
+    }
+    .ai-url-display {
+      background-color: var(--lb-mint-tint);
+      border: 1px solid var(--lb-emerald);
+      border-radius: var(--lb-radius-sm);
+      padding: 10px 14px;
+      font-family: monospace;
+      font-size: 13px;
+      color: var(--lb-dark-emerald);
+      word-break: break-all;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Section Styling */
+    .section-title-wrap {
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--lb-light-blue);
+      padding-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .section-title {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--lb-blue);
+      letter-spacing: -0.2px;
+    }
+    .section-desc {
+      font-size: 14px;
+      color: var(--lb-charcoal);
+    }
+
+    /* Color Palette Grid */
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 18px;
+      margin-bottom: 44px;
+    }
+    .color-card {
+      background-color: var(--lb-white);
+      border: 1.5px solid var(--lb-light-blue);
+      border-radius: var(--lb-radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .color-swatch {
+      height: 68px;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    .color-swatch .hex-badge {
+      background-color: rgba(255, 255, 255, 0.92);
+      color: #111;
+      font-family: monospace;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      border: 1px solid rgba(0,0,0,0.15);
+    }
+    .color-swatch .hex-badge:hover {
+      background-color: #FFFFFF;
+      border-color: #000;
+    }
+    .color-info {
+      padding: 14px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .color-name {
+      font-size: 15px;
+      font-weight: 900;
+      color: var(--lb-ink);
+    }
+    .color-role {
+      font-size: 12.5px;
+      color: var(--lb-charcoal);
+      line-height: 1.4;
+    }
+    .color-specs {
+      background-color: var(--lb-ice-tint);
+      border-radius: 6px;
+      padding: 8px 10px;
+      font-size: 11.5px;
+      color: var(--lb-ink);
+      line-height: 1.5;
+    }
+    .color-specs strong {
+      color: var(--lb-blue);
+    }
+
+    /* Symbols Gallery */
+    .symbols-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 18px;
+      margin-bottom: 44px;
+    }
+    .symbol-card {
+      background-color: var(--lb-white);
+      border: 1.5px solid var(--lb-light-blue);
+      border-radius: var(--lb-radius-lg);
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .symbol-img-wrap {
+      width: 90px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #F8FAFC;
+      border: 1.5px solid var(--lb-ice);
+      border-radius: var(--lb-radius-md);
+      margin-bottom: 14px;
+      padding: 6px;
+    }
+    .symbol-img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    .symbol-title {
+      font-size: 15px;
+      font-weight: 900;
+      color: var(--lb-blue);
+      margin-bottom: 4px;
+    }
+    .symbol-filename {
+      font-family: monospace;
+      font-size: 12px;
+      color: var(--lb-dark-emerald);
+      background-color: var(--lb-mint-tint);
+      padding: 2px 8px;
+      border-radius: 4px;
+      border: 1px solid #c2e5cc;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+    .symbol-desc {
+      font-size: 12.5px;
+      color: var(--lb-charcoal);
+      line-height: 1.45;
+      margin-bottom: 12px;
+      flex: 1;
+    }
+    .symbol-card-btns {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      width: 100%;
+    }
+    .btn-sm {
+      font-size: 12px;
+      padding: 6px 10px;
+      font-weight: 700;
+      border-radius: 6px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    /* Live BrainCert LMS HTML Component Builder */
+    .lms-builder {
+      margin-bottom: 48px;
+    }
+    .template-box {
+      background-color: var(--lb-white);
+      border: 2px solid var(--lb-blue);
+      border-radius: var(--lb-radius-lg);
+      margin-bottom: 28px;
+      overflow: hidden;
+    }
+    .template-header {
+      background-color: var(--lb-ice-tint);
+      border-bottom: 1.5px solid var(--lb-light-blue);
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .template-header-info h3 {
+      font-size: 16px;
+      font-weight: 900;
+      color: var(--lb-blue);
+      margin-bottom: 2px;
+    }
+    .template-header-info p {
+      font-size: 13px;
+      color: var(--lb-charcoal);
+    }
+    .template-preview {
+      padding: 24px 20px;
+      background-color: #FFFFFF;
+    }
+
+    /* Channel Governance Tabs */
+    .gov-section {
+      margin-bottom: 44px;
+    }
+    .tabs-header {
+      display: flex;
+      gap: 6px;
+      border-bottom: 2px solid var(--lb-blue);
+      margin-bottom: 20px;
+      overflow-x: auto;
+    }
+    .tab-btn {
+      background-color: var(--lb-ice-tint);
+      border: 1.5px solid var(--lb-light-blue);
+      border-bottom: none;
+      border-radius: 8px 8px 0 0;
+      padding: 10px 18px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--lb-charcoal);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.15s, color 0.15s;
+    }
+    .tab-btn.active {
+      background-color: var(--lb-blue);
+      color: var(--lb-white);
+      border-color: var(--lb-blue);
+    }
+    .tab-content {
+      display: none;
+      background-color: var(--lb-white);
+      border: 2px solid var(--lb-blue);
+      border-radius: 0 0 var(--lb-radius-lg) var(--lb-radius-lg);
+      padding: 24px;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .gov-rule-box {
+      background-color: var(--lb-ice-tint);
+      border-left: 4px solid var(--lb-blue);
+      border-radius: var(--lb-radius-sm);
+      padding: 16px 20px;
+      margin-bottom: 16px;
+    }
+    .gov-rule-box h4 {
+      font-size: 15px;
+      font-weight: 900;
+      color: var(--lb-blue);
+      margin-bottom: 6px;
+    }
+    .gov-rule-box p, .gov-rule-box ul {
+      font-size: 14px;
+      color: var(--lb-ink);
+      line-height: 1.55;
+    }
+    .gov-rule-box ul {
+      margin-left: 20px;
+      margin-top: 6px;
+    }
+    .gov-rule-box li {
+      margin-bottom: 4px;
+    }
+
+    /* Toast Notification */
+    #toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: var(--lb-ink);
+      color: var(--lb-white);
+      padding: 12px 20px;
+      border-radius: 8px;
+      border-left: 5px solid var(--lb-emerald);
+      font-size: 14px;
+      font-weight: 700;
+      z-index: 9999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease-in-out;
+    }
+    #toast.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 2px solid var(--lb-light-blue);
+      padding-top: 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--lb-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-content">
+      <div class="brand-id">
+        <img src="./symbols/LB-Logo.png" alt="Learn:Blended Logo" class="brand-logo" onerror="this.src='./symbols/Standalone%20LB%20Logo%20white%20border%20TRANSPARENT.png'">
+        <div class="brand-title">
+          <h1>LEARN:BLENDED BRAND PORTAL</h1>
+          <p>"Blending excellence for you!" — Omnichannel V8.2 Hub</p>
+        </div>
+      </div>
+      <div>
+        <span class="badge-v82">Ratified V8.2 System</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- QUICK NAV -->
+    <nav class="quick-nav">
+      <span class="quick-nav-label">JUMP TO:</span>
+      <a href="#ai-bar" class="nav-btn">🤖 AI Directives</a>
+      <a href="#palette" class="nav-btn">🎨 Palette Matrix</a>
+      <a href="#symbols" class="nav-btn">📐 Official Symbols</a>
+      <a href="#builder" class="nav-btn">⚡ BrainCert HTML Builder</a>
+      <a href="#governance" class="nav-btn">📋 Channel Governance</a>
+    </nav>
+
+    <!-- TOP AI PROMPT BAR -->
+    <section id="ai-bar" class="ai-prompt-bar">
+      <div class="ai-bar-header">
+        <div class="ai-title">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          Machine-Readable AI System Directives (V8.2)
+        </div>
+        <div class="ai-actions">
+          <button class="btn btn-emerald" onclick="copyAiDirective()">
+            📋 Copy 7 Core AI Laws (System Prompt)
+          </button>
+          <button class="btn btn-blue" onclick="copyLlmsUrl()">
+            🔗 Copy llms.txt URL
+          </button>
+          <button class="btn btn-outline" onclick="copyBrandkitUrl()">
+            📄 Copy Brand Kit Markdown URL
+          </button>
+        </div>
+      </div>
+      <p class="ai-bar-desc">
+        One-click discovery endpoints for <strong>Gemini, Claude, ChatGPT, Antigravity, and Google AI Studio</strong>. Paste the AI Directive into any model's custom instructions or system prompt to enforce 100% compliant Learn:Blended courseware.
+      </p>
+      <div class="ai-url-display">
+        <span id="llms-url-text">https://obronie.github.io/learnblended-brand/symbols/../llms.txt</span>
+        <span style="font-size: 11px; color: var(--lb-charcoal); font-family: sans-serif;">Standard AI Discovery Endpoint</span>
+      </div>
+    </section>
+
+    <!-- COLOR PALETTE MATRIX -->
+    <section id="palette">
+      <div class="section-title-wrap">
+        <div>
+          <h2 class="section-title">Color Palette Matrix & Print Rules</h2>
+          <p class="section-desc">Screen HEX, commercial CMYK, and monochrome laser printer fallback rules.</p>
+        </div>
+      </div>
+
+      <div class="color-grid">
+
+        <!-- Canvas White -->
+        <div class="color-card">
+          <div class="color-swatch" style="background-color: #FFFFFF;">
+            <button class="hex-badge" onclick="copyText('#FFFFFF', 'Canvas White Hex')">#FFFFFF</button>
+          </div>
+          <div class="color-info">
+            <div>
+              <div class="color-name">Canvas White</div>
+              <div class="color-role">Primary reading canvas for LMS HTML, Word, Slides, focus cards.</div>
+            </div>
+            <div class="color-specs">
+              <strong>RGB:</strong> 255, 255, 255<br>
+              <strong>CMYK:</strong> 0, 0, 0, 0 (Paper White)<br>
+              <strong>B&W Laser:</strong> 0% K (Paper White)
+            </div>
+          </div>
+        </div>
+
+        <!-- Reading Ink -->
+        <div class="color-card">
+          <div class="color-swatch" style="background-color: #222222;">
+            <button class="hex-badge" style="background:#fff; color:#000;" onclick="copyText('#222222', 'Reading Ink Hex')">#222222</button>
+          </div>
+          <div class="color-info">
+            <div>
+              <div class="color-name">Reading Ink</div>
+              <div class="color-role">Primary body text for LMS HTML, MS Word, and Printed Manuals.</div>
+            </div>
+            <div class="color-specs">
+              <strong>RGB:</strong> 34, 34, 34<br>
+              <strong>CMYK:</strong> 0, 0, 0, 90 (Neutral Black)<br>
+              <strong>B&W Laser:</strong> 90% K (#222222)
+            </div>
+          </div>
+        </div>
+
+        <!-- Steel Blue -->
+        <div class="color-card">
+          <div class="color-swatch" style="background-color: #4682B4;">
+            <button class="hex-badge" style="background:#fff; color:#000;" onclick="copyText('#4682B4', 'Steel Blue Hex')">#4682B4</button>
+          </div>
+          <div class="color-info">
+            <div>
+              <div class="color-name">Steel Blue</div>
+              <div class="color-role">Primary brand structural color, H1/H2 titles, Option A stage.</div>
+            </div>
+            <div class="color-specs">
+              <strong>RGB:</strong> 70, 130, 180<br>
+              <strong>CMYK:</strong> 74, 40, 12, 2 (PMS 7689 C)<br>
+              <strong>B&W Laser:</strong> Solid 2pt Black Border + bold
+            </div>
+          </div>
+        </div>
+
+        <!-- Emerald Green -->
+        <div class="color-card">
+          <div class="color-swatch" style="background-color: #6DC082;">
+            <button class="hex-badge" style="background:#fff; color:#000;" onclick="copyText('#6DC082', 'Emerald Green Hex')">#6DC082</button>
+          </div>
+          <div class="color-info">
+            <div>
+              <div class="color-name">Emerald Green</div>
+              <div class="color-role">Action borders, payoff checkmarks, kinetic fires, symbol accents.</div>
+            </div>
+            <div class="color-specs">
+              <strong>RGB:</strong> 109, 192, 130<br>
+              <strong>CMYK:</strong> 58, 0, 55, 0 (PMS 7480 C)<br>
+              <strong>B&W Laser:</strong> 4pt Left Black Bar + 1.5pt Border
+            </div>
+          </div>
+        </div>
+
+        <!-- Dark Emerald -->
+        <div class="color-card">
+          <div class="color-swatch" style="background-color: #1E7E34;">
+            <button class="hex-badge" style="background:#fff; color:#000;" onclick="copyText('#1E7E34', 'Dark Emerald Hex')">#1E7E34</button>
+          </div>
+          <div class="color-info">
+            <div>
+              <div class="color-name">Dark Emerald (Accessible)</div>
+              <div class="color-role">High-contrast accessible green text/titles on light backgrounds.</div>
+            </div>
+            <div class="color-specs">
+              <strong>RGB:</strong> 30, 126, 52<br>
+              <strong>CMYK:</strong> 85, 18, 100, 6 (PMS 7739 C)<br>
+              <strong>B&W Laser:</strong> 100% K Bold (#000000)
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Ice Blue -->
+        <div class="color-card">
+          <div class="color-swatch" style="background-color: #D5E3EF;">
+            <button class="hex-badge" onclick="copyText('#D5E3EF', 'Soft Ice Blue Hex')">#D5E3EF</button>
+          </div>
+          <div class="color-info">
+            <div>
+              <div class="color-name">Soft Ice Blue</div>
+              <div class="color-role">Statutory quote panels, badges, table header accents.</div>
+            </div>
+            <div class="color-specs">
+              <strong>RGB:</strong> 213, 227, 239<br>
+              <strong>CMYK:</strong> 16, 6, 2, 0 (PMS 656 C)<br>
+              <strong>B&W Laser:</strong> 6% K Screen Tint (#F2F2F2)
+            </div>
+          </div>
+        </div>
+
+        <!-- Blue Ice Tint -->
+        <div class="color-card">
+          <div class="color-swatch" style="background-color: #F4F8FB;">
+            <button class="hex-badge" onclick="copyText('#F4F8FB', 'Blue Ice Tint Hex')">#F4F8FB</button>
+          </div>
+          <div class="color-info">
+            <div>
+              <div class="color-name">Blue Ice Tint</div>
+              <div class="color-role">Container fill for Steel Blue callout blocks & alternating rows.</div>
+            </div>
+            <div class="color-specs">
+              <strong>RGB:</strong> 244, 248, 251<br>
+              <strong>CMYK:</strong> 4, 1, 0, 0<br>
+              <strong>B&W Laser:</strong> 3% K Screen Tint (#F8F8F8)
+            </div>
+          </div>
+        </div>
+
+        <!-- Mint Ice Tint -->
+        <div class="color-card">
+          <div class="color-swatch" style="background-color: #EAF6ED;">
+            <button class="hex-badge" onclick="copyText('#EAF6ED', 'Mint Ice Tint Hex')">#EAF6ED</button>
+          </div>
+          <div class="color-info">
+            <div>
+              <div class="color-name">Mint Ice Tint</div>
+              <div class="color-role">Light container fill for Emerald Green callouts & takeaways.</div>
+            </div>
+            <div class="color-specs">
+              <strong>RGB:</strong> 234, 246, 237<br>
+              <strong>CMYK:</strong> 8, 0, 10, 0<br>
+              <strong>B&W Laser:</strong> 5% K Screen Tint (#F4F4F4)
+            </div>
+          </div>
+        </div>
+
+        <!-- Light Blue -->
+        <div class="color-card">
+          <div class="color-swatch" style="background-color: #83ADCF;">
+            <button class="hex-badge" onclick="copyText('#83ADCF', 'Light Blue Hex')">#83ADCF</button>
+          </div>
+          <div class="color-info">
+            <div>
+              <div class="color-name">Light Blue</div>
+              <div class="color-role">Subtle dividers, diagram connectors, inner card borders.</div>
+            </div>
+            <div class="color-specs">
+              <strong>RGB:</strong> 131, 173, 207<br>
+              <strong>CMYK:</strong> 48, 21, 7, 0 (PMS 542 C)<br>
+              <strong>B&W Laser:</strong> Solid 1pt Gray Border (50% K)
+            </div>
+          </div>
+        </div>
+
+        <!-- Dim Gray -->
+        <div class="color-card">
+          <div class="color-swatch" style="background-color: #4A4A4A;">
+            <button class="hex-badge" style="background:#fff; color:#000;" onclick="copyText('#4A4A4A', 'Dim Gray Hex')">#4A4A4A</button>
+          </div>
+          <div class="color-info">
+            <div>
+              <div class="color-name">Dim Gray</div>
+              <div class="color-role">Video body text, secondary descriptions, sub-headings.</div>
+            </div>
+            <div class="color-specs">
+              <strong>RGB:</strong> 74, 74, 74<br>
+              <strong>CMYK:</strong> 0, 0, 0, 80 (Cool Gray 11 C)<br>
+              <strong>B&W Laser:</strong> 80% K (#4A4A4A)
+            </div>
+          </div>
+        </div>
+
+        <!-- Muted Gray -->
+        <div class="color-card">
+          <div class="color-swatch" style="background-color: #696969;">
+            <button class="hex-badge" style="background:#fff; color:#000;" onclick="copyText('#696969', 'Muted Gray Hex')">#696969</button>
+          </div>
+          <div class="color-info">
+            <div>
+              <div class="color-name">Muted Gray</div>
+              <div class="color-role">Captions, document footers, page numbers, metadata.</div>
+            </div>
+            <div class="color-specs">
+              <strong>RGB:</strong> 105, 105, 105<br>
+              <strong>CMYK:</strong> 0, 0, 0, 65 (Cool Gray 9 C)<br>
+              <strong>B&W Laser:</strong> 65% K (#696969)
+            </div>
+          </div>
+        </div>
+
+        <!-- Validation Red -->
+        <div class="color-card">
+          <div class="color-swatch" style="background-color: #D9534F;">
+            <button class="hex-badge" style="background:#fff; color:#000;" onclick="copyText('#D9534F', 'Validation Red Hex')">#D9534F</button>
+          </div>
+          <div class="color-info">
+            <div>
+              <div class="color-name">Validation Red</div>
+              <div class="color-role">Error states, "Wrong Way" contrast boxes, quiz failure feedback.</div>
+            </div>
+            <div class="color-specs">
+              <strong>RGB:</strong> 217, 83, 79<br>
+              <strong>CMYK:</strong> 10, 82, 75, 1 (PMS 1795 C)<br>
+              <strong>B&W Laser:</strong> Double 3pt Border + [ALERT]
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- OFFICIAL SYMBOLS GALLERY -->
+    <section id="symbols">
+      <div class="section-title-wrap">
+        <div>
+          <h2 class="section-title">Official Symbols & Graphic Asset Gallery</h2>
+          <p class="section-desc">Unified 300x300 assets with URL-safe filenames and 1-click HTTPS links for BrainCert.</p>
+        </div>
+      </div>
+
+      <div class="symbols-grid">
+
+        <!-- 1. LMS Portal -->
+        <div class="symbol-card">
+          <div class="symbol-img-wrap">
+            <img src="./symbols/LMS.png" alt="LMS Portal" class="symbol-img">
+          </div>
+          <div class="symbol-title">1. LMS Portal</div>
+          <div class="symbol-filename">LMS.png</div>
+          <div class="symbol-desc">
+            Directs learner to an online quiz, upload, or lesson in BrainCert LMS. Replaces legacy TalentLMS.
+          </div>
+          <div class="symbol-card-btns">
+            <button class="btn btn-emerald btn-sm" onclick="copyAssetUrl('LMS.png')">Copy Image URL</button>
+            <button class="btn btn-outline btn-sm" onclick="copyImgTag('LMS.png', 'LMS Portal')">Copy &lt;img&gt; Tag</button>
+          </div>
+        </div>
+
+        <!-- 2. Learner Guide -->
+        <div class="symbol-card">
+          <div class="symbol-img-wrap">
+            <img src="./symbols/Learner-Guide.png" alt="Learner Guide" class="symbol-img" onerror="this.src='./symbols/Learner%20Guide.png'">
+          </div>
+          <div class="symbol-title">2. Learner Guide</div>
+          <div class="symbol-filename">Learner-Guide.png</div>
+          <div class="symbol-desc">
+            Directs learner to read a section, table, or worksheet in their printed or PDF Learner Guide.
+          </div>
+          <div class="symbol-card-btns">
+            <button class="btn btn-emerald btn-sm" onclick="copyAssetUrl('Learner-Guide.png')">Copy Image URL</button>
+            <button class="btn btn-outline btn-sm" onclick="copyImgTag('Learner-Guide.png', 'Learner Guide')">Copy &lt;img&gt; Tag</button>
+          </div>
+        </div>
+
+        <!-- 3. Practical -->
+        <div class="symbol-card">
+          <div class="symbol-img-wrap">
+            <img src="./symbols/Practical.png" alt="Practical Task" class="symbol-img">
+          </div>
+          <div class="symbol-title">3. Practical Task</div>
+          <div class="symbol-filename">Practical.png</div>
+          <div class="symbol-desc">
+            Triggers a hands-on workplace drill, physical floor task, or PoE logbook activity.
+          </div>
+          <div class="symbol-card-btns">
+            <button class="btn btn-blue btn-sm" onclick="copyAssetUrl('Practical.png')">Copy Image URL</button>
+            <button class="btn btn-outline btn-sm" onclick="copyImgTag('Practical.png', 'Practical Activity')">Copy &lt;img&gt; Tag</button>
+          </div>
+        </div>
+
+        <!-- 4. Assessment -->
+        <div class="symbol-card">
+          <div class="symbol-img-wrap">
+            <img src="./symbols/Assessment.png" alt="Assessment" class="symbol-img">
+          </div>
+          <div class="symbol-title">4. Assessment</div>
+          <div class="symbol-filename">Assessment.png</div>
+          <div class="symbol-desc">
+            Marks a Formative Knowledge Check, Summative PoE task, or EISA exam readiness checkpoint.
+          </div>
+          <div class="symbol-card-btns">
+            <button class="btn btn-blue btn-sm" onclick="copyAssetUrl('Assessment.png')">Copy Image URL</button>
+            <button class="btn btn-outline btn-sm" onclick="copyImgTag('Assessment.png', 'Assessment Check')">Copy &lt;img&gt; Tag</button>
+          </div>
+        </div>
+
+        <!-- 5. Discussion -->
+        <div class="symbol-card">
+          <div class="symbol-img-wrap">
+            <img src="./symbols/Discussion.png" alt="Discussion" class="symbol-img">
+          </div>
+          <div class="symbol-title">5. Discussion</div>
+          <div class="symbol-filename">Discussion.png</div>
+          <div class="symbol-desc">
+            Triggers a group discussion, peer reflection, or facilitator-led classroom syndicate Q&A.
+          </div>
+          <div class="symbol-card-btns">
+            <button class="btn btn-emerald btn-sm" onclick="copyAssetUrl('Discussion.png')">Copy Image URL</button>
+            <button class="btn btn-outline btn-sm" onclick="copyImgTag('Discussion.png', 'Group Discussion')">Copy &lt;img&gt; Tag</button>
+          </div>
+        </div>
+
+        <!-- 6. Information -->
+        <div class="symbol-card">
+          <div class="symbol-img-wrap">
+            <img src="./symbols/Information.png" alt="Information" class="symbol-img">
+          </div>
+          <div class="symbol-title">6. Information</div>
+          <div class="symbol-filename">Information.png</div>
+          <div class="symbol-desc">
+            Highlights an essential workplace rule, key definition, or compliance "Good to Know" note.
+          </div>
+          <div class="symbol-card-btns">
+            <button class="btn btn-blue btn-sm" onclick="copyAssetUrl('Information.png')">Copy Image URL</button>
+            <button class="btn btn-outline btn-sm" onclick="copyImgTag('Information.png', 'Information Note')">Copy &lt;img&gt; Tag</button>
+          </div>
+        </div>
+
+        <!-- 7. MS Teams -->
+        <div class="symbol-card">
+          <div class="symbol-img-wrap">
+            <img src="./symbols/MS-Teams.png" alt="MS Teams" class="symbol-img" onerror="this.src='./symbols/MS%20Teams.png'">
+          </div>
+          <div class="symbol-title">7. MS Teams</div>
+          <div class="symbol-filename">MS-Teams.png</div>
+          <div class="symbol-desc">
+            Indicates a scheduled live virtual session hosted on Microsoft Teams for corporate clients.
+          </div>
+          <div class="symbol-card-btns">
+            <button class="btn btn-blue btn-sm" onclick="copyAssetUrl('MS-Teams.png')">Copy Image URL</button>
+            <button class="btn btn-outline btn-sm" onclick="copyImgTag('MS-Teams.png', 'MS Teams Session')">Copy &lt;img&gt; Tag</button>
+          </div>
+        </div>
+
+        <!-- 8. Brand Logo -->
+        <div class="symbol-card">
+          <div class="symbol-img-wrap">
+            <img src="./symbols/LB-Logo.png" alt="Brand Logo" class="symbol-img" onerror="this.src='./symbols/Standalone%20LB%20Logo%20white%20border%20TRANSPARENT.png'">
+          </div>
+          <div class="symbol-title">8. Brand Logo</div>
+          <div class="symbol-filename">LB-Logo.png</div>
+          <div class="symbol-desc">
+            Official Learn:Blended rounded monogram with white keyline for headers, covers, and portal navbars.
+          </div>
+          <div class="symbol-card-btns">
+            <button class="btn btn-outline btn-sm" onclick="copyAssetUrl('LB-Logo.png')">Copy Image URL</button>
+            <button class="btn btn-outline btn-sm" onclick="copyImgTag('LB-Logo.png', 'Learn:Blended Logo')">Copy &lt;img&gt; Tag</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LIVE BRAINCERT LMS HTML COMPONENT BUILDER -->
+    <section id="builder" class="lms-builder">
+      <div class="section-title-wrap">
+        <div>
+          <h2 class="section-title">Live BrainCert LMS HTML Component Builder</h2>
+          <p class="section-desc">8 canonical inline HTML templates for BrainCert WYSIWYG lessons (zero &lt;style&gt; dependencies).</p>
+        </div>
+      </div>
+
+      <!-- TEMPLATE 1 -->
+      <div class="template-box">
+        <div class="template-header">
+          <div class="template-header-info">
+            <h3>Block 1: Lesson Wrapper & Module Title Banner</h3>
+            <p>Full-width 840px white reading canvas with Steel Blue unit header and dark ink paragraph.</p>
+          </div>
+          <button class="btn btn-blue btn-sm" onclick="copyTemplate('tpl-1')">📋 Copy Inline HTML</button>
+        </div>
+        <div class="template-preview" id="preview-1">
+          <div style="background-color: #FFFFFF; color: #222222; font-family: 'Roboto', Arial, sans-serif; font-size: 16px; line-height: 1.65; max-width: 840px; margin: 0 auto; padding: 20px; box-sizing: border-box; border: 1px solid #E2E8F0; border-radius: 12px;">
+            <div style="border-bottom: 3px solid #4682B4; padding-bottom: 14px; margin-bottom: 24px;">
+              <div style="display: inline-block; background-color: #D5E3EF; color: #4682B4; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; padding: 4px 12px; border-radius: 8px; margin-bottom: 8px;">
+                Module 1 • Unit 1.1
+              </div>
+              <h1 style="color: #4682B4; font-size: 26px; font-weight: 900; margin: 0; line-height: 1.25;">
+                Checking Stock Carefully Before You Sign the Delivery Note
+              </h1>
+            </div>
+            <p style="margin: 0 0 16px 0; color: #222222;">
+              When a delivery truck arrives at the receiving bay during a busy morning shift, the driver will often rush you to sign the delivery note immediately. If you sign before counting the actual boxes on the pallet, your company becomes legally responsible for any missing or damaged stock.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEMPLATE 2 -->
+      <div class="template-box">
+        <div class="template-header">
+          <div class="template-header-info">
+            <h3>Block 2: Steel Blue Symbol Callout (Practical Task)</h3>
+            <p>Paired with Practical.png, Assessment.png, Information.png, or MS-Teams.png.</p>
+          </div>
+          <button class="btn btn-blue btn-sm" onclick="copyTemplate('tpl-2')">📋 Copy Inline HTML</button>
+        </div>
+        <div class="template-preview" id="preview-2">
+          <div style="display: flex; align-items: flex-start; gap: 16px; background-color: #F4F8FB; border: 2px solid #4682B4; border-radius: 16px; padding: 18px 20px; margin: 10px auto; max-width: 840px; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
+            <img src="./symbols/Practical.png" alt="Practical Activity" style="width: 56px; height: 56px; flex-shrink: 0; display: block;" />
+            <div style="flex: 1;">
+              <div style="font-size: 13px; font-weight: 900; text-transform: uppercase; color: #4682B4; letter-spacing: 0.6px; margin-bottom: 4px;">
+                Workplace Practical Task
+              </div>
+              <div style="font-size: 15.5px; color: #222222; line-height: 1.55;">
+                Take a blank Goods Received Voucher (GRV) to your receiving bay. Compare the supplier's delivery note against 3 physical cartons and record any damaged corners before signing.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEMPLATE 3 -->
+      <div class="template-box">
+        <div class="template-header">
+          <div class="template-header-info">
+            <h3>Block 3: Emerald Green Symbol Callout (LMS Portal)</h3>
+            <p>Paired with LMS.png, Learner-Guide.png, or Discussion.png with high-contrast text.</p>
+          </div>
+          <button class="btn btn-emerald btn-sm" onclick="copyTemplate('tpl-3')">📋 Copy Inline HTML</button>
+        </div>
+        <div class="template-preview" id="preview-3">
+          <div style="display: flex; align-items: flex-start; gap: 16px; background-color: #EAF6ED; border: 2px solid #6DC082; border-radius: 16px; padding: 18px 20px; margin: 10px auto; max-width: 840px; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
+            <img src="./symbols/LMS.png" alt="LMS Activity" style="width: 56px; height: 56px; flex-shrink: 0; display: block;" />
+            <div style="flex: 1;">
+              <div style="font-size: 13px; font-weight: 900; text-transform: uppercase; color: #1E7E34; letter-spacing: 0.6px; margin-bottom: 4px;">
+                Complete on Your LMS Portal
+              </div>
+              <div style="font-size: 15.5px; color: #222222; line-height: 1.55;">
+                Click the <strong>Next</strong> button below this lesson in BrainCert to complete the 5-question receiving bay check.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEMPLATE 4 -->
+      <div class="template-box">
+        <div class="template-header">
+          <div class="template-header-info">
+            <h3>Block 4: Statutory Authority & Plain-English Translation Card</h3>
+            <p>Mirrors Video Block QUOTE with Soft Ice Blue panel and floor translation card.</p>
+          </div>
+          <button class="btn btn-blue btn-sm" onclick="copyTemplate('tpl-4')">📋 Copy Inline HTML</button>
+        </div>
+        <div class="template-preview" id="preview-4">
+          <div style="background-color: #D5E3EF; border-left: 6px solid #4682B4; border-radius: 16px; padding: 20px 24px; margin: 10px auto; max-width: 840px; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
+            <p style="font-size: 17px; font-style: italic; color: #4682B4; font-weight: 500; margin: 0 0 6px 0; line-height: 1.45;">
+              "Every employer shall provide and maintain, as far as is reasonably practicable, a working environment that is safe and without risk to the health of his employees."
+            </p>
+            <div style="font-size: 12px; font-weight: 700; color: #4682B4; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px;">
+              — Occupational Health and Safety Act 85 of 1993, Section 8(1)
+            </div>
+            <div style="background-color: #FFFFFF; border-radius: 12px; padding: 12px 16px; font-size: 15px; color: #222222; border: 1px solid #83ADCF; line-height: 1.5;">
+              <strong style="color: #1E7E34;">What this means on the floor:</strong> You must keep walkways clear of loose shrink-wrap and broken pallets so nobody trips while carrying stock.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEMPLATE 5 -->
+      <div class="template-box">
+        <div class="template-header">
+          <div class="template-header-info">
+            <h3>Block 5: Two-Column Common Mistake vs. Audit-Ready Practice</h3>
+            <p>Mirrors Video Block B with Validation Red and Emerald Green contrast panels.</p>
+          </div>
+          <button class="btn btn-blue btn-sm" onclick="copyTemplate('tpl-5')">📋 Copy Inline HTML</button>
+        </div>
+        <div class="template-preview" id="preview-5">
+          <div style="display: flex; flex-wrap: wrap; gap: 16px; margin: 10px auto; max-width: 840px; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
+            <!-- Left: Mistake -->
+            <div style="flex: 1 1 280px; background-color: #FDF2F2; border: 2px solid #D9534F; border-radius: 16px; padding: 18px;">
+              <div style="color: #D9534F; font-size: 13px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">
+                ✗ Common Floor Mistake
+              </div>
+              <p style="margin: 0; font-size: 15px; color: #222222; line-height: 1.5;">
+                Signing the driver's POD (Proof of Delivery) first and planning to check the boxes later when the bay is quiet.
+              </p>
+            </div>
+            <!-- Right: Audit-Ready Practice -->
+            <div style="flex: 1 1 280px; background-color: #EAF6ED; border: 2px solid #6DC082; border-radius: 16px; padding: 18px;">
+              <div style="color: #1E7E34; font-size: 13px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">
+                ✓ Audit-Ready Practice
+              </div>
+              <p style="margin: 0; font-size: 15px; color: #222222; line-height: 1.5;">
+                Checking seal numbers, counting every carton against the Purchase Order, noting shortages in ink, and signing last.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEMPLATE 6 -->
+      <div class="template-box">
+        <div class="template-header">
+          <div class="template-header-info">
+            <h3>Block 6: Numbered Step-by-Step Process Cards</h3>
+            <p>Mirrors Video Block F Kinetic List with Emerald payoff on final step.</p>
+          </div>
+          <button class="btn btn-blue btn-sm" onclick="copyTemplate('tpl-6')">📋 Copy Inline HTML</button>
+        </div>
+        <div class="template-preview" id="preview-6">
+          <div style="margin: 10px auto; max-width: 840px; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
+            <h2 style="color: #4682B4; font-size: 20px; font-weight: 700; margin: 0 0 12px 0;">
+              The 3-Step Receiving Check
+            </h2>
+            <div style="display: flex; align-items: center; gap: 14px; background-color: #FFFFFF; border: 1.5px solid #83ADCF; border-left: 6px solid #4682B4; border-radius: 12px; padding: 14px 16px; margin-bottom: 10px;">
+              <div style="background-color: #4682B4; color: #FFFFFF; font-weight: 900; font-size: 15px; width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+              <div style="font-size: 15.5px; color: #222222;"><strong style="color: #4682B4;">Match the Paperwork:</strong> Check that the supplier invoice matches your company Purchase Order number.</div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 14px; background-color: #FFFFFF; border: 1.5px solid #83ADCF; border-left: 6px solid #4682B4; border-radius: 12px; padding: 14px 16px; margin-bottom: 10px;">
+              <div style="background-color: #4682B4; color: #FFFFFF; font-weight: 900; font-size: 15px; width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+              <div style="font-size: 15.5px; color: #222222;"><strong style="color: #4682B4;">Inspect & Count Stock:</strong> Count every unit physically and check for water damage, broken seals, or expired dates.</div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 14px; background-color: #EAF6ED; border: 1.5px solid #6DC082; border-left: 6px solid #6DC082; border-radius: 12px; padding: 14px 16px;">
+              <div style="background-color: #1E7E34; color: #FFFFFF; font-weight: 900; font-size: 15px; width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+              <div style="font-size: 15.5px; color: #222222;"><strong style="color: #1E7E34;">Record & Sign:</strong> Write any variances on the Goods Received Voucher (GRV) and get the driver to counter-sign.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEMPLATE 7 -->
+      <div class="template-box">
+        <div class="template-header">
+          <div class="template-header-info">
+            <h3>Block 7: Clean Structured Data Table</h3>
+            <p>Steel Blue header row with rounded corners and alternating row fills.</p>
+          </div>
+          <button class="btn btn-blue btn-sm" onclick="copyTemplate('tpl-7')">📋 Copy Inline HTML</button>
+        </div>
+        <div class="template-preview" id="preview-7">
+          <table style="width: 100%; max-width: 840px; margin: 10px auto; border-collapse: separate; border-spacing: 0; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; border: 2px solid #4682B4; border-radius: 12px; overflow: hidden;">
+            <thead>
+              <tr style="background-color: #4682B4; color: #FFFFFF; text-align: left;">
+                <th style="padding: 12px 16px; font-weight: 700;">Document</th>
+                <th style="padding: 12px 16px; font-weight: 700;">Used By</th>
+                <th style="padding: 12px 16px; font-weight: 700;">Purpose on the Floor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background-color: #FFFFFF; color: #222222;">
+                <td style="padding: 12px 16px; border-bottom: 1px solid #D5E3EF; font-weight: 700; color: #4682B4;">Purchase Order (PO)</td>
+                <td style="padding: 12px 16px; border-bottom: 1px solid #D5E3EF;">Procurement / Buyer</td>
+                <td style="padding: 12px 16px; border-bottom: 1px solid #D5E3EF;">Confirms what items and quantities were officially ordered.</td>
+              </tr>
+              <tr style="background-color: #F4F8FB; color: #222222;">
+                <td style="padding: 12px 16px; font-weight: 700; color: #4682B4;">Goods Received Voucher (GRV)</td>
+                <td style="padding: 12px 16px;">Receiving Clerk</td>
+                <td style="padding: 12px 16px;">Proves the exact physical stock received into the warehouse.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- TEMPLATE 8 -->
+      <div class="template-box">
+        <div class="template-header">
+          <div class="template-header-info">
+            <h3>Block 8: Key Takeaway Box + Mandatory Legal Disclaimer Footer</h3>
+            <p>Emerald takeaway card + mandatory statutory notice.</p>
+          </div>
+          <button class="btn btn-emerald btn-sm" onclick="copyTemplate('tpl-8')">📋 Copy Inline HTML</button>
+        </div>
+        <div class="template-preview" id="preview-8">
+          <div style="max-width: 840px; margin: 10px auto;">
+            <div style="background-color: #FFFFFF; border: 2px solid #6DC082; border-left: 8px solid #6DC082; border-radius: 16px; padding: 18px 20px; margin-bottom: 20px; font-family: 'Roboto', Arial, sans-serif;">
+              <div style="font-size: 13px; font-weight: 900; text-transform: uppercase; color: #1E7E34; letter-spacing: 0.6px; margin-bottom: 4px;">
+                ✓ Key Floor Takeaway
+              </div>
+              <div style="font-size: 16px; font-weight: 500; color: #222222;">
+                Your signature is a legal receipt. Never sign a delivery note until you have physically counted the stock yourself.
+              </div>
+            </div>
+            <div style="background-color: #F4F8FB; border: 1px solid #D5E3EF; border-radius: 8px; padding: 10px 16px; font-family: 'Roboto', Arial, sans-serif; font-size: 12.5px; color: #696969; text-align: center;">
+              <strong style="color: #4682B4;">Learn:Blended Notice:</strong> Training content, not formal legal advice.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- CHANNEL GOVERNANCE TABS -->
+    <section id="governance" class="gov-section">
+      <div class="section-title-wrap">
+        <div>
+          <h2 class="section-title">Omnichannel Governance Specifications</h2>
+          <p class="section-desc">Technical production rules for Word, Print, Slides, Video, and Web Coding.</p>
+        </div>
+      </div>
+
+      <div class="tabs-header">
+        <button class="tab-btn active" onclick="openTab('tab-word')">📄 MS Word & Print Manuals</button>
+        <button class="tab-btn" onclick="openTab('tab-ppt')">📊 PowerPoint (16:9)</button>
+        <button class="tab-btn" onclick="openTab('tab-video')">🎬 Hyperframes Video (V8.1)</button>
+        <button class="tab-btn" onclick="openTab('tab-code')">💻 Web, Kadence & React</button>
+        <button class="tab-btn" onclick="openTab('tab-ai')">🤖 AI Core Directives</button>
+      </div>
+
+      <!-- TAB: WORD & PRINT -->
+      <div id="tab-word" class="tab-content active">
+        <div class="gov-rule-box">
+          <h4>Page Geometry & Binding Gutter Standards</h4>
+          <ul>
+            <li><strong>Formats:</strong> A4 (210×297mm) for Learner Guides and PoE Portfolios; A5 (148×210mm) for Laminated Pocket Cards.</li>
+            <li><strong>Margins:</strong> Top/Bottom 20mm, Outer 18mm, <strong>Inner Gutter 25mm</strong> (18mm margin + 7mm ring-binder punch clearance).</li>
+            <li><strong>Bleed:</strong> 3mm on full-bleed cover spreads (216×303mm), exported PDF/X-1a at 300 DPI.</li>
+          </ul>
+        </div>
+        <div class="gov-rule-box">
+          <h4>Non-Breaking 2-Column Table Rule for Callout Boxes</h4>
+          <p>Never use floating textboxes in Word. Always build callouts as a 1-Row, 2-Column Table with <code>CantSplit = True</code> (Col 1: 22mm icon cell, Col 2: 145mm text cell).</p>
+        </div>
+        <div class="gov-rule-box">
+          <h4>Monochrome Laser Printer Fallback (Canon LBP252dw Compatible)</h4>
+          <p>Emerald Green callouts use a <strong>4.5pt solid black left border + 1.5pt outer border</strong> with 5% K tint (#F4F4F4). Steel Blue callouts use a <strong>uniform 1.5pt border</strong> with 3% K tint (#F8F8F8). Both remain instantly distinguishable in black-and-white.</p>
+        </div>
+      </div>
+
+      <!-- TAB: PPT -->
+      <div id="tab-ppt" class="tab-content">
+        <div class="gov-rule-box">
+          <h4>Classroom Stage Architecture (Option A)</h4>
+          <ul>
+            <li><strong>Ratio:</strong> Widescreen 16:9 (33.867 cm × 19.05 cm / 1920×1080px).</li>
+            <li><strong>Background:</strong> Solid Steel Blue #4682B4 with optional organic corner blobs in #D5E3EF and #6DC082.</li>
+            <li><strong>Dominant White Card:</strong> Centered 1860×1020px rounded rectangle, 20px radius, 0px drop shadow.</li>
+          </ul>
+        </div>
+        <div class="gov-rule-box">
+          <h4>5 Canonical Slide Layouts</h4>
+          <p>1. Title Slide (LB-Logo, 44pt Steel Blue title, 20pt subtitle).<br>
+             2. Concept Slide (Max 4 bullets, 20pt dark ink, #6DC082 checkmark bullets).<br>
+             3. 2-Column Contrast Slide (Red mistake left vs. Green audit-ready right).<br>
+             4. Syndicate Drill Slide (Large 120px symbol on left, drill instructions on right).<br>
+             5. Statutory Authority Slide (Soft Ice Blue panel with italic legal quote + plain-English translation).</p>
+        </div>
+      </div>
+
+      <!-- TAB: VIDEO -->
+      <div id="tab-video" class="tab-content">
+        <div class="gov-rule-box">
+          <h4>Hyperframes Stage & Motion Grammar (Ratified V8.1)</h4>
+          <ul>
+            <li><strong>Stage:</strong> 1920×1080, Option A persistent white card (30px screen inset, 20px radius).</li>
+            <li><strong>5px Nesting Rule:</strong> Nested panels have 16px radius, 5px outer perimeter gap, 5px flush divider.</li>
+            <li><strong>Caption Bar:</strong> Steel Blue background, pure white text, active karaoke word underlined in #6DC082.</li>
+            <li><strong>Transitions:</strong> Silent directional panel morphs (top/bottom ±15px, kinetic fires +40px right).</li>
+            <li><strong>Deterministic Blueprint:</strong> Strictly typed JSON schema mapping segments to Blocks A, B, C, D, F, or QUOTE.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TAB: CODE & WEB -->
+      <div id="tab-code" class="tab-content">
+        <div class="gov-rule-box">
+          <h4>WordPress (Kadence Pro) 9-Slot Global Palette</h4>
+          <p>P1 Primary: #4682B4 | P2 Accent: #6DC082 | P3 Body Ink: #222222 | P4 Dim Gray: #4A4A4A | P5 Muted: #696969 | P6 Borders: #83ADCF | P7 Alt 1: #D5E3EF | P8 Alt 2: #F4F8FB | P9 Canvas: #FFFFFF.</p>
+        </div>
+        <div class="gov-rule-box">
+          <h4>CSS Tokens & Custom App UI Rules</h4>
+          <p>All cards use <code>background: #FFFFFF; border: 2px solid #83ADCF; border-radius: 16px; box-shadow: none;</code>. Primary buttons use #4682B4 with 10px radius. Action buttons use #1E7E34 (or #6DC082 with #222222 text).</p>
+        </div>
+      </div>
+
+      <!-- TAB: AI DIRECTIVES -->
+      <div id="tab-ai" class="tab-content">
+        <div class="gov-rule-box">
+          <h4>The 7 Core Laws for All AI Models</h4>
+          <ol style="margin-left: 20px; font-size: 14px; line-height: 1.6;">
+            <li><strong>Clean White Canvas:</strong> Long-form content must use #FFFFFF background with #222222 reading ink.</li>
+            <li><strong>Strict Flatness:</strong> <code>box-shadow: none</code> across all mediums. Zero exceptions.</li>
+            <li><strong>Corner Geometry:</strong> 20px containers, 16px callout cards, 8-12px badges and pills.</li>
+            <li><strong>Single Font:</strong> Roboto is the exclusive brand typeface.</li>
+            <li><strong>Dual-Color Semantics:</strong> Steel Blue for structure/law; Emerald Green for action/takeaways; Validation Red for errors only.</li>
+            <li><strong>WCAG Contrast Law:</strong> Never use light emerald #6DC082 for small/medium body text. Use #1E7E34 for green headings and #222222 for reading copy.</li>
+            <li><strong>South African Voice:</strong> Direct, floor-level SA English (Grade 7-8 reading level), coach tone ("you/your").</li>
+          </ol>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p><strong>Learn:Blended Master Brand Portal V8.2</strong> • Ratified Governance Manual</p>
+      <p style="margin-top: 4px;">Notice: Training content, not formal legal advice.</p>
+    </footer>
+
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast">Copied to clipboard!</div>
+
+  <!-- EMBEDDED TEMPLATE DATA FOR 1-CLICK COPY -->
+  <script>
+    const ASSETS_BASE = "https://obronie.github.io/learnblended-brand/symbols/";
+
+    const TEMPLATES = {
+      'tpl-1': `<div style="background-color: #FFFFFF; color: #222222; font-family: 'Roboto', Arial, sans-serif; font-size: 16px; line-height: 1.65; max-width: 840px; margin: 0 auto; padding: 20px; box-sizing: border-box;">
+  <div style="border-bottom: 3px solid #4682B4; padding-bottom: 14px; margin-bottom: 24px;">
+    <div style="display: inline-block; background-color: #D5E3EF; color: #4682B4; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; padding: 4px 12px; border-radius: 8px; margin-bottom: 8px;">
+      Module 1 • Unit 1.1
+    </div>
+    <h1 style="color: #4682B4; font-size: 26px; font-weight: 900; margin: 0; line-height: 1.25;">
+      Checking Stock Carefully Before You Sign the Delivery Note
+    </h1>
+  </div>
+  <p style="margin: 0 0 16px 0; color: #222222;">
+    When a delivery truck arrives at the receiving bay during a busy morning shift, the driver will often rush you to sign the delivery note immediately. If you sign before counting the actual boxes on the pallet, your company becomes legally responsible for any missing or damaged stock.
+  </p>
+</div>`,
+
+      'tpl-2': `<div style="display: flex; align-items: flex-start; gap: 16px; background-color: #F4F8FB; border: 2px solid #4682B4; border-radius: 16px; padding: 18px 20px; margin: 22px 0; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
+  <img src="${ASSETS_BASE}Practical.png" alt="Practical Activity" style="width: 56px; height: 56px; flex-shrink: 0; display: block;" />
+  <div style="flex: 1;">
+    <div style="font-size: 13px; font-weight: 900; text-transform: uppercase; color: #4682B4; letter-spacing: 0.6px; margin-bottom: 4px;">
+      Workplace Practical Task
+    </div>
+    <div style="font-size: 15.5px; color: #222222; line-height: 1.55;">
+      Take a blank Goods Received Voucher (GRV) to your receiving bay. Compare the supplier's delivery note against 3 physical cartons and record any damaged corners before signing.
+    </div>
+  </div>
+</div>`,
+
+      'tpl-3': `<div style="display: flex; align-items: flex-start; gap: 16px; background-color: #EAF6ED; border: 2px solid #6DC082; border-radius: 16px; padding: 18px 20px; margin: 22px 0; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
+  <img src="${ASSETS_BASE}LMS.png" alt="LMS Activity" style="width: 56px; height: 56px; flex-shrink: 0; display: block;" />
+  <div style="flex: 1;">
+    <div style="font-size: 13px; font-weight: 900; text-transform: uppercase; color: #1E7E34; letter-spacing: 0.6px; margin-bottom: 4px;">
+      Complete on Your LMS Portal
+    </div>
+    <div style="font-size: 15.5px; color: #222222; line-height: 1.55;">
+      Click the <strong>Next</strong> button below this lesson in BrainCert to complete the 5-question receiving bay check.
+    </div>
+  </div>
+</div>`,
+
+      'tpl-4': `<div style="background-color: #D5E3EF; border-left: 6px solid #4682B4; border-radius: 16px; padding: 20px 24px; margin: 22px 0; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
+  <p style="font-size: 17px; font-style: italic; color: #4682B4; font-weight: 500; margin: 0 0 6px 0; line-height: 1.45;">
+    "Every employer shall provide and maintain, as far as is reasonably practicable, a working environment that is safe and without risk to the health of his employees."
+  </p>
+  <div style="font-size: 12px; font-weight: 700; color: #4682B4; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px;">
+    — Occupational Health and Safety Act 85 of 1993, Section 8(1)
+  </div>
+  <div style="background-color: #FFFFFF; border-radius: 12px; padding: 12px 16px; font-size: 15px; color: #222222; border: 1px solid #83ADCF; line-height: 1.5;">
+    <strong style="color: #1E7E34;">What this means on the floor:</strong> You must keep walkways clear of loose shrink-wrap and broken pallets so nobody trips while carrying stock.
+  </div>
+</div>`,
+
+      'tpl-5': `<div style="display: flex; flex-wrap: wrap; gap: 16px; margin: 22px 0; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
+  <div style="flex: 1 1 280px; background-color: #FDF2F2; border: 2px solid #D9534F; border-radius: 16px; padding: 18px;">
+    <div style="color: #D9534F; font-size: 13px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">
+      ✗ Common Floor Mistake
+    </div>
+    <p style="margin: 0; font-size: 15px; color: #222222; line-height: 1.5;">
+      Signing the driver's POD (Proof of Delivery) first and planning to check the boxes later when the bay is quiet.
+    </p>
+  </div>
+  <div style="flex: 1 1 280px; background-color: #EAF6ED; border: 2px solid #6DC082; border-radius: 16px; padding: 18px;">
+    <div style="color: #1E7E34; font-size: 13px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">
+      ✓ Audit-Ready Practice
+    </div>
+    <p style="margin: 0; font-size: 15px; color: #222222; line-height: 1.5;">
+      Checking seal numbers, counting every carton against the Purchase Order, noting shortages in ink, and signing last.
+    </p>
+  </div>
+</div>`,
+
+      'tpl-6': `<div style="margin: 22px 0; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
+  <h2 style="color: #4682B4; font-size: 20px; font-weight: 700; margin: 0 0 12px 0;">
+    The 3-Step Receiving Check
+  </h2>
+  <div style="display: flex; align-items: center; gap: 14px; background-color: #FFFFFF; border: 1.5px solid #83ADCF; border-left: 6px solid #4682B4; border-radius: 12px; padding: 14px 16px; margin-bottom: 10px;">
+    <div style="background-color: #4682B4; color: #FFFFFF; font-weight: 900; font-size: 15px; width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+    <div style="font-size: 15.5px; color: #222222;"><strong style="color: #4682B4;">Match the Paperwork:</strong> Check that the supplier invoice matches your company Purchase Order number.</div>
+  </div>
+  <div style="display: flex; align-items: center; gap: 14px; background-color: #FFFFFF; border: 1.5px solid #83ADCF; border-left: 6px solid #4682B4; border-radius: 12px; padding: 14px 16px; margin-bottom: 10px;">
+    <div style="background-color: #4682B4; color: #FFFFFF; font-weight: 900; font-size: 15px; width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+    <div style="font-size: 15.5px; color: #222222;"><strong style="color: #4682B4;">Inspect & Count Stock:</strong> Count every unit physically and check for water damage, broken seals, or expired dates.</div>
+  </div>
+  <div style="display: flex; align-items: center; gap: 14px; background-color: #EAF6ED; border: 1.5px solid #6DC082; border-left: 6px solid #6DC082; border-radius: 12px; padding: 14px 16px;">
+    <div style="background-color: #1E7E34; color: #FFFFFF; font-weight: 900; font-size: 15px; width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+    <div style="font-size: 15.5px; color: #222222;"><strong style="color: #1E7E34;">Record & Sign:</strong> Write any variances on the Goods Received Voucher (GRV) and get the driver to counter-sign.</div>
+  </div>
+</div>`,
+
+      'tpl-7': `<table style="width: 100%; border-collapse: separate; border-spacing: 0; margin: 22px 0; font-family: 'Roboto', Arial, sans-serif; font-size: 15px; border: 2px solid #4682B4; border-radius: 12px; overflow: hidden;">
+  <thead>
+    <tr style="background-color: #4682B4; color: #FFFFFF; text-align: left;">
+      <th style="padding: 12px 16px; font-weight: 700;">Document</th>
+      <th style="padding: 12px 16px; font-weight: 700;">Used By</th>
+      <th style="padding: 12px 16px; font-weight: 700;">Purpose on the Floor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #FFFFFF; color: #222222;">
+      <td style="padding: 12px 16px; border-bottom: 1px solid #D5E3EF; font-weight: 700; color: #4682B4;">Purchase Order (PO)</td>
+      <td style="padding: 12px 16px; border-bottom: 1px solid #D5E3EF;">Procurement / Buyer</td>
+      <td style="padding: 12px 16px; border-bottom: 1px solid #D5E3EF;">Confirms what items and quantities were officially ordered.</td>
+    </tr>
+    <tr style="background-color: #F4F8FB; color: #222222;">
+      <td style="padding: 12px 16px; font-weight: 700; color: #4682B4;">Goods Received Voucher (GRV)</td>
+      <td style="padding: 12px 16px;">Receiving Clerk</td>
+      <td style="padding: 12px 16px;">Proves the exact physical stock received into the warehouse.</td>
+    </tr>
+  </tbody>
+</table>`,
+
+      'tpl-8': `<!-- KEY TAKEAWAY SUMMARY -->
+<div style="background-color: #FFFFFF; border: 2px solid #6DC082; border-left: 8px solid #6DC082; border-radius: 16px; padding: 18px 20px; margin: 24px 0; font-family: 'Roboto', Arial, sans-serif;">
+  <div style="font-size: 13px; font-weight: 900; text-transform: uppercase; color: #1E7E34; letter-spacing: 0.6px; margin-bottom: 4px;">
+    ✓ Key Floor Takeaway
+  </div>
+  <div style="font-size: 16px; font-weight: 500; color: #222222;">
+    Your signature is a legal receipt. Never sign a delivery note until you have physically counted the stock yourself.
+  </div>
+</div>
+
+<!-- MANDATORY V8.2 LEGAL DISCLAIMER FOOTER -->
+<div style="background-color: #F4F8FB; border: 1px solid #D5E3EF; border-radius: 8px; padding: 10px 16px; margin-top: 32px; font-family: 'Roboto', Arial, sans-serif; font-size: 12.5px; color: #696969; text-align: center;">
+  <strong style="color: #4682B4;">Learn:Blended Notice:</strong> Training content, not formal legal advice.
+</div>`
+    };
+
+    const AI_DIRECTIVE_TEXT = `When generating course content, HTML, CSS, React apps, MS Word templates, PowerPoint decks, or video blueprints for Learn:Blended, strictly enforce these 7 Core Laws:
+
+1. The Clean White Reading Canvas Law: Long-form learning content MUST use a Pure White (#FFFFFF) background with crisp Dark Reading Ink (#222222) body text. Never place multi-sentence paragraphs inside heavy dark or colored boxes. Use brand colors (#4682B4 Steel Blue, #6DC082 Emerald Green, #D5E3EF Soft Ice Blue, #EAF6ED Mint Ice) strictly as structured visual enhancement blocks, callout borders, section headers, symbol cards, and summary tables.
+2. The Strict Flatness Law: box-shadow: none across all mediums. Never use drop shadows, text shadows, 3D bevels, skeuomorphic gradients, or neon glows.
+3. The Corner Geometry Law: Outer containers = 20px radius; Callout cards & inner panels = 16px radius; Badges, pills & table wrappers = 8px to 12px radius.
+4. The Single Font Law: Roboto ('Roboto', Arial, sans-serif) is the exclusive typeface.
+5. The Dual-Color Semantic Law: Steel Blue (#4682B4) for Structure, Authority, Navigation, Law, Practical Tasks, and Assessment; Emerald Green (#6DC082 graphics / #1E7E34 text) for Action, Payoff, Takeaways, Learner Guide references, Discussion, and LMS portal tasks; Validation Red (#D9534F) for Errors/Mistakes only.
+6. The WCAG Contrast Law: Never render body text in light Emerald #6DC082 on white. Pair #6DC082 graphics/borders with #1E7E34 for green headings and #222222 for reading body text.
+7. The South African Floor-Level Voice Law: Direct, honest South African English (UK/SA spelling) at a Grade 7-8 reading level, using a supportive workplace coach tone ("you/your").`;
+
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      toast.innerText = message;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2400);
+    }
+
+    function copyText(text, label) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast(`Copied ${label}: ${text}`);
+      }).catch(err => {
+        showToast('Failed to copy to clipboard');
+      });
+    }
+
+    function copyAiDirective() {
+      navigator.clipboard.writeText(AI_DIRECTIVE_TEXT).then(() => {
+        showToast('Copied Master AI Directive (7 Core Laws)!');
+      });
+    }
+
+    function copyLlmsUrl() {
+      const url = ASSETS_BASE.replace('/symbols/', '/llms.txt');
+      navigator.clipboard.writeText(url).then(() => {
+        showToast(`Copied llms.txt URL: ${url}`);
+      });
+    }
+
+    function copyBrandkitUrl() {
+      const url = ASSETS_BASE.replace('/symbols/', '/brandkit-v8.2.md');
+      navigator.clipboard.writeText(url).then(() => {
+        showToast(`Copied Brand Kit URL: ${url}`);
+      });
+    }
+
+    function copyAssetUrl(filename) {
+      const url = `${ASSETS_BASE}${filename}`;
+      navigator.clipboard.writeText(url).then(() => {
+        showToast(`Copied Image URL: ${url}`);
+      });
+    }
+
+    function copyImgTag(filename, altText) {
+      const tag = `<img src="${ASSETS_BASE}${filename}" alt="${altText}" style="width: 56px; height: 56px; flex-shrink: 0; display: block;" />`;
+      navigator.clipboard.writeText(tag).then(() => {
+        showToast(`Copied <img> tag for ${filename}!`);
+      });
+    }
+
+    function copyTemplate(tplKey) {
+      const html = TEMPLATES[tplKey];
+      if (html) {
+        navigator.clipboard.writeText(html).then(() => {
+          showToast('Copied Inline HTML Template to Clipboard!');
+        });
+      }
+    }
+
+    function openTab(tabId) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      event.target.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
