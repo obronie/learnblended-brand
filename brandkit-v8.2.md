@@ -1,7 +1,7 @@
 ﻿# LEARN:BLENDED MASTER BRAND KIT V8.2
 **The Complete Omnichannel Visual, Messaging, BrainCert LMS HTML, Print, Office, Coding & Programmatic-Video Governance Manual**  
 **Tagline:** *"Blending excellence for you!"*  
-**Status:** Ratified (V8.2 â€” Omnichannel & AI-Optimized Edition) | **Owner:** Learn:Blended (Solo-Operator Authority)  
+**Status:** Ratified (V8.2 — Omnichannel & AI-Optimized Edition) | **Owner:** Learn:Blended (Solo-Operator Authority)  
 **Supersedes:** Brand Kit V8.1, V8.0, V7.0  
 **Public Symbol Assets Base URL:** `https://obronie.github.io/learnblended-brand/symbols/` *(Default: `https://<username>.github.io/learnblended-brand/symbols/`)*  
 **Reference Video Render:** `renders/v8-option-a-all-blocks/v8-option-a-morphs.mp4`  
@@ -22,9 +22,9 @@ When any AI model (Gemini, Claude, ChatGPT, Antigravity, or Google AI Studio) ge
 5. **The Dual-Color Semantic Law:**
    * **Steel Blue (`#4682B4`)** signals **Structure, Authority, Navigation, Statutory Law, Practical Execution, and Assessment**.
    * **Emerald Green (`#6DC082` graphics / `#1E7E34` accessible text)** signals **Action, Positive Payoff, Key Takeaways, Learner Guide References, Group Discussion, and LMS Portal Activities**.
-   * **Validation Red (`#D9534F`)** is restricted strictly to **Error States, "Wrong Way" contrast blocks, and Quiz Feedback**â€”never decorative.
+   * **Validation Red (`#D9534F`)** is restricted strictly to **Error States, "Wrong Way" contrast blocks, and Quiz Feedback**—never decorative.
 6. **The WCAG Contrast Law:** Never render small or medium text in `#6DC082` (Emerald Green) on a white background (contrast is 2.35:1). Always use `#6DC082` for **borders, badges, and graphical icons**, and pair it with **`#1E7E34` (Dark Emerald)** for green headings/labels and **`#222222` (Reading Ink)** for body copy.
-7. **The South African Floor-Level Voice Law:** Write in direct, honest South African English (UK/SA spelling: *programme, organisation, labour, practise/practice*) at a **Grade 7â€“8 reading level**. Address the learner as *"you/your"* using a supportive workplace coach tone, never an academic examiner tone.
+7. **The South African Floor-Level Voice Law:** Write in direct, honest South African English (UK/SA spelling: *programme, organisation, labour, practise/practice*) at a **Grade 7–8 reading level**. Address the learner as *"you/your"* using a supportive workplace coach tone, never an academic examiner tone.
 
 ---
 
@@ -72,14 +72,14 @@ Every training scenario, case study, and practical drill must reflect authentic 
 
 ### 2.2 Omnichannel Typographic Scale (`Roboto` Only)
 
-| Element Role | Hyperframes Video (1920Ã—1080) | BrainCert LMS HTML | MS Word & Print (A4) | PowerPoint (16:9) | Weight & Color Token |
+| Element Role | Hyperframes Video (1920×1080) | BrainCert LMS HTML | MS Word & Print (A4) | PowerPoint (16:9) | Weight & Color Token |
 |---|---|---|---|---|---|
-| **H1 / Primary Title** | `48â€“56px` | `26px` (`LH: 1.25`) | `20pt` (`Before: 0pt, After: 8pt`) | `36pt` | Black/Bold (`900`/`700`), Steel Blue `#4682B4` |
-| **H2 / Section Header**| `36â€“40px` | `20px` (`LH: 1.3`) | `14pt` (`Before: 14pt, After: 4pt`) | `24pt` | Bold (`700`), Steel Blue `#4682B4` |
-| **H3 / Block Title** | `30â€“34px` | `16px` (`Uppercase`) | `11.5pt` (`Before: 8pt, After: 2pt`)| `18pt` | Bold/Black (`700`/`900`), `#4682B4` or `#1E7E34` |
-| **Body Copy** | `26â€“32px` (`#4A4A4A`) | `16px` (`#222222`, `LH: 1.65`) | `10.5pt` (`#222222`, `LH: 1.35`) | `16pt` (`#222222`) | Regular (`400`), Reading Ink `#222222` (Video: `#4A4A4A`) |
-| **Statutory Quote** | `34â€“38px` | `16.5px` (`#4682B4`) | `10.5pt` (`#4682B4`) | `20pt` (`#4682B4`) | Italic (`400`), Steel Blue `#4682B4` |
-| **Caption / Footer** | `26â€“28px` (Caption Bar)| `13px` (`#696969`) | `8.5pt` (`#696969`) | `10pt` (`#696969`) | Regular/Medium (`400`/`500`), Muted `#696969` |
+| **H1 / Primary Title** | `48–56px` | `26px` (`LH: 1.25`) | `20pt` (`Before: 0pt, After: 8pt`) | `36pt` / `44pt` | Black/Bold (`900`/`700`), Steel Blue `#4682B4` |
+| **H2 / Section Header**| `36–40px` | `20px` (`LH: 1.3`) | `14pt` (`Before: 14pt, After: 4pt`) | `24pt` / `32pt` | Bold (`700`), Steel Blue `#4682B4` |
+| **H3 / Block Title** | `30–34px` | `16px` (`Uppercase`) | `11.5pt` (`Before: 8pt, After: 2pt`)| `18pt` / `20pt` | Bold/Black (`700`/`900`), `#4682B4` or `#1E7E34` |
+| **Body Copy** | `26–32px` (`#4A4A4A`) | `16px` (`#222222`, `LH: 1.65`) | `10.5pt` (`#222222`, `LH: 1.35`) | `16pt`–`20pt` (`#222222`) | Regular (`400`), Reading Ink `#222222` (Video: `#4A4A4A`) |
+| **Statutory Quote** | `34–38px` | `16.5px` (`#4682B4`) | `10.5pt` (`#4682B4`) | `20pt`–`24pt` (`#4682B4`) | Italic (`400`), Steel Blue `#4682B4` |
+| **Caption / Footer** | `26–28px` (Caption Bar)| `13px` (`#696969`) | `8.5pt` (`#696969`) | `10pt` (`#696969`) | Regular/Medium (`400`/`500`), Muted `#696969` |
 
 ---
 
@@ -105,7 +105,7 @@ All instructional symbols share the V8.2 Unified Frame: a flat white rounded squ
 ### 4.1 Pedagogical Layout Rhythm for BrainCert Lessons
 When authoring HTML lessons for BrainCert Enterprise LMS, AI models must never output unstyled walls of text or dark/heavy full-page backgrounds. Follow this strict **White-Canvas Rhythm**:
 1. **Base Canvas:** Pure White (`#FFFFFF`) container (`max-width: 840px`), `16px` Roboto Regular body copy in crisp Dark Reading Ink (`#222222`), line-height `1.65`.
-2. **Pacing Rule:** After every **2 short paragraphs (max 80â€“100 words)** of black-on-white reading text, insert a **Visual Enhancement Block** (Symbol Callout, Numbered Step Grid, Wrong/Right Contrast, Statutory Quote, or Comparison Table) to anchor comprehension visually.
+2. **Pacing Rule:** After every **2 short paragraphs (max 80–100 words)** of black-on-white reading text, insert a **Visual Enhancement Block** (Symbol Callout, Numbered Step Grid, Wrong/Right Contrast, Statutory Quote, or Comparison Table) to anchor comprehension visually.
 3. **BrainCert Editor Survival Rule:** BrainCert's rich-text editor strips `<style>` tags inside lessons. **All HTML lesson code MUST use 100% self-contained inline CSS (`style="..."`)** exactly as structured in the 8 canonical templates below.
 
 ### 4.2 The 8 Canonical BrainCert Inline HTML Templates
@@ -117,7 +117,7 @@ When authoring HTML lessons for BrainCert Enterprise LMS, AI models must never o
   <!-- MODULE TITLE BANNER -->
   <div style="border-bottom: 3px solid #4682B4; padding-bottom: 14px; margin-bottom: 24px;">
     <div style="display: inline-block; background-color: #D5E3EF; color: #4682B4; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; padding: 4px 12px; border-radius: 8px; margin-bottom: 8px;">
-      Module 1 â€¢ Unit 1.1
+      Module 1 • Unit 1.1
     </div>
     <h1 style="color: #4682B4; font-size: 26px; font-weight: 900; margin: 0; line-height: 1.25;">
       Checking Stock Carefully Before You Sign the Delivery Note
@@ -169,7 +169,7 @@ When authoring HTML lessons for BrainCert Enterprise LMS, AI models must never o
     "Every employer shall provide and maintain, as far as is reasonably practicable, a working environment that is safe and without risk to the health of his employees."
   </p>
   <div style="font-size: 12px; font-weight: 700; color: #4682B4; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px;">
-    â€” Occupational Health and Safety Act 85 of 1993, Section 8(1)
+    — Occupational Health and Safety Act 85 of 1993, Section 8(1)
   </div>
   <div style="background-color: #FFFFFF; border-radius: 12px; padding: 12px 16px; font-size: 15px; color: #222222; border: 1px solid #83ADCF; line-height: 1.5;">
     <strong style="color: #1E7E34;">What this means on the floor:</strong> You must keep walkways clear of loose shrink-wrap and broken pallets so nobody trips while carrying stock.
@@ -183,7 +183,7 @@ When authoring HTML lessons for BrainCert Enterprise LMS, AI models must never o
   <!-- Left: Mistake (Validation Red) -->
   <div style="flex: 1 1 280px; background-color: #FDF2F2; border: 2px solid #D9534F; border-radius: 16px; padding: 18px;">
     <div style="color: #D9534F; font-size: 13px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">
-      âœ— Common Floor Mistake
+      ✗ Common Floor Mistake
     </div>
     <p style="margin: 0; font-size: 15px; color: #222222; line-height: 1.5;">
       Signing the driver's POD (Proof of Delivery) first and planning to check the boxes later when the bay is quiet.
@@ -192,7 +192,7 @@ When authoring HTML lessons for BrainCert Enterprise LMS, AI models must never o
   <!-- Right: Audit-Ready Practice (Emerald Green) -->
   <div style="flex: 1 1 280px; background-color: #EAF6ED; border: 2px solid #6DC082; border-radius: 16px; padding: 18px;">
     <div style="color: #1E7E34; font-size: 13px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">
-      âœ“ Audit-Ready Practice
+      ✓ Audit-Ready Practice
     </div>
     <p style="margin: 0; font-size: 15px; color: #222222; line-height: 1.5;">
       Checking seal numbers, counting every carton against the Purchase Order, noting shortages in ink, and signing last.
@@ -255,7 +255,7 @@ When authoring HTML lessons for BrainCert Enterprise LMS, AI models must never o
 <!-- KEY TAKEAWAY SUMMARY -->
 <div style="background-color: #FFFFFF; border: 2px solid #6DC082; border-left: 8px solid #6DC082; border-radius: 16px; padding: 18px 20px; margin: 24px 0; font-family: 'Roboto', Arial, sans-serif;">
   <div style="font-size: 13px; font-weight: 900; text-transform: uppercase; color: #1E7E34; letter-spacing: 0.6px; margin-bottom: 4px;">
-    âœ“ Key Floor Takeaway
+    ✓ Key Floor Takeaway
   </div>
   <div style="font-size: 16px; font-weight: 500; color: #222222;">
     Your signature is a legal receipt. Never sign a delivery note until you have physically counted the stock yourself.
@@ -273,12 +273,12 @@ When authoring HTML lessons for BrainCert Enterprise LMS, AI models must never o
 ## 5. MS WORD (`.DOCX`) & PRINTED MATTER SPECIFICATION
 
 ### 5.1 Page Geometry & Ring-Binder Gutter Rules
-* **Paper Format:** Standard ISO **A4 (`210mm Ã— 297mm`)** for Learner Guides, Facilitator Manuals, Workplace Logbooks, and PoE Assessment Workbooks; **A5 (`148mm Ã— 210mm`)** for laminated pocket reference cards.
+* **Paper Format:** Standard ISO **A4 (`210mm × 297mm`)** for Learner Guides, Facilitator Manuals, Workplace Logbooks, and PoE Assessment Workbooks; **A5 (`148mm × 210mm`)** for laminated pocket reference cards.
 * **Margins:**
   * **Top / Bottom:** `20mm`
   * **Outer Edge:** `18mm`
   * **Inner (Binding Gutter) Edge:** `25mm` (18mm margin + 7mm ring-binder/comb-punch clearance so hole-punching never clips symbol icons or table borders).
-* **Print Bleed (Covers Only):** `3mm` full bleed (`216mm Ã— 303mm`) exported as PDF/X-1a at `300 DPI`.
+* **Print Bleed (Covers Only):** `3mm` full bleed (`216mm × 303mm`) exported as PDF/X-1a at `300 DPI`.
 
 ### 5.2 MS Word Style Sheet Mapping
 When generating `.docx` files programmatically (via `python-docx`, `docx-js`, or Word Templates), define these exact paragraph styles:
@@ -291,7 +291,7 @@ When generating `.docx` files programmatically (via `python-docx`, `docx-js`, or
 
 ### 5.3 MS Word Callout Box Construction (Non-Breaking 2-Column Table Rule)
 Never use floating Word textboxes (they shift and break across pages). Always build symbol callout boxes in MS Word as a **1-Row, 2-Column Table** with `CantSplit` (*"Allow row to break across pages" = OFF*):
-* **Column 1 (Icon Cell):** Width `22mm`, vertical alignment `Center`, containing the Symbol PNG (`14mm Ã— 14mm`).
+* **Column 1 (Icon Cell):** Width `22mm`, vertical alignment `Center`, containing the Symbol PNG (`14mm × 14mm`).
 * **Column 2 (Text Cell):** Width `145mm`, cell padding Top/Bottom `3mm`, Left/Right `4mm`.
 * **Monochrome Laser Print Compatibility:** Because many manuals are printed on black-and-white laser printers (e.g., Canon i-SENSYS LBP252dw), Emerald Green callouts use a **`4.5pt` solid left border + `1.5pt` outer border** and `#EAF6ED` (`5% K` tint), while Steel Blue callouts use a **uniform `1.5pt` outer border** and `#F4F8FB` (`3% K` tint), making them visually distinct even without color ink.
 
@@ -299,23 +299,50 @@ Never use floating Word textboxes (they shift and break across pages). Always bu
 
 ## 6. POWERPOINT (16:9) CLASSROOM PRESENTATION SPECIFICATION
 
-* **Slide Dimensions:** Widescreen 16:9 (`33.867 cm Ã— 19.05 cm` / `1920Ã—1080px`).
+* **Slide Dimensions:** Widescreen 16:9 (`33.867 cm × 19.05 cm` / `1920×1080px`).
 * **Stage Geometry (Mirrors Hyperframes Option A):**
-  * **Slide Background:** Solid Steel Blue `#4682B4` (with optional flat corner vector blobs in `#D5E3EF` and `#6DC082`).
-  * **Dominant White Slide Card:** Pure White `#FFFFFF` rounded rectangle (`1860Ã—1020px`, centered, `20px` corner radius, zero drop shadow).
-* **5 Standard Classroom Slide Layouts:**
-  1. **Title Slide:** Full white card, `LB-Logo.png` (`90px`), `44pt` Roboto Black `#4682B4` title, `20pt` `#1E7E34` subtitle, tagline *"Blending excellence for you!"*.
-  2. **Concept Teaching Slide:** Clean white card, `32pt` `#4682B4` title, maximum **4 bullet points** (`20pt` `#222222`, max 12 words per bullet) with `#6DC082` square/checkmark bullets.
-  3. **2-Column Contrast Slide:** Mirrors Block 5 (`#D9534F` Mistake on left vs. `#6DC082` Audit-Ready Practice on right).
-  4. **Classroom Activity / Syndicate Drill Slide:** Large Symbol Icon (`Discussion.png`, `Practical.png`, or `LMS.png` at `120Ã—120px`) on left, clear task instructions + time allocation badge on right.
-  5. **Statutory Quote Slide:** Soft Ice Blue `#D5E3EF` panel (`16px` radius) with italic `#4682B4` statutory text and white plain-English floor translation card below.
+  * **Slide Background:** Solid Steel Blue `#4682B4` (with optional flat organic corner vector blobs in `#D5E3EF` and `#6DC082`).
+  * **Dominant White Slide Card:** Pure White `#FFFFFF` rounded rectangle (`1860×1020px`, centered, inset `30px` from all screen edges, `20px` corner radius, strictly flat with zero drop shadow).
+  * **The 5px Nesting Rule:** Nested internal panels obey `16px` corner radius, `5px` outer perimeter gap facing the card edge, and a flush `5px` white divider between sibling panels.
+
+### 6.1 The 5 Canonical PowerPoint 16:9 Slide Layouts
+
+#### Layout 1: Module Title & Hook Slide (Mirrors Block A Architecture)
+* **Canvas:** Full-width white card (`1860×1020px`), `60px` internal padding.
+* **Top Bar:** `LB-Logo.png` (`90×90px`) top-left; Module/SAQA Qualification Pill (`#D5E3EF` background, `#4682B4` bold `14pt` uppercase text, `8px` radius) top-right.
+* **Center Hero:** Module Title in `44pt` Roboto Black (`900`) Steel Blue (`#4682B4`), maximum 2 lines.
+* **Payoff Banner:** Nested bottom panel (`#EAF6ED` fill, `2px` `#6DC082` border, `16px` radius) containing the core workplace payoff statement in `22pt` Roboto Bold Dark Emerald (`#1E7E34`).
+* **Footer:** `10pt` Muted Gray (`#696969`): *"Training content, not formal legal advice."*
+
+#### Layout 2: Core Concept & 4-Step Teaching Slide (Mirrors Block F Kinetic Workhorse)
+* **Header Zone:** Top-left H1 (`32pt` Roboto Bold `#4682B4`) + concise 1-line context sub-header (`18pt` Roboto Regular `#4A4A4A`).
+* **Body Zone (4 Horizontal Step Rows):** Maximum 4 stacked step cards (`height: 145px` each, `12px` vertical gap, `16px` radius).
+  * **Steps 1–3 (Standard State):** `#F4F8FB` background, `1.5px` `#83ADCF` border, `6px` `#4682B4` left bar, `48×48px` `#4682B4` number badge (`1`, `2`, `3` in white `20pt` Black), `20pt` `#222222` text (max 12 words per row).
+  * **Step 4 (Payoff State):** `#EAF6ED` background, `2px` `#6DC082` border, `6px` `#6DC082` left bar, `48×48px` `#1E7E34` checkmark/number badge, `20pt` `#1E7E34` bold payoff text.
+
+#### Layout 3: Two-Sided Principle Contrast Slide (Mirrors Block B Split Architecture)
+* **Outer Card Override:** Solid Steel Blue (`#4682B4`) dominant card with a `4px` crisp white border and `15px` blue inner frame.
+* **50/50 Split Columns (5px gap):**
+  * **Left Panel (Common Floor Mistake / False Belief):** Nested white card (`16px` radius, `2px` `#D9534F` border, `#FDF2F2` top header strip) with `20pt` `#D9534F` Bold header (`✗ COMMON FLOOR MISTAKE`) and `18pt` `#222222` scenario points.
+  * **Right Panel (Audit-Ready Practice):** Nested white card (`16px` radius, `2px` `#6DC082` border, `#EAF6ED` top header strip) with `20pt` `#1E7E34` Bold header (`✓ AUDIT-READY PRACTICE`) and `18pt` `#222222` actionable steps.
+
+#### Layout 4: Statutory Authority & Floor Translation Slide (Mirrors Block QUOTE)
+* **Left Panel (55% width, nested 5px from left/top/bottom):** Soft Ice Blue (`#D5E3EF` at 85% opacity) panel (`16px` radius, `6px` `#4682B4` left border) containing verbatim Act/Section quote in `24pt` Roboto Italic `#4682B4` and uppercase citation badge (`14pt` Roboto Bold `#4682B4`).
+* **Right Panel (45% width, separated by 5px white divider):** Pure White (`#FFFFFF`) panel with `Information.png` (`80×80px`) at top, heading `"WHAT THIS MEANS ON THE FLOOR"` (`18pt` Roboto Black `#1E7E34`), and plain-English frontline explanation (`18pt` Roboto Regular `#222222`).
+
+#### Layout 5: Classroom Syndicate Drill / Practical Activity Slide (Blended Delivery)
+* **Left Panel (35% width, nested 5px inset):** Solid Steel Blue (`#4682B4`) or Mint Ice (`#EAF6ED`) vertical card (`16px` radius) displaying the large Official Symbol (`Practical.png`, `Discussion.png`, `Learner-Guide.png`, or `LMS.png` at `160×160px` centered), Activity Type title (`22pt` Bold), and a Time Allocation Pill (e.g., `⏱ 15 MINUTES`).
+* **Right Panel (65% width):** Pure White (`#FFFFFF`) workspace showing:
+  1. **Your Task:** Numbered instructions (`18pt` `#222222`).
+  2. **Reference:** Exact Learner Guide page or BrainCert LMS unit number.
+  3. **Output / PoE Evidence:** Boxed footer (`#F4F8FB`, `1.5px` `#4682B4` border) stating exactly what the learner must write, submit, or present.
 
 ---
 
-## 7. HYPERFRAMES STAGE & MOTION GRAMMAR (RATIFIED V8.1 PRESERVED)
+## 7. HYPERFRAMES STAGE & MOTION GRAMMAR (RATIFIED V8.1 RESTORATION)
 
 ### 7.1 The Stage (Option A Architecture)
-* **Fixed Resolution:** `1920Ã—1080`.
+* **Fixed Resolution:** `1920×1080`.
 * **Canvas Background:** Steel Blue (`#4682B4`) carrying **four flat organic vector blobs** (White `#FFFFFF`, Soft-Ice `#D5E3EF`, Emerald `#6DC082`) in slow, loop-closed breathing (out-and-back sine cycle so cuts are seamless).
 * **Dominant Card:** Pure White (`#FFFFFF`), inset **30px from every screen edge**, **20px corner radius**, `overflow: hidden`, strictly **flat (no drop shadows)**.
 
@@ -324,9 +351,17 @@ Never use floating Word textboxes (they shift and break across pages). Always bu
 * Maintain a **5px gap** facing the card's outer perimeter, and a flush **5px white divider** between sibling panels.
 * **Block B Exception:** Block B uses a solid blue fill with a **4px crisp white border** around the card, plus a **15px blue frame** around the nested white panel.
 
-### 7.3 Caption Bar Grammar (V8.1)
-* **Standard Caption Bar:** Background = **Steel Blue (`#4682B4`)**, Text = **White (`#FFFFFF`)**, Active Word = **Emerald Green (`#6DC082`)** (Roboto Black 900 Underlined).
-* **Inverted Caption Bar:** On blue-dominant surfaces (Block B), background = **White (`#FFFFFF`)**, Text = **Steel Blue (`#4682B4`)**, Active Word = **Dark Emerald (`#1E7E34`)**.
+### 7.3 Dedicated V8.1 Video Typographic & State Table
+
+| Element Role | Video Font Size | Weight & Style | Color Token & State Behavior |
+|---|---|---|---|
+| **H1 / Slide Titles** | `48–56px` | Bold / Black (900) | Steel Blue `#4682B4` |
+| **Kinetic Item Headers** | `36–40px` | Bold (700) | Starts Dim Gray `#4A4A4A` $\rightarrow$ transitions to Emerald `#6DC082` on horizontal fire (`+40px` right, scale `1.1`) |
+| **Body & Sub-descriptions** | `26–32px` | Regular (400) | Dim Gray `#4A4A4A` / `#696969` |
+| **Statutory Quotes** | `34–38px` | Roboto Italic (400) | Steel Blue `#4682B4` (Roboto Italic) |
+| **Standard Caption Bar** | `26–28px` | Medium (500) | Background `#4682B4`, Text `#FFFFFF`, Active Word `#6DC082` (**Roboto Black 900 Underlined**) |
+| **Inverted Caption Bar (Block B)** | `26–28px` | Medium (500) | Background `#FFFFFF`, Text `#4682B4`, Active Word `#1E7E34` (**Roboto Black 900 Underlined**) |
+
 * **Caption Toggle:** Optional per-slide toggle (active on kinetic/avatar slides; OFF on hero/quote slides to maximize real estate).
 
 ### 7.4 Motion & Transitions
@@ -338,18 +373,25 @@ Never use floating Word textboxes (they shift and break across pages). Always bu
   * Inter-scene morphs are silent (no whooshes, no BGM).
 * **Stage Close:** Lesson ends cleanly on **Block A (Consequence Payoff & Hand-off to Quiz)** with a final exit whoosh SFX.
 
-### 7.5 The 6 Slide Blocks Catalog & Deterministic JSON Blueprint Contract
+### 7.5 The Mandatory 8-Segment Pedagogical Lesson Arc & Slide Blocks Catalog
 
-| Block Type | Name | Layout Architecture | Typical Course Job |
-|---|---|---|---|
-| **Block D** | **Avatar + Script** | 60% blue script over 40% avatar holder (left), 70% white content (right), nested caption bar. | **Segment 1:** Bridge from reflection poll into the theory lesson. |
-| **Block A** | **Single Hero** | Full-width white card with bold Steel Blue headline and green payoff statement. No caption bar. | **Segment 2 & 8:** Destabilise false belief / Consequence payoff. |
-| **Block B** | **Split Blue-Dominant** | Solid blue card with **4px white border** and 15px blue frame around ~50% nested white block. | **Segment 2:** Two-sided principle contrast. |
-| **Block F** | **Kinetic Workhorse** | White card, title + kinetic list ($\le 4$ items firing into Emerald) + caption bar. | **Segment 3, 4, 7:** Framework steps & scenario replay. |
-| **Block QUOTE** | **Statutory Authority** | 85% translucent Soft Ice Blue panel on left, Steel Blue italic quote + citation, plain-English translation. | **Segment 5:** Verbatim statutory legal anchor. |
-| **Block C** | **Split + Diagram** | White-dominant left (4 archetypes: flow, comparison, matrix, loop), blue block right, nested caption bar. | **Segment 6:** Conceptual framework visualization. |
+| Segment # | Slide Block Architecture | Course Pedagogical Job |
+|---|---|---|
+| **Segment 1** | **Block D (Avatar + Script)** | 60% blue script over 40% avatar holder (left), 70% white content (right), nested caption bar. *Job: Bridge from reflection poll into the theory lesson.* |
+| **Segment 2** | **Block A or Block B** | **Block A** (Full-width white hero, no caption bar) to *destabilise a false belief*, OR **Block B** (Solid blue card, `4px` white border, `15px` blue frame around ~50% nested white panel, inverted caption bar) for *two-sided principle contrast*. |
+| **Segment 3** | **Block F (Kinetic Workhorse)** | White card, title + kinetic list ($\le 4$ items firing horizontally `+40px` right, scale `1.1` into `#6DC082`) + standard caption bar. *Job: Core framework steps (Part 1).* |
+| **Segment 4** | **Block F (Kinetic Workhorse)** | White card, title + kinetic list firing into Emerald + standard caption bar. *Job: Core framework steps (Part 2).* |
+| **Segment 5** | **Block QUOTE (Statutory Authority)** | 85% translucent Soft Ice Blue (`#D5E3EF`) panel on left, `#4682B4` italic quote + citation, plain-English translation on right. No caption bar. *Job: Verbatim statutory legal anchor.* |
+| **Segment 6** | **Block C (Split + Diagram)** | White-dominant left panel rendering **1 of 4 strict archetypes (`flow`, `comparison`, `matrix`, `loop`)**, blue panel right, nested caption bar. *Job: Conceptual framework visualization.* |
+| **Segment 7** | **Block F (Kinetic Workhorse)** | Kinetic list replay with standard caption bar. *Job: Practical South African workplace scenario replay.* |
+| **Segment 8** | **Block A (Single Hero Close)** | Full-width white card with `#4682B4` headline and `#6DC082` consequence payoff statement + final exit whoosh SFX (and hand-off to BrainCert quiz; **zero legal disclaimer on final slide**). |
 
-* **Deterministic Blueprint Contract:** The AI Studio app generates a strictly validated JSON `Blueprint` where each segment specifies `block: "A" | "B" | "C" | "D" | "F" | "QUOTE"` and populates only the permitted slots (`kineticItems` for F, `quoteText` for QUOTE, `diagram` for C).
+### 7.6 Deterministic JSON Blueprint Contract
+The AI Studio app generates a strictly validated JSON `Blueprint` where each segment specifies `block: "A" | "B" | "C" | "D" | "F" | "QUOTE"` and populates only the permitted slots:
+1. `kineticItems` for Block F ($\le 4$ items).
+2. `quoteText` and `statutoryCitation` for Block QUOTE.
+3. `diagram` (`type: "flow" | "comparison" | "matrix" | "loop"`) for Block C.
+4. `heroTitle` and `payoffStatement` for Block A.
 
 ---
 
@@ -357,7 +399,7 @@ Never use floating Word textboxes (they shift and break across pages). Always bu
 
 ### 8.1 WordPress (Kadence Pro) 9-Slot Global Palette
 * `Palette 1 (Primary Accent)`: `#4682B4` (Steel Blue)
-* `Palette 2 (Secondary Accent)`: `#6DC082` (Emerald Green â€” buttons/accents)
+* `Palette 2 (Secondary Accent)`: `#6DC082` (Emerald Green — buttons/accents)
 * `Palette 3 (Strongest Heading/Body Text)`: `#222222` (Reading Ink)
 * `Palette 4 (Secondary Body Text)`: `#4A4A4A` (Dim Gray)
 * `Palette 5 (Muted / Meta Text)`: `#696969` (Muted Gray)
@@ -397,5 +439,4 @@ When coding interactive classroom response tools, learner registration forms, or
 * **Video Reference Proof:** `renders/v8-option-a-all-blocks/v8-option-a-morphs.mp4`
 * **Symbol Set Verification:** 8 standardized PNG assets (`LMS.png`, `Learner-Guide.png`, `Practical.png`, `Assessment.png`, `Discussion.png`, `Information.png`, `MS-Teams.png`, `LB-Logo.png`).
 * **Change Governance:** This document represents **Brand Kit V8.2**. Any future modifications require formal version incrementation (`V8.3+`) and synchronization to the GitHub Pages `llms.txt` endpoint.
-
 

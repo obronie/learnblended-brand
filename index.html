@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -52,7 +52,7 @@
 
     /* Container */
     .container {
-      max-width: 1140px;
+      max-width: 1160px;
       margin: 0 auto;
       padding: 0 20px;
     }
@@ -476,7 +476,7 @@
       border-left: 4px solid var(--lb-blue);
       border-radius: var(--lb-radius-sm);
       padding: 16px 20px;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
     }
     .gov-rule-box h4 {
       font-size: 15px;
@@ -495,6 +495,85 @@
     }
     .gov-rule-box li {
       margin-bottom: 4px;
+    }
+
+    /* Structured Tables */
+    .spec-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin: 14px 0 20px 0;
+      font-size: 13.5px;
+      border: 1.5px solid var(--lb-light-blue);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .spec-table th {
+      background-color: var(--lb-blue);
+      color: #FFFFFF;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 700;
+    }
+    .spec-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--lb-ice);
+      color: var(--lb-ink);
+    }
+    .spec-table tr:nth-child(even) td {
+      background-color: var(--lb-ice-tint);
+    }
+    .spec-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* 16:9 Mini-Wireframe Stage Styles */
+    .wireframe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+      gap: 24px;
+      margin: 20px 0 30px 0;
+    }
+    .wireframe-card {
+      background-color: #FFFFFF;
+      border: 1.5px solid var(--lb-light-blue);
+      border-radius: var(--lb-radius-md);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .wireframe-meta h5 {
+      font-size: 15px;
+      font-weight: 900;
+      color: var(--lb-blue);
+      margin-bottom: 2px;
+    }
+    .wireframe-meta p {
+      font-size: 12.5px;
+      color: var(--lb-charcoal);
+      line-height: 1.4;
+    }
+    .wireframe-stage {
+      aspect-ratio: 16 / 9;
+      background-color: #4682B4;
+      border-radius: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+    }
+    .wireframe-dominant-card {
+      background-color: #FFFFFF;
+      border-radius: 8px;
+      width: 100%;
+      height: 100%;
+      padding: 12px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      position: relative;
     }
 
     /* Toast Notification */
@@ -535,7 +614,7 @@
   <header>
     <div class="container header-content">
       <div class="brand-id">
-        <img src="./symbols/LB-Logo.png" alt="Learn:Blended Logo" class="brand-logo" onerror="this.src='./symbols/Standalone%20LB%20Logo%20white%20border%20TRANSPARENT.png'">
+        <img src="./symbols/LB-Logo.png" alt="Learn:Blended Logo" class="brand-logo" onerror="this.src='https://obronie.github.io/learnblended-brand/symbols/LB-Logo.png'">
         <div class="brand-title">
           <h1>LEARN:BLENDED BRAND PORTAL</h1>
           <p>"Blending excellence for you!" — Omnichannel V8.2 Hub</p>
@@ -582,7 +661,7 @@
         One-click discovery endpoints for <strong>Gemini, Claude, ChatGPT, Antigravity, and Google AI Studio</strong>. Paste the AI Directive into any model's custom instructions or system prompt to enforce 100% compliant Learn:Blended courseware.
       </p>
       <div class="ai-url-display">
-        <span id="llms-url-text">https://obronie.github.io/learnblended-brand/symbols/../llms.txt</span>
+        <span id="llms-url-text">https://obronie.github.io/learnblended-brand/llms.txt</span>
         <span style="font-size: 11px; color: var(--lb-charcoal); font-family: sans-serif;">Standard AI Discovery Endpoint</span>
       </div>
     </section>
@@ -831,7 +910,7 @@
         <!-- 1. LMS Portal -->
         <div class="symbol-card">
           <div class="symbol-img-wrap">
-            <img src="./symbols/LMS.png" alt="LMS Portal" class="symbol-img">
+            <img src="./symbols/LMS.png" alt="LMS Portal" class="symbol-img" onerror="this.src='https://obronie.github.io/learnblended-brand/symbols/LMS.png'">
           </div>
           <div class="symbol-title">1. LMS Portal</div>
           <div class="symbol-filename">LMS.png</div>
@@ -847,7 +926,7 @@
         <!-- 2. Learner Guide -->
         <div class="symbol-card">
           <div class="symbol-img-wrap">
-            <img src="./symbols/Learner-Guide.png" alt="Learner Guide" class="symbol-img" onerror="this.src='./symbols/Learner%20Guide.png'">
+            <img src="./symbols/Learner-Guide.png" alt="Learner Guide" class="symbol-img" onerror="this.src='https://obronie.github.io/learnblended-brand/symbols/Learner-Guide.png'">
           </div>
           <div class="symbol-title">2. Learner Guide</div>
           <div class="symbol-filename">Learner-Guide.png</div>
@@ -863,7 +942,7 @@
         <!-- 3. Practical -->
         <div class="symbol-card">
           <div class="symbol-img-wrap">
-            <img src="./symbols/Practical.png" alt="Practical Task" class="symbol-img">
+            <img src="./symbols/Practical.png" alt="Practical Task" class="symbol-img" onerror="this.src='https://obronie.github.io/learnblended-brand/symbols/Practical.png'">
           </div>
           <div class="symbol-title">3. Practical Task</div>
           <div class="symbol-filename">Practical.png</div>
@@ -879,7 +958,7 @@
         <!-- 4. Assessment -->
         <div class="symbol-card">
           <div class="symbol-img-wrap">
-            <img src="./symbols/Assessment.png" alt="Assessment" class="symbol-img">
+            <img src="./symbols/Assessment.png" alt="Assessment" class="symbol-img" onerror="this.src='https://obronie.github.io/learnblended-brand/symbols/Assessment.png'">
           </div>
           <div class="symbol-title">4. Assessment</div>
           <div class="symbol-filename">Assessment.png</div>
@@ -895,7 +974,7 @@
         <!-- 5. Discussion -->
         <div class="symbol-card">
           <div class="symbol-img-wrap">
-            <img src="./symbols/Discussion.png" alt="Discussion" class="symbol-img">
+            <img src="./symbols/Discussion.png" alt="Discussion" class="symbol-img" onerror="this.src='https://obronie.github.io/learnblended-brand/symbols/Discussion.png'">
           </div>
           <div class="symbol-title">5. Discussion</div>
           <div class="symbol-filename">Discussion.png</div>
@@ -911,7 +990,7 @@
         <!-- 6. Information -->
         <div class="symbol-card">
           <div class="symbol-img-wrap">
-            <img src="./symbols/Information.png" alt="Information" class="symbol-img">
+            <img src="./symbols/Information.png" alt="Information" class="symbol-img" onerror="this.src='https://obronie.github.io/learnblended-brand/symbols/Information.png'">
           </div>
           <div class="symbol-title">6. Information</div>
           <div class="symbol-filename">Information.png</div>
@@ -927,7 +1006,7 @@
         <!-- 7. MS Teams -->
         <div class="symbol-card">
           <div class="symbol-img-wrap">
-            <img src="./symbols/MS-Teams.png" alt="MS Teams" class="symbol-img" onerror="this.src='./symbols/MS%20Teams.png'">
+            <img src="./symbols/MS-Teams.png" alt="MS Teams" class="symbol-img" onerror="this.src='https://obronie.github.io/learnblended-brand/symbols/MS-Teams.png'">
           </div>
           <div class="symbol-title">7. MS Teams</div>
           <div class="symbol-filename">MS-Teams.png</div>
@@ -943,7 +1022,7 @@
         <!-- 8. Brand Logo -->
         <div class="symbol-card">
           <div class="symbol-img-wrap">
-            <img src="./symbols/LB-Logo.png" alt="Brand Logo" class="symbol-img" onerror="this.src='./symbols/Standalone%20LB%20Logo%20white%20border%20TRANSPARENT.png'">
+            <img src="./symbols/LB-Logo.png" alt="Brand Logo" class="symbol-img" onerror="this.src='https://obronie.github.io/learnblended-brand/symbols/LB-Logo.png'">
           </div>
           <div class="symbol-title">8. Brand Logo</div>
           <div class="symbol-filename">LB-Logo.png</div>
@@ -1005,7 +1084,7 @@
         </div>
         <div class="template-preview" id="preview-2">
           <div style="display: flex; align-items: flex-start; gap: 16px; background-color: #F4F8FB; border: 2px solid #4682B4; border-radius: 16px; padding: 18px 20px; margin: 10px auto; max-width: 840px; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
-            <img src="./symbols/Practical.png" alt="Practical Activity" style="width: 56px; height: 56px; flex-shrink: 0; display: block;" />
+            <img src="./symbols/Practical.png" alt="Practical Activity" style="width: 56px; height: 56px; flex-shrink: 0; display: block;" onerror="this.src='https://obronie.github.io/learnblended-brand/symbols/Practical.png'" />
             <div style="flex: 1;">
               <div style="font-size: 13px; font-weight: 900; text-transform: uppercase; color: #4682B4; letter-spacing: 0.6px; margin-bottom: 4px;">
                 Workplace Practical Task
@@ -1029,7 +1108,7 @@
         </div>
         <div class="template-preview" id="preview-3">
           <div style="display: flex; align-items: flex-start; gap: 16px; background-color: #EAF6ED; border: 2px solid #6DC082; border-radius: 16px; padding: 18px 20px; margin: 10px auto; max-width: 840px; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
-            <img src="./symbols/LMS.png" alt="LMS Activity" style="width: 56px; height: 56px; flex-shrink: 0; display: block;" />
+            <img src="./symbols/LMS.png" alt="LMS Activity" style="width: 56px; height: 56px; flex-shrink: 0; display: block;" onerror="this.src='https://obronie.github.io/learnblended-brand/symbols/LMS.png'" />
             <div style="flex: 1;">
               <div style="font-size: 13px; font-weight: 900; text-transform: uppercase; color: #1E7E34; letter-spacing: 0.6px; margin-bottom: 4px;">
                 Complete on Your LMS Portal
@@ -1196,20 +1275,515 @@
       <div class="section-title-wrap">
         <div>
           <h2 class="section-title">Omnichannel Governance Specifications</h2>
-          <p class="section-desc">Technical production rules for Word, Print, Slides, Video, and Web Coding.</p>
+          <p class="section-desc">Technical production blueprints for PowerPoint, Hyperframes Video, Word/Print, and Web.</p>
         </div>
       </div>
 
       <div class="tabs-header">
-        <button class="tab-btn active" onclick="openTab('tab-word')">📄 MS Word & Print Manuals</button>
-        <button class="tab-btn" onclick="openTab('tab-ppt')">📊 PowerPoint (16:9)</button>
+        <button class="tab-btn active" onclick="openTab('tab-ppt')">📊 PowerPoint (16:9)</button>
         <button class="tab-btn" onclick="openTab('tab-video')">🎬 Hyperframes Video (V8.1)</button>
+        <button class="tab-btn" onclick="openTab('tab-word')">📄 MS Word & Print Manuals</button>
         <button class="tab-btn" onclick="openTab('tab-code')">💻 Web, Kadence & React</button>
         <button class="tab-btn" onclick="openTab('tab-ai')">🤖 AI Core Directives</button>
       </div>
 
+      <!-- TAB: PPT (16:9) -->
+      <div id="tab-ppt" class="tab-content active">
+        <div class="gov-rule-box">
+          <h4>PowerPoint 16:9 Stage Architecture (Option A Mirror)</h4>
+          <ul>
+            <li><strong>Slide Dimensions:</strong> Widescreen 16:9 (<code>33.867 cm × 19.05 cm</code> / <code>1920×1080px</code>).</li>
+            <li><strong>Stage Background:</strong> Solid Steel Blue <code>#4682B4</code> carrying optional organic corner blobs in <code>#D5E3EF</code> and <code>#6DC082</code>.</li>
+            <li><strong>Dominant White Card:</strong> Centered <code>1860×1020px</code> rounded rectangle, <code>30px</code> inset from all screen edges, <code>20px</code> corner radius, strictly flat with zero drop shadow.</li>
+            <li><strong>The 5px Nesting Rule:</strong> Nested internal panels obey <code>16px</code> corner radius, <code>5px</code> outer perimeter gap facing the card edge, and a flush <code>5px</code> white divider between sibling panels.</li>
+          </ul>
+        </div>
+
+        <h3 style="color: var(--lb-blue); font-size: 18px; font-weight: 900; margin: 24px 0 12px 0;">
+          The 5 Canonical PowerPoint 16:9 Slide Wireframes
+        </h3>
+        <p style="font-size: 13.5px; color: var(--lb-charcoal); margin-bottom: 16px;">
+          Interactive visual wireframes demonstrating the exact spatial proportions, color zones, and nesting rules for classroom decks.
+        </p>
+
+        <div class="wireframe-grid">
+
+          <!-- PPT Layout 1 -->
+          <div class="wireframe-card">
+            <div class="wireframe-meta">
+              <h5>Layout 1: Module Title & Hook Slide (Mirrors Block A)</h5>
+              <p>Full-width white card, brand logo, SAQA qualification pill, 44pt title, and emerald payoff banner.</p>
+            </div>
+            <div class="wireframe-stage">
+              <div class="wireframe-dominant-card" style="justify-content: space-between; padding: 14px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <img src="./symbols/LB-Logo.png" alt="Logo" style="height: 28px; width: auto;" onerror="this.src='https://obronie.github.io/learnblended-brand/symbols/LB-Logo.png'">
+                  <div style="background-color: #D5E3EF; color: #4682B4; font-size: 9.5px; font-weight: 700; text-transform: uppercase; padding: 3px 8px; border-radius: 6px;">
+                    Module 1 • SAQA 119472
+                  </div>
+                </div>
+                <div style="text-align: center; margin: 10px 0;">
+                  <h3 style="color: #4682B4; font-size: 15px; font-weight: 900; line-height: 1.25;">
+                    Checking Stock Carefully Before You Sign the Delivery Note
+                  </h3>
+                  <p style="color: #4A4A4A; font-size: 10px; margin-top: 4px;">Receiving Bay Operating Standards & Legal Accountability</p>
+                </div>
+                <div style="background-color: #EAF6ED; border: 1.5px solid #6DC082; border-radius: 8px; padding: 8px 10px; text-align: center;">
+                  <span style="color: #1E7E34; font-size: 10px; font-weight: 900;">
+                    ✓ Core Payoff: Never accept legal liability for supplier shortages on the receiving floor.
+                  </span>
+                </div>
+                <div style="text-align: right; font-size: 8px; color: #696969; margin-top: 2px;">
+                  Training content, not formal legal advice.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PPT Layout 2 -->
+          <div class="wireframe-card">
+            <div class="wireframe-meta">
+              <h5>Layout 2: Core Concept & 4-Step Teaching Slide (Mirrors Block F)</h5>
+              <p>H1 header + 4 stacked horizontal process cards with left accent bars and emerald payoff step.</p>
+            </div>
+            <div class="wireframe-stage">
+              <div class="wireframe-dominant-card" style="padding: 10px;">
+                <div style="margin-bottom: 6px;">
+                  <h4 style="color: #4682B4; font-size: 12px; font-weight: 900;">The 4-Step Receiving Protocol</h4>
+                  <p style="color: #4A4A4A; font-size: 8.5px;">Follow this sequential workflow before counter-signing any driver's POD.</p>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 5px; flex: 1; justify-content: center;">
+                  <div style="background: #F4F8FB; border: 1px solid #83ADCF; border-left: 4px solid #4682B4; border-radius: 6px; padding: 5px 8px; display: flex; align-items: center; gap: 8px;">
+                    <div style="background: #4682B4; color: #fff; font-size: 9px; font-weight: 900; width: 16px; height: 16px; border-radius: 4px; display: flex; align-items: center; justify-content: center;">1</div>
+                    <div style="font-size: 8.5px; color: #222;"><strong>Match Paperwork:</strong> Compare PO against supplier delivery note.</div>
+                  </div>
+                  <div style="background: #F4F8FB; border: 1px solid #83ADCF; border-left: 4px solid #4682B4; border-radius: 6px; padding: 5px 8px; display: flex; align-items: center; gap: 8px;">
+                    <div style="background: #4682B4; color: #fff; font-size: 9px; font-weight: 900; width: 16px; height: 16px; border-radius: 4px; display: flex; align-items: center; justify-content: center;">2</div>
+                    <div style="font-size: 8.5px; color: #222;"><strong>Inspect Seals & Pallets:</strong> Check shrink-wrap, carton seals, and tilt sensors.</div>
+                  </div>
+                  <div style="background: #F4F8FB; border: 1px solid #83ADCF; border-left: 4px solid #4682B4; border-radius: 6px; padding: 5px 8px; display: flex; align-items: center; gap: 8px;">
+                    <div style="background: #4682B4; color: #fff; font-size: 9px; font-weight: 900; width: 16px; height: 16px; border-radius: 4px; display: flex; align-items: center; justify-content: center;">3</div>
+                    <div style="font-size: 8.5px; color: #222;"><strong>Count Units in Ink:</strong> Count each physical box before entering stock into the system.</div>
+                  </div>
+                  <div style="background: #EAF6ED; border: 1.5px solid #6DC082; border-left: 4px solid #6DC082; border-radius: 6px; padding: 5px 8px; display: flex; align-items: center; gap: 8px;">
+                    <div style="background: #1E7E34; color: #fff; font-size: 9px; font-weight: 900; width: 16px; height: 16px; border-radius: 4px; display: flex; align-items: center; justify-content: center;">✓</div>
+                    <div style="font-size: 8.5px; color: #1E7E34;"><strong>Sign & Endorse:</strong> Endorse shortages in ink, counter-signed by the delivery driver.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PPT Layout 3 -->
+          <div class="wireframe-card">
+            <div class="wireframe-meta">
+              <h5>Layout 3: Two-Sided Principle Contrast Slide (Mirrors Block B)</h5>
+              <p>Solid Steel Blue outer card with 4px white border, 15px blue frame, and 50/50 red vs. green cards.</p>
+            </div>
+            <div class="wireframe-stage" style="padding: 6px;">
+              <!-- Outer card override -->
+              <div style="background-color: #4682B4; border: 2px solid #FFFFFF; border-radius: 8px; width: 100%; height: 100%; padding: 6px; display: flex; gap: 5px; box-sizing: border-box;">
+                <!-- Left Mistake -->
+                <div style="flex: 1; background: #FFFFFF; border: 1.5px solid #D9534F; border-radius: 6px; padding: 8px; display: flex; flex-direction: column;">
+                  <div style="background: #FDF2F2; color: #D9534F; font-size: 8.5px; font-weight: 900; padding: 3px 6px; border-radius: 4px; margin-bottom: 6px; text-transform: uppercase;">
+                    ✗ Common Floor Mistake
+                  </div>
+                  <ul style="font-size: 8px; color: #222; margin-left: 12px; line-height: 1.4;">
+                    <li>Signing the POD quickly to let the driver leave.</li>
+                    <li>Assuming internal counts match the invoice.</li>
+                    <li>Failing to record damaged corners immediately.</li>
+                  </ul>
+                </div>
+                <!-- Right Audit -->
+                <div style="flex: 1; background: #FFFFFF; border: 1.5px solid #6DC082; border-radius: 6px; padding: 8px; display: flex; flex-direction: column;">
+                  <div style="background: #EAF6ED; color: #1E7E34; font-size: 8.5px; font-weight: 900; padding: 3px 6px; border-radius: 4px; margin-bottom: 6px; text-transform: uppercase;">
+                    ✓ Audit-Ready Practice
+                  </div>
+                  <ul style="font-size: 8px; color: #222; margin-left: 12px; line-height: 1.4;">
+                    <li>Physically counting stock before signing anything.</li>
+                    <li>Recording carton damage directly on the delivery note.</li>
+                    <li>Demanding driver counter-signature in ink.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PPT Layout 4 -->
+          <div class="wireframe-card">
+            <div class="wireframe-meta">
+              <h5>Layout 4: Statutory Authority & Floor Translation (Mirrors Block QUOTE)</h5>
+              <p>55% Soft Ice Blue quote panel with 6px blue bar, 45% white translation card with Information.png.</p>
+            </div>
+            <div class="wireframe-stage">
+              <div class="wireframe-dominant-card" style="padding: 6px; display: flex; flex-direction: row; gap: 5px;">
+                <!-- Left Quote (55%) -->
+                <div style="flex: 0 0 55%; background: #D5E3EF; border-left: 4px solid #4682B4; border-radius: 6px; padding: 10px; display: flex; flex-direction: column; justify-content: center;">
+                  <p style="font-size: 8.5px; font-style: italic; color: #4682B4; font-weight: 500; line-height: 1.35; margin-bottom: 6px;">
+                    "Every employer shall provide and maintain, as far as is reasonably practicable, a working environment that is safe and without risk to the health of his employees."
+                  </p>
+                  <div style="font-size: 7.5px; font-weight: 700; color: #4682B4; text-transform: uppercase;">
+                    — OHS Act 85 of 1993, Section 8(1)
+                  </div>
+                </div>
+                <!-- Right Translation (45%) -->
+                <div style="flex: 1; background: #FFFFFF; border: 1px solid #83ADCF; border-radius: 6px; padding: 8px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                  <img src="./symbols/Information.png" alt="Info" style="width: 28px; height: 28px; margin-bottom: 4px;" onerror="this.src='https://obronie.github.io/learnblended-brand/symbols/Information.png'">
+                  <div style="font-size: 8px; font-weight: 900; color: #1E7E34; text-transform: uppercase; margin-bottom: 3px;">
+                    What This Means on the Floor
+                  </div>
+                  <p style="font-size: 7.5px; color: #222; line-height: 1.35;">
+                    Keep walkways clear of loose shrink-wrap and pallets so nobody trips while carrying cartons.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PPT Layout 5 -->
+          <div class="wireframe-card">
+            <div class="wireframe-meta">
+              <h5>Layout 5: Classroom Syndicate Drill / Practical Activity Slide</h5>
+              <p>35% left activity panel with symbol + timer; 65% right workspace with tasks and PoE output box.</p>
+            </div>
+            <div class="wireframe-stage">
+              <div class="wireframe-dominant-card" style="padding: 6px; display: flex; flex-direction: row; gap: 5px;">
+                <!-- Left 35% Activity Banner -->
+                <div style="flex: 0 0 35%; background: #F4F8FB; border: 1.5px solid #4682B4; border-radius: 6px; padding: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                  <img src="./symbols/Practical.png" alt="Practical" style="width: 34px; height: 34px; margin-bottom: 4px;" onerror="this.src='https://obronie.github.io/learnblended-brand/symbols/Practical.png'">
+                  <div style="font-size: 9px; font-weight: 900; color: #4682B4; text-transform: uppercase;">Workplace Drill</div>
+                  <div style="background: #4682B4; color: #fff; font-size: 7.5px; font-weight: 700; padding: 2px 6px; border-radius: 4px; margin-top: 4px;">
+                    ⏱ 15 MINUTES
+                  </div>
+                </div>
+                <!-- Right 65% Workspace -->
+                <div style="flex: 1; padding: 6px; display: flex; flex-direction: column; justify-content: space-between;">
+                  <div>
+                    <div style="font-size: 8.5px; font-weight: 900; color: #4682B4; margin-bottom: 2px;">Your Syndicate Task:</div>
+                    <ol style="font-size: 7.5px; color: #222; margin-left: 12px; line-height: 1.3;">
+                      <li>Inspect 3 sample cartons in your syndicate bay.</li>
+                      <li>Compare physical labels against PO #7701.</li>
+                      <li>Complete the receiving logbook worksheet.</li>
+                    </ol>
+                  </div>
+                  <div style="background: #EAF6ED; border: 1px solid #6DC082; border-radius: 4px; padding: 4px 6px;">
+                    <span style="font-size: 7.5px; color: #1E7E34; font-weight: 700;">
+                      PoE Evidence: Hand in signed receiving audit sheet on Page 12 of your Learner Guide.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TAB: VIDEO (HYPERFRAMES V8.1) -->
+      <div id="tab-video" class="tab-content">
+        <div class="gov-rule-box">
+          <h4>Hyperframes Stage & Motion Grammar (Ratified V8.1 Restoration)</h4>
+          <ul>
+            <li><strong>Stage Resolution:</strong> Fixed <code>1920×1080</code> (16:9). Option A persistent white card carrying breathing vector blobs.</li>
+            <li><strong>The 5px Nesting Rule:</strong> Nested internal panels have <code>16px</code> corner radius, <code>5px</code> perimeter gap facing the card edge, and <code>5px</code> flush white dividers between sibling panels.</li>
+            <li><strong>Block B Exception:</strong> Solid blue card with <code>4px</code> crisp white border and <code>15px</code> blue frame around ~50% nested white panel.</li>
+            <li><strong>Transitions:</strong> Silent directional panel morphs (top/bottom ±15px, kinetic fires +40px right). Inter-scene morphs are silent (no whooshes, no BGM).</li>
+            <li><strong>Disclaimer Ruling:</strong> Mandatory disclaimer is <strong>REMOVED from final video slide</strong> to prevent viewer drop-off.</li>
+          </ul>
+        </div>
+
+        <div class="gov-rule-box">
+          <h4>Dedicated V8.1 Video Typographic & State Table</h4>
+          <table class="spec-table">
+            <thead>
+              <tr>
+                <th>Element Role</th>
+                <th>Video Font Size</th>
+                <th>Weight & Style</th>
+                <th>Color Token & State Behavior</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>H1 / Slide Titles</strong></td>
+                <td>48–56px</td>
+                <td>Bold / Black (900)</td>
+                <td>Steel Blue <code>#4682B4</code></td>
+              </tr>
+              <tr>
+                <td><strong>Kinetic Item Headers</strong></td>
+                <td>36–40px</td>
+                <td>Bold (700)</td>
+                <td>Starts Dim Gray <code>#4A4A4A</code> → transitions to Emerald <code>#6DC082</code> on fire (+40px right, scale 1.1)</td>
+              </tr>
+              <tr>
+                <td><strong>Body & Sub-descriptions</strong></td>
+                <td>26–32px</td>
+                <td>Regular (400)</td>
+                <td>Dim Gray <code>#4A4A4A</code> / Muted <code>#696969</code></td>
+              </tr>
+              <tr>
+                <td><strong>Statutory Quotes</strong></td>
+                <td>34–38px</td>
+                <td>Roboto Italic (400)</td>
+                <td>Steel Blue <code>#4682B4</code></td>
+              </tr>
+              <tr>
+                <td><strong>Standard Caption Bar</strong></td>
+                <td>26–28px</td>
+                <td>Medium (500)</td>
+                <td>Background <code>#4682B4</code>, Text <code>#FFFFFF</code>, Active Word <code>#6DC082</code> (<strong>Black 900 Underlined</strong>)</td>
+              </tr>
+              <tr>
+                <td><strong>Inverted Caption Bar (Block B)</strong></td>
+                <td>26–28px</td>
+                <td>Medium (500)</td>
+                <td>Background <code>#FFFFFF</code>, Text <code>#4682B4</code>, Active Word <code>#1E7E34</code> (<strong>Black 900 Underlined</strong>)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="gov-rule-box">
+          <h4>The Mandatory 8-Segment Pedagogical Arc Blueprint</h4>
+          <table class="spec-table">
+            <thead>
+              <tr>
+                <th>Segment #</th>
+                <th>Slide Block Architecture</th>
+                <th>Course Pedagogical Job</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Segment 1</strong></td>
+                <td><strong>Block D (Avatar + Script)</strong></td>
+                <td>60% blue script over 40% avatar holder (left), 70% white content (right), nested caption bar. <em>Job: Bridge from reflection poll into theory lesson.</em></td>
+              </tr>
+              <tr>
+                <td><strong>Segment 2</strong></td>
+                <td><strong>Block A or Block B</strong></td>
+                <td><strong>Block A</strong> (Full-width white hero) to <em>destabilise false belief</em>, OR <strong>Block B</strong> (Split blue-dominant) for <em>two-sided principle contrast</em>.</td>
+              </tr>
+              <tr>
+                <td><strong>Segment 3</strong></td>
+                <td><strong>Block F (Kinetic Workhorse)</strong></td>
+                <td>White card, title + kinetic list (≤ 4 items firing into Emerald) + caption bar. <em>Job: Core framework steps (Part 1).</em></td>
+              </tr>
+              <tr>
+                <td><strong>Segment 4</strong></td>
+                <td><strong>Block F (Kinetic Workhorse)</strong></td>
+                <td>Kinetic list firing into Emerald + caption bar. <em>Job: Core framework steps (Part 2).</em></td>
+              </tr>
+              <tr>
+                <td><strong>Segment 5</strong></td>
+                <td><strong>Block QUOTE (Statutory Authority)</strong></td>
+                <td>85% translucent Soft Ice Blue panel on left, Steel Blue italic quote + citation, plain-English translation right. <em>Job: Verbatim statutory legal anchor.</em></td>
+              </tr>
+              <tr>
+                <td><strong>Segment 6</strong></td>
+                <td><strong>Block C (Split + Diagram)</strong></td>
+                <td>White-dominant left (1 of 4 archetypes: flow, comparison, matrix, loop), blue panel right, nested caption bar. <em>Job: Conceptual framework visualization.</em></td>
+              </tr>
+              <tr>
+                <td><strong>Segment 7</strong></td>
+                <td><strong>Block F (Kinetic Workhorse)</strong></td>
+                <td>Kinetic list replay with caption bar. <em>Job: Practical South African workplace scenario replay.</em></td>
+              </tr>
+              <tr>
+                <td><strong>Segment 8</strong></td>
+                <td><strong>Block A (Single Hero Close)</strong></td>
+                <td>Full-width white card with Steel Blue headline and Emerald payoff statement + exit whoosh (zero disclaimer on final slide).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="color: var(--lb-blue); font-size: 18px; font-weight: 900; margin: 24px 0 12px 0;">
+          The 6 Canonical Hyperframes Video Block Wireframes
+        </h3>
+        <p style="font-size: 13.5px; color: var(--lb-charcoal); margin-bottom: 16px;">
+          Visual spatial architecture for all 6 Hyperframes video blocks obeying the V8.1 5px nesting rule and caption bar grammar.
+        </p>
+
+        <div class="wireframe-grid">
+
+          <!-- Block D -->
+          <div class="wireframe-card">
+            <div class="wireframe-meta">
+              <h5>Block D: Avatar + Script (Segment 1 Bridge)</h5>
+              <p>60% blue script over 40% avatar circle (left), 70% white content (right), nested caption bar.</p>
+            </div>
+            <div class="wireframe-stage">
+              <div class="wireframe-dominant-card" style="padding: 6px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div style="display: flex; gap: 5px; flex: 1;">
+                  <!-- Left Avatar Holder -->
+                  <div style="flex: 0 0 32%; display: flex; flex-direction: column; gap: 4px;">
+                    <div style="flex: 1; background: #4682B4; border-radius: 6px; padding: 6px; color: #fff; font-size: 7.5px;">
+                      <strong>Facilitator Script:</strong><br>"Welcome back team! Let's examine what happens..."
+                    </div>
+                    <div style="height: 38px; background: #D5E3EF; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+                      <div style="width: 26px; height: 26px; border-radius: 50%; background: #4682B4; border: 1.5px solid #fff;"></div>
+                    </div>
+                  </div>
+                  <!-- Right Content Area -->
+                  <div style="flex: 1; background: #FFFFFF; border: 1px solid #83ADCF; border-radius: 6px; padding: 8px;">
+                    <div style="font-size: 9px; font-weight: 900; color: #4682B4; margin-bottom: 4px;">The Receiving Trap</div>
+                    <p style="font-size: 7.5px; color: #222; line-height: 1.35;">
+                      When rush orders arrive, drivers demand immediate signatures. Don't sign blindly!
+                    </p>
+                  </div>
+                </div>
+                <!-- Caption Bar -->
+                <div style="background: #4682B4; color: #fff; border-radius: 4px; padding: 3px 8px; font-size: 7.5px; text-align: center; margin-top: 5px;">
+                  Always count every carton <span style="color: #6DC082; font-weight: 900; text-decoration: underline;">before</span> you sign.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Block A -->
+          <div class="wireframe-card">
+            <div class="wireframe-meta">
+              <h5>Block A: Single Hero (Segments 2 & 8)</h5>
+              <p>Full-width white card, bold Steel Blue headline, green payoff, zero caption bar.</p>
+            </div>
+            <div class="wireframe-stage">
+              <div class="wireframe-dominant-card" style="justify-content: center; align-items: center; text-align: center; padding: 16px;">
+                <div style="background: #D5E3EF; color: #4682B4; font-size: 8px; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-bottom: 8px;">
+                  CORE PRINCIPLE
+                </div>
+                <h3 style="color: #4682B4; font-size: 15px; font-weight: 900; line-height: 1.25; margin-bottom: 10px;">
+                  Your Signature is a Formal Legal Acceptance of Debt.
+                </h3>
+                <div style="background: #EAF6ED; border: 1.5px solid #6DC082; border-radius: 6px; padding: 6px 12px;">
+                  <span style="color: #1E7E34; font-size: 9.5px; font-weight: 900;">
+                    ✓ Payoff: Never sign until you count the actual boxes yourself.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Block B -->
+          <div class="wireframe-card">
+            <div class="wireframe-meta">
+              <h5>Block B: Split Blue-Dominant (Segment 2 Contrast)</h5>
+              <p>Solid blue card, 4px white border, 15px blue frame around nested white panel, inverted caption bar.</p>
+            </div>
+            <div class="wireframe-stage" style="padding: 6px;">
+              <div style="background: #4682B4; border: 2.5px solid #FFFFFF; border-radius: 8px; width: 100%; height: 100%; padding: 6px; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
+                <div style="display: flex; gap: 5px; flex: 1;">
+                  <div style="flex: 1; background: #FFFFFF; border-radius: 6px; padding: 6px;">
+                    <div style="color: #D9534F; font-size: 8px; font-weight: 900; margin-bottom: 2px;">THE BLIND SIGNATURE</div>
+                    <p style="font-size: 7px; color: #222; line-height: 1.3;">Signing POD on the truck gate without inspecting pallet contents.</p>
+                  </div>
+                  <div style="flex: 1; background: #FFFFFF; border-radius: 6px; padding: 6px;">
+                    <div style="color: #1E7E34; font-size: 8px; font-weight: 900; margin-bottom: 2px;">THE AUDIT-READY CHECK</div>
+                    <p style="font-size: 7px; color: #222; line-height: 1.3;">Matching PO quantity against physical inventory before ink touches paper.</p>
+                  </div>
+                </div>
+                <!-- Inverted Caption Bar -->
+                <div style="background: #FFFFFF; color: #4682B4; border-radius: 4px; padding: 3px 8px; font-size: 7.5px; text-align: center; margin-top: 4px;">
+                  Blind signatures mean <span style="color: #1E7E34; font-weight: 900; text-decoration: underline;">your</span> business pays the loss.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Block F -->
+          <div class="wireframe-card">
+            <div class="wireframe-meta">
+              <h5>Block F: Kinetic Workhorse (Segments 3, 4, 7)</h5>
+              <p>White card, title + kinetic list firing into Emerald + standard caption bar.</p>
+            </div>
+            <div class="wireframe-stage">
+              <div class="wireframe-dominant-card" style="justify-content: space-between; padding: 8px;">
+                <div>
+                  <h4 style="color: #4682B4; font-size: 11px; font-weight: 900; margin-bottom: 4px;">Receiving Steps (Kinetic Fire)</h4>
+                  <div style="display: flex; flex-direction: column; gap: 4px;">
+                    <div style="background: #F4F8FB; border: 1px solid #83ADCF; border-radius: 4px; padding: 3px 6px; font-size: 7.5px; color: #4A4A4A;">
+                      1. Match Purchase Order number
+                    </div>
+                    <div style="background: #F4F8FB; border: 1px solid #83ADCF; border-radius: 4px; padding: 3px 6px; font-size: 7.5px; color: #4A4A4A;">
+                      2. Inspect carton seals and outer shrink-wrap
+                    </div>
+                    <!-- Active Kinetic Item Firing -->
+                    <div style="background: #EAF6ED; border: 1.5px solid #6DC082; border-radius: 4px; padding: 3px 6px; font-size: 7.5px; color: #1E7E34; font-weight: 900; transform: translateX(8px);">
+                      🔥 3. Count physical boxes against delivery note
+                    </div>
+                  </div>
+                </div>
+                <div style="background: #4682B4; color: #fff; border-radius: 4px; padding: 3px 8px; font-size: 7.5px; text-align: center;">
+                  Always count <span style="color: #6DC082; font-weight: 900; text-decoration: underline;">physically</span> before signing.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Block QUOTE -->
+          <div class="wireframe-card">
+            <div class="wireframe-meta">
+              <h5>Block QUOTE: Statutory Authority (Segment 5)</h5>
+              <p>85% translucent Soft Ice Blue panel left with italic quote, plain-English translation right.</p>
+            </div>
+            <div class="wireframe-stage">
+              <div class="wireframe-dominant-card" style="padding: 6px; display: flex; flex-direction: row; gap: 5px;">
+                <div style="flex: 0 0 55%; background: #D5E3EF; border-left: 4px solid #4682B4; border-radius: 6px; padding: 8px; display: flex; flex-direction: column; justify-content: center;">
+                  <p style="font-size: 8px; font-style: italic; color: #4682B4; line-height: 1.35; margin-bottom: 4px;">
+                    "Every employer shall provide and maintain a working environment that is safe and without risk..."
+                  </p>
+                  <div style="font-size: 7px; font-weight: 700; color: #4682B4; text-transform: uppercase;">
+                    — OHS Act 85 of 1993, Section 8(1)
+                  </div>
+                </div>
+                <div style="flex: 1; background: #FFFFFF; border: 1px solid #83ADCF; border-radius: 6px; padding: 8px; display: flex; flex-direction: column; justify-content: center;">
+                  <div style="font-size: 8px; font-weight: 900; color: #1E7E34; text-transform: uppercase; margin-bottom: 2px;">
+                    Plain-English Rule:
+                  </div>
+                  <p style="font-size: 7.5px; color: #222; line-height: 1.3;">
+                    Clear receiving walkways of broken wooden pallets so workers never trip.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Block C -->
+          <div class="wireframe-card">
+            <div class="wireframe-meta">
+              <h5>Block C: Split + Diagram (Segment 6)</h5>
+              <p>White-dominant left rendering 1 of 4 archetypes (flow, comparison, matrix, loop), blue summary right.</p>
+            </div>
+            <div class="wireframe-stage">
+              <div class="wireframe-dominant-card" style="padding: 6px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div style="display: flex; gap: 5px; flex: 1;">
+                  <!-- Diagram Left -->
+                  <div style="flex: 1; background: #FFFFFF; border: 1px solid #83ADCF; border-radius: 6px; padding: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <div style="font-size: 8px; font-weight: 900; color: #4682B4; margin-bottom: 6px;">Receiving Flow Archetype</div>
+                    <div style="display: flex; align-items: center; gap: 4px; font-size: 7px;">
+                      <span style="background: #D5E3EF; padding: 2px 4px; border-radius: 3px;">Truck Bay</span> →
+                      <span style="background: #D5E3EF; padding: 2px 4px; border-radius: 3px;">Count</span> →
+                      <span style="background: #EAF6ED; color: #1E7E34; padding: 2px 4px; border-radius: 3px; font-weight: 700;">Sign GRV</span>
+                    </div>
+                  </div>
+                  <!-- Blue Summary Right -->
+                  <div style="flex: 0 0 38%; background: #4682B4; color: #fff; border-radius: 6px; padding: 6px; font-size: 7.5px;">
+                    <strong>Framework Point:</strong><br>The flow never skips the verification stage.
+                  </div>
+                </div>
+                <div style="background: #4682B4; color: #fff; border-radius: 4px; padding: 3px 8px; font-size: 7.5px; text-align: center; margin-top: 5px;">
+                  Follow the linear <span style="color: #6DC082; font-weight: 900; text-decoration: underline;">three-step</span> audit path.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <!-- TAB: WORD & PRINT -->
-      <div id="tab-word" class="tab-content active">
+      <div id="tab-word" class="tab-content">
         <div class="gov-rule-box">
           <h4>Page Geometry & Binding Gutter Standards</h4>
           <ul>
@@ -1225,40 +1799,6 @@
         <div class="gov-rule-box">
           <h4>Monochrome Laser Printer Fallback (Canon LBP252dw Compatible)</h4>
           <p>Emerald Green callouts use a <strong>4.5pt solid black left border + 1.5pt outer border</strong> with 5% K tint (#F4F4F4). Steel Blue callouts use a <strong>uniform 1.5pt border</strong> with 3% K tint (#F8F8F8). Both remain instantly distinguishable in black-and-white.</p>
-        </div>
-      </div>
-
-      <!-- TAB: PPT -->
-      <div id="tab-ppt" class="tab-content">
-        <div class="gov-rule-box">
-          <h4>Classroom Stage Architecture (Option A)</h4>
-          <ul>
-            <li><strong>Ratio:</strong> Widescreen 16:9 (33.867 cm × 19.05 cm / 1920×1080px).</li>
-            <li><strong>Background:</strong> Solid Steel Blue #4682B4 with optional organic corner blobs in #D5E3EF and #6DC082.</li>
-            <li><strong>Dominant White Card:</strong> Centered 1860×1020px rounded rectangle, 20px radius, 0px drop shadow.</li>
-          </ul>
-        </div>
-        <div class="gov-rule-box">
-          <h4>5 Canonical Slide Layouts</h4>
-          <p>1. Title Slide (LB-Logo, 44pt Steel Blue title, 20pt subtitle).<br>
-             2. Concept Slide (Max 4 bullets, 20pt dark ink, #6DC082 checkmark bullets).<br>
-             3. 2-Column Contrast Slide (Red mistake left vs. Green audit-ready right).<br>
-             4. Syndicate Drill Slide (Large 120px symbol on left, drill instructions on right).<br>
-             5. Statutory Authority Slide (Soft Ice Blue panel with italic legal quote + plain-English translation).</p>
-        </div>
-      </div>
-
-      <!-- TAB: VIDEO -->
-      <div id="tab-video" class="tab-content">
-        <div class="gov-rule-box">
-          <h4>Hyperframes Stage & Motion Grammar (Ratified V8.1)</h4>
-          <ul>
-            <li><strong>Stage:</strong> 1920×1080, Option A persistent white card (30px screen inset, 20px radius).</li>
-            <li><strong>5px Nesting Rule:</strong> Nested panels have 16px radius, 5px outer perimeter gap, 5px flush divider.</li>
-            <li><strong>Caption Bar:</strong> Steel Blue background, pure white text, active karaoke word underlined in #6DC082.</li>
-            <li><strong>Transitions:</strong> Silent directional panel morphs (top/bottom ±15px, kinetic fires +40px right).</li>
-            <li><strong>Deterministic Blueprint:</strong> Strictly typed JSON schema mapping segments to Blocks A, B, C, D, F, or QUOTE.</li>
-          </ul>
         </div>
       </div>
 
@@ -1284,7 +1824,7 @@
             <li><strong>Corner Geometry:</strong> 20px containers, 16px callout cards, 8-12px badges and pills.</li>
             <li><strong>Single Font:</strong> Roboto is the exclusive brand typeface.</li>
             <li><strong>Dual-Color Semantics:</strong> Steel Blue for structure/law; Emerald Green for action/takeaways; Validation Red for errors only.</li>
-            <li><strong>WCAG Contrast Law:</strong> Never use light emerald #6DC082 for small/medium body text. Use #1E7E34 for green headings and #222222 for reading copy.</li>
+            <li><strong>WCAG Contrast Law:</strong> Never use light emerald #6DC082 for small/medium body text. Use #1E7E34 for green headings and #222222 for reading body text.</li>
             <li><strong>South African Voice:</strong> Direct, floor-level SA English (Grade 7-8 reading level), coach tone ("you/your").</li>
           </ol>
         </div>
@@ -1467,16 +2007,14 @@
     }
 
     function copyLlmsUrl() {
-      const url = ASSETS_BASE.replace('/symbols/', '/llms.txt');
-      navigator.clipboard.writeText(url).then(() => {
-        showToast(`Copied llms.txt URL: ${url}`);
+      navigator.clipboard.writeText("https://obronie.github.io/learnblended-brand/llms.txt").then(() => {
+        showToast('Copied llms.txt URL!');
       });
     }
 
     function copyBrandkitUrl() {
-      const url = ASSETS_BASE.replace('/symbols/', '/brandkit-v8.2.md');
-      navigator.clipboard.writeText(url).then(() => {
-        showToast(`Copied Brand Kit URL: ${url}`);
+      navigator.clipboard.writeText("https://obronie.github.io/learnblended-brand/brandkit-v8.2.md").then(() => {
+        showToast('Copied Brand Kit URL!');
       });
     }
 
