@@ -1,4 +1,4 @@
-﻿# LEARN:BLENDED MASTER BRAND KIT V8.2
+# LEARN:BLENDED MASTER BRAND KIT V8.2
 **The Complete Omnichannel Visual, Messaging, BrainCert LMS HTML, Print, Office, Coding & Programmatic-Video Governance Manual**  
 **Tagline:** *"Blending excellence for you!"*  
 **Status:** Ratified (V8.2 — Omnichannel & AI-Optimized Edition) | **Owner:** Learn:Blended (Solo-Operator Authority)  
@@ -10,7 +10,7 @@
 
 ## 0. AI MODEL DIRECTIVE (SYSTEM PROMPT FOR ALL AI AGENTS)
 
-When any AI model (Gemini, Claude, ChatGPT, Antigravity, or Google AI Studio) generates course content, HTML, CSS, React apps, MS Word templates, PowerPoint decks, or video blueprints for **Learn:Blended**, it MUST strictly enforce these **8 Core Laws**:
+When any AI model (Gemini, Claude, ChatGPT, Antigravity, or Google AI Studio) generates course content, HTML, CSS, React apps, MS Word templates, PowerPoint decks, or video blueprints for **Learn:Blended**, it MUST strictly enforce these **10 Core Laws**:
 
 1. **The Clean White Reading Canvas Law (LMS, Word & Print):** Long-form learning content MUST use a **Pure White (`#FFFFFF`) background with crisp Dark Reading Ink (`#222222`) body text**. Never place multi-sentence paragraphs inside heavy dark or colored boxes. Use brand colors (`#4682B4` Steel Blue, `#6DC082` Emerald Green, `#D5E3EF` Soft Ice Blue, `#EAF6ED` Mint Ice) strictly as **structured visual enhancement blocks, callout borders, section headers, symbol cards, and summary tables** that break up the white page and guide the learner's eye.
 2. **The Strict Flatness Law:** `box-shadow: none` across all mediums. Never use drop shadows, text shadows, 3D bevels, skeuomorphic gradients, or neon glows in HTML, CSS, PowerPoint, Word, or Video. Depth and hierarchy are created strictly through solid borders (`1px` to `6px`), soft tint fills (`#F4F8FB`, `#D5E3EF`, `#EAF6ED`), and nested container spacing.
@@ -26,6 +26,8 @@ When any AI model (Gemini, Claude, ChatGPT, Antigravity, or Google AI Studio) ge
 6. **The WCAG Contrast Law:** Never render small or medium text in `#6DC082` (Emerald Green) on a white background (contrast is 2.35:1). Always use `#6DC082` for **borders, badges, and graphical icons**, and pair it with **`#1E7E34` (Dark Emerald)** for green headings/labels and **`#222222` (Reading Ink)** for body copy.
 7. **The South African Floor-Level Voice Law:** Write in direct, honest South African English (UK/SA spelling: *programme, organisation, labour, practise/practice*) at a **Grade 7–8 reading level**. Address the learner as *"you/your"* using a supportive workplace coach tone, never an academic examiner tone.
 8. **The No Legal Disclaimer Law:** Never insert legal disclaimers (such as *"Training content, not formal legal advice"*) in videos, BrainCert HTML lessons, PowerPoint slides, or printed manuals. The brand maintains authoritative, defensible training content without cluttering learning surfaces with disclaimers.
+9. **The Bold-Prefix / Regular-Body Law:** Never bold an entire sentence inside interactive options (`Option A/B/C`), accordion headers (`Click to Reveal`), numbered process steps, or bullet lists. Always style the **Lead-In Prefix** (`Option A:`, `Step 1:`, `💡 Click to Reveal:`) in **Roboto Bold (`700`)** using **Steel Blue (`#4682B4`)** or **Dark Emerald (`#1E7E34`)**, and style the **sentence following the colon** in **Roboto Regular (`400`)** using **Dark Reading Ink (`#222222`)**.
+10. **The Visual Illustration & Character Law:** Whenever an AI model generates or prompts for illustrations, scenario graphics, or character avatars across BrainCert HTML, PowerPoint, MS Word manuals, or Hyperframes Block D, it MUST enforce the **Learn:Blended 3D Realistic Pixar Aesthetic**: authentic South African workplace diversity, employees dressed in **Emerald Green (`#6DC082`) collared golf shirts and light blue denim jeans**, set in realistic South African work environments (warehouses, receiving bays, retail floors, offices) with subtle **Steel Blue (`#4682B4`) and Emerald Green (`#6DC082`)** architectural and equipment accents.
 
 ---
 
@@ -100,7 +102,8 @@ All instructional symbols share the V8.2 Unified Frame: a flat white rounded squ
 When authoring HTML lessons for BrainCert Enterprise LMS, AI models must never output unstyled walls of text or dark/heavy full-page backgrounds. Follow this strict **White-Canvas Rhythm**:
 1. **Base Canvas:** Pure White (`#FFFFFF`) container (`max-width: 840px`), `16px` Roboto Regular body copy in crisp Dark Reading Ink (`#222222`), line-height `1.65`.
 2. **Pacing Rule:** After every **2 short paragraphs (max 80–100 words)** of black-on-white reading text, insert a **Visual Enhancement Block** (Symbol Callout, Numbered Step Grid, Wrong/Right Contrast, Statutory Quote, Comparison Table, or Interactive Click-to-Reveal Check) to anchor comprehension visually.
-3. **BrainCert Editor Survival Rule:** BrainCert's rich-text editor strips `<style>`, `<script>`, and `onclick` tags inside lessons. **All HTML lesson code MUST use 100% self-contained inline CSS (`style="..."`) and pure HTML5 interactive tags (`<details>` and `<summary>`)** exactly as structured in the canonical templates below.
+3. **The Bold-Prefix / Regular-Body Law:** Never bold an entire sentence inside interactive options (`Option A/B/C`), accordion headers (`Click to Reveal`), numbered process steps, or bullet lists. Always style the **Lead-In Prefix** (`Option A:`, `Step 1:`, `💡 Click to Reveal:`) in **Roboto Bold (`700`)** using **Steel Blue (`#4682B4`)** or **Dark Emerald (`#1E7E34`)**, and style the **sentence following the colon** in **Roboto Regular (`400`)** using **Dark Reading Ink (`#222222`)**.
+4. **BrainCert HTML Pasting Rule (Code-View Governance):** Always paste and edit Learn:Blended HTML blocks inside BrainCert's **Code View (`</>`)** and save directly. Interactive `<details>`/`<summary>` blocks include explicit `display: list-item` and visual `[Check ▾]` / `[Reveal ▾]` badges to override BrainCert's Bootstrap CSS reset. *Note: Interactive HTML blocks are designed for instant formative self-checking during a lesson; use BrainCert's native Testing Engine for graded markbook assessments.*
 
 ### 4.2 The Canonical BrainCert Inline HTML Templates
 
@@ -195,7 +198,7 @@ When authoring HTML lessons for BrainCert Enterprise LMS, AI models must never o
 </div>
 ```
 
-#### Block 6: Numbered Step-by-Step Process Cards (Mirrors Video Block F Kinetic List)
+#### Block 6: Numbered Step-by-Step Process Cards (Bold Prefix + Regular Body)
 ```html
 <div style="margin: 22px 0; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
   <h2 style="color: #4682B4; font-size: 20px; font-weight: 700; margin: 0 0 12px 0;">
@@ -204,17 +207,17 @@ When authoring HTML lessons for BrainCert Enterprise LMS, AI models must never o
   <!-- Step 1 -->
   <div style="display: flex; align-items: center; gap: 14px; background-color: #FFFFFF; border: 1.5px solid #83ADCF; border-left: 6px solid #4682B4; border-radius: 12px; padding: 14px 16px; margin-bottom: 10px;">
     <div style="background-color: #4682B4; color: #FFFFFF; font-weight: 900; font-size: 15px; width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
-    <div style="font-size: 15.5px; color: #222222;"><strong style="color: #4682B4;">Match the Paperwork:</strong> Check that the supplier invoice matches your company Purchase Order number.</div>
+    <div style="font-size: 15.5px; color: #222222;"><strong style="color: #4682B4; font-weight: 700;">Match the Paperwork:</strong> Check that the supplier invoice matches your company Purchase Order number.</div>
   </div>
   <!-- Step 2 -->
   <div style="display: flex; align-items: center; gap: 14px; background-color: #FFFFFF; border: 1.5px solid #83ADCF; border-left: 6px solid #4682B4; border-radius: 12px; padding: 14px 16px; margin-bottom: 10px;">
     <div style="background-color: #4682B4; color: #FFFFFF; font-weight: 900; font-size: 15px; width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
-    <div style="font-size: 15.5px; color: #222222;"><strong style="color: #4682B4;">Inspect & Count Stock:</strong> Count every unit physically and check for water damage, broken seals, or expired dates.</div>
+    <div style="font-size: 15.5px; color: #222222;"><strong style="color: #4682B4; font-weight: 700;">Inspect & Count Stock:</strong> Count every unit physically and check for water damage, broken seals, or expired dates.</div>
   </div>
   <!-- Step 3 (Emerald Payoff Step) -->
   <div style="display: flex; align-items: center; gap: 14px; background-color: #EAF6ED; border: 1.5px solid #6DC082; border-left: 6px solid #6DC082; border-radius: 12px; padding: 14px 16px;">
     <div style="background-color: #1E7E34; color: #FFFFFF; font-weight: 900; font-size: 15px; width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
-    <div style="font-size: 15.5px; color: #222222;"><strong style="color: #1E7E34;">Record & Sign:</strong> Write any variances on the Goods Received Voucher (GRV) and get the driver to counter-sign.</div>
+    <div style="font-size: 15.5px; color: #222222;"><strong style="color: #1E7E34; font-weight: 700;">Record & Sign:</strong> Write any variances on the Goods Received Voucher (GRV) and get the driver to counter-sign.</div>
   </div>
 </div>
 ```
@@ -256,14 +259,14 @@ When authoring HTML lessons for BrainCert Enterprise LMS, AI models must never o
 </div>
 ```
 
-#### Interactive Block 9: Multi-Option Scenario Check (Click Option to Reveal Incorrect `#D9534F` vs. Correct `#1E7E34` Explanation)
+#### Interactive Block 9: Multi-Option Scenario Check (Bold Prefix + Regular Option Text + Bootstrap-Safe Badge)
 ```html
 <div style="background-color: #FFFFFF; border: 2px solid #4682B4; border-radius: 16px; padding: 22px; margin: 24px 0; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
   <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
     <img src="https://obronie.github.io/learnblended-brand/symbols/Assessment.png" alt="Quick Check" style="width: 48px; height: 48px; flex-shrink: 0; display: block;" />
     <div>
       <div style="font-size: 12px; font-weight: 900; text-transform: uppercase; color: #4682B4; letter-spacing: 0.6px;">
-        Interactive Floor Check • Click an Option to Check Your Answer
+        Interactive Floor Check • Click an Option Below
       </div>
       <div style="font-size: 17px; font-weight: 700; color: #222222; line-height: 1.35;">
         A courier arrives at 16:45 with 12 sealed cartons, but 2 cartons have crushed, wet corners. The driver asks you to sign a clean POD now because he is running late. What should you do?
@@ -273,11 +276,12 @@ When authoring HTML lessons for BrainCert Enterprise LMS, AI models must never o
 
   <!-- Option A: Incorrect -->
   <details style="margin-bottom: 10px; border: 1.5px solid #83ADCF; border-radius: 12px; background-color: #F4F8FB; overflow: hidden;">
-    <summary style="padding: 14px 16px; font-size: 15.5px; font-weight: 700; color: #222222; cursor: pointer; outline: none;">
-      Option A: Sign the POD so the driver can leave, then email the supplier tomorrow morning with photos.
+    <summary style="display: list-item; padding: 14px 16px; font-size: 15.5px; font-weight: 400; color: #222222; cursor: pointer; outline: none; line-height: 1.5;">
+      <strong style="color: #4682B4; font-weight: 700;">Option A:</strong> Sign the POD so the driver can leave, then email the supplier tomorrow morning with photos.
+      <span style="float: right; background-color: #D5E3EF; color: #4682B4; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 6px; margin-left: 8px;">Check ▾</span>
     </summary>
-    <div style="background-color: #FDF2F2; border-top: 2px solid #D9534F; padding: 14px 16px; font-size: 15px; color: #222222; line-height: 1.55;">
-      <strong style="color: #D9534F; text-transform: uppercase; font-size: 13px; display: block; margin-bottom: 4px;">
+    <div style="background-color: #FDF2F2; border-top: 2px solid #D9534F; padding: 14px 16px; font-size: 15px; font-weight: 400; color: #222222; line-height: 1.55;">
+      <strong style="color: #D9534F; text-transform: uppercase; font-size: 13px; font-weight: 900; display: block; margin-bottom: 4px;">
         ✗ Incorrect — Why This Puts the Store at Risk
       </strong>
       Signing a clean Proof of Delivery (POD) confirms the stock arrived in good condition. The supplier can reject a damage claim tomorrow because you signed off without noting the wet boxes.
@@ -286,11 +290,12 @@ When authoring HTML lessons for BrainCert Enterprise LMS, AI models must never o
 
   <!-- Option B: Correct -->
   <details style="margin-bottom: 10px; border: 1.5px solid #83ADCF; border-radius: 12px; background-color: #F4F8FB; overflow: hidden;">
-    <summary style="padding: 14px 16px; font-size: 15.5px; font-weight: 700; color: #222222; cursor: pointer; outline: none;">
-      Option B: Write "2 cartons crushed/wet — subject to check" on both copies of the POD and GRV, and get the driver to counter-sign before signing.
+    <summary style="display: list-item; padding: 14px 16px; font-size: 15.5px; font-weight: 400; color: #222222; cursor: pointer; outline: none; line-height: 1.5;">
+      <strong style="color: #4682B4; font-weight: 700;">Option B:</strong> Write "2 cartons crushed/wet — subject to check" on both copies of the POD and GRV, and get the driver to counter-sign before signing.
+      <span style="float: right; background-color: #D5E3EF; color: #4682B4; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 6px; margin-left: 8px;">Check ▾</span>
     </summary>
-    <div style="background-color: #EAF6ED; border-top: 2px solid #6DC082; padding: 14px 16px; font-size: 15px; color: #222222; line-height: 1.55;">
-      <strong style="color: #1E7E34; text-transform: uppercase; font-size: 13px; display: block; margin-bottom: 4px;">
+    <div style="background-color: #EAF6ED; border-top: 2px solid #6DC082; padding: 14px 16px; font-size: 15px; font-weight: 400; color: #222222; line-height: 1.55;">
+      <strong style="color: #1E7E34; text-transform: uppercase; font-size: 13px; font-weight: 900; display: block; margin-bottom: 4px;">
         ✓ Correct — Audit-Ready Floor Practice
       </strong>
       Recording the exact variance on the delivery note and Goods Received Voucher (GRV) with the driver's counter-signature gives Procurement solid proof for a credit note.
@@ -299,11 +304,12 @@ When authoring HTML lessons for BrainCert Enterprise LMS, AI models must never o
 
   <!-- Option C: Incorrect -->
   <details style="border: 1.5px solid #83ADCF; border-radius: 12px; background-color: #F4F8FB; overflow: hidden;">
-    <summary style="padding: 14px 16px; font-size: 15.5px; font-weight: 700; color: #222222; cursor: pointer; outline: none;">
-      Option C: Accept all 12 cartons quietly and throw the 2 damaged cartons in the skip.
+    <summary style="display: list-item; padding: 14px 16px; font-size: 15.5px; font-weight: 400; color: #222222; cursor: pointer; outline: none; line-height: 1.5;">
+      <strong style="color: #4682B4; font-weight: 700;">Option C:</strong> Accept all 12 cartons quietly and throw the 2 damaged cartons in the skip.
+      <span style="float: right; background-color: #D5E3EF; color: #4682B4; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 6px; margin-left: 8px;">Check ▾</span>
     </summary>
-    <div style="background-color: #FDF2F2; border-top: 2px solid #D9534F; padding: 14px 16px; font-size: 15px; color: #222222; line-height: 1.55;">
-      <strong style="color: #D9534F; text-transform: uppercase; font-size: 13px; display: block; margin-bottom: 4px;">
+    <div style="background-color: #FDF2F2; border-top: 2px solid #D9534F; padding: 14px 16px; font-size: 15px; font-weight: 400; color: #222222; line-height: 1.55;">
+      <strong style="color: #D9534F; text-transform: uppercase; font-size: 13px; font-weight: 900; display: block; margin-bottom: 4px;">
         ✗ Incorrect — Never Destroy Stock Evidence
       </strong>
       Throwing away damaged goods causes an unexplained stock shrinkage variance. Always quarantine damaged items in the returns cage and record them on the GRV.
@@ -312,16 +318,27 @@ When authoring HTML lessons for BrainCert Enterprise LMS, AI models must never o
 </div>
 ```
 
-#### Interactive Block 10: Click-to-Reveal Coaching / FAQ Accordion Card
+#### Interactive Block 10: Click-to-Reveal Coaching / FAQ Accordion Card (Bold Prefix + Regular Question Text)
 ```html
 <details style="background-color: #FFFFFF; border: 2px solid #6DC082; border-radius: 16px; margin: 20px 0; font-family: 'Roboto', Arial, sans-serif; overflow: hidden; box-sizing: border-box;">
-  <summary style="background-color: #EAF6ED; padding: 16px 20px; font-size: 16px; font-weight: 700; color: #1E7E34; cursor: pointer; outline: none;">
-    💡 Click to Reveal: What should you do if the truck seal number does not match the manifest?
+  <summary style="display: list-item; background-color: #EAF6ED; padding: 16px 20px; font-size: 15.5px; font-weight: 400; color: #222222; cursor: pointer; outline: none; line-height: 1.5;">
+    <strong style="color: #1E7E34; font-weight: 700;">💡 Click to Reveal:</strong> What should you do if the truck seal number does not match the manifest?
+    <span style="float: right; background-color: #FFFFFF; border: 1px solid #6DC082; color: #1E7E34; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 6px; margin-left: 8px;">Reveal ▾</span>
   </summary>
-  <div style="padding: 18px 20px; background-color: #FFFFFF; color: #222222; font-size: 15.5px; line-height: 1.6; border-top: 1px solid #6DC082;">
-    <strong>Stop off-loading immediately and do not break the seal.</strong> Take a clear photo of the seal on the truck door, call your supervisor to witness it, and record the seal mismatch on the gate register before opening the doors.
+  <div style="padding: 18px 20px; background-color: #FFFFFF; color: #222222; font-size: 15.5px; font-weight: 400; line-height: 1.6; border-top: 1px solid #6DC082;">
+    <strong style="color: #1E7E34; font-weight: 700;">Stop off-loading immediately:</strong> Do not break the seal yourself. Take a clear photo of the seal on the truck door, call your supervisor to witness it, and record the seal mismatch on the gate register before opening the doors.
   </div>
 </details>
+```
+
+#### Block 11: Scenario Image Frame Container
+```html
+<div style="background-color: #F4F8FB; border: 2px solid #83ADCF; border-radius: 16px; overflow: hidden; margin: 22px 0; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
+  <img src="https://obronie.github.io/learnblended-brand/assets/scenario-placeholder.jpg" alt="South African workplace scenario" style="width: 100%; height: auto; display: block; margin: 0;" />
+  <div style="padding: 10px 16px; font-size: 13.5px; color: #4A4A4A; border-top: 1px solid #D5E3EF; background-color: #FFFFFF;">
+    <strong style="color: #4682B4; font-weight: 700;">On the Floor:</strong> Always check the physical carton count against your Purchase Order before signing the driver's delivery note.
+  </div>
+</div>
 ```
 
 ---
@@ -491,8 +508,60 @@ When coding interactive classroom response tools, learner registration forms, or
 
 ---
 
-## 9. ASSET VERIFICATION & VERSION CONTROL
+## 9. AI IMAGE, CHARACTER & SCENE GENERATION GOVERNANCE (V8.2)
+
+### 9.1 Core Visual Aesthetic: "Realistic Pixar Studio 3D"
+All custom illustrations, scenario headers, character avatars (including Hyperframes Block D), and manual graphics must share one unmistakable visual signature:
+* **Render Style:** High-end **Realistic Pixar / Disney feature-animation 3D style**—warm cinematic global illumination, realistic subsurface skin textures, expressive friendly faces, natural human proportions (never big-headed chibi/caricature), and crisp depth-of-field.
+* **Authentic South African Representation:** Characters must reflect the true demographic diversity of the South African workforce across age, gender, and heritage (Black, Coloured, Indian, and White South African team members working collaboratively).
+* **BANNED Visual Tropes:** Generic flat 2D corporate "Memphis/Algeria" vector art, cold stock photography of American skyscrapers, dollar signs (`$` instead of `R` / ZAR), left-hand-drive trucks, or gloomy/gritty industrial lighting.
+
+### 9.2 Mandatory Employee Wardrobe & Uniform Standard
+To make every Learn:Blended learner immediately identify the protagonist on screen or in print:
+* **Top (Mandatory):** Clean, well-fitted **Emerald Green (`#6DC082`) short-sleeve collared golf shirt / polo shirt** (optionally featuring the subtle Learn:Blended `lb` monogram on the left chest).
+* **Bottoms (Mandatory):** Neat, practical **light blue denim jeans** (`#83ADCF` to classic light-wash indigo tone).
+* **Role-Specific PPE Add-Ons (When in Warehouse / Dispatch / Receiving Scenarios):**
+  * High-visibility reflective safety vest worn *open* over the Emerald Green golf shirt (or safety harness straps that still leave the Emerald Green shirt clearly visible).
+  * Steel-toe safety boots, clipboard with Goods Received Voucher (GRV), or handheld barcode scanner.
+
+### 9.3 Subtle Brand-Aligned Work Environment Rules
+The background environment must feel like a real, tidy South African SME workplace (warehouse receiving bay, retail store backroom, dispatch desk, or training room) while subtly echoing the Learn:Blended color palette:
+* **Steel Blue (`#4682B4`) Environmental Accents:** Warehouse pallet racking uprights, painted floor walkway border lines, noticeboard frames, folders, or office feature trim.
+* **Emerald Green (`#6DC082`) & Soft Ice Blue (`#D5E3EF`) Accents:** Safety signage headers, storage bins, directional arrows, or sunlit wall panels.
+* **South African Environmental Anchors:** Standard wooden CHEP-style pallets, brown corrugated cartons, roller-shutter receiving doors, South African 3-pin plugs/equipment, and local signage in UK/SA English.
+
+### 9.4 Recurring Instructional Character Cast (Consistent Persona Reference)
+When generating multi-part courses or Hyperframes Block D avatar scenes, maintain continuity using the established Learn:Blended cast:
+* **Siya:** Friendly Black South African male warehouse/receiving clerk (early 30s, short neat fade, warm confident expression, wearing the Emerald Green golf shirt and light blue jeans).
+* **Tumi:** Approachable Black South African female operations/inventory coordinator (late 20s, braided hair tied back neatly, holding clipboard/scanner, Emerald Green golf shirt and light blue jeans).
+* **Lauren:** Organised Coloured South African female HR / admin / retail supervisor (30s, shoulder-length dark wavy hair, warm coach demeanour, Emerald Green golf shirt and light blue jeans).
+* **Sipho:** Experienced Black South African male forklift/dispatch team leader (40s, short beard with a touch of grey, calm mentor presence, Emerald Green golf shirt and light blue jeans).
+* **Gail:** Practical White South African female office/procurement administrator (40s, glasses, friendly professional smile, Emerald Green golf shirt and light blue jeans).
+* **Lerato:** Energetic young Black South African female junior store person / learner (early 20s, curious engaged expression, Emerald Green golf shirt and light blue jeans).
+* **Thabo:** Detail-oriented Black South African male dispatch & receiving clerk (late 20s, inspecting stock labels carefully, Emerald Green golf shirt and light blue jeans).
+
+### 9.5 Deterministic AI Image Prompt Formula (Copy-Paste Template for Any Image AI)
+Whenever an AI generates an image prompt for Imagen, Midjourney, DALL-E, or Antigravity, it must construct the prompt using this exact 5-part formula:
+
+> **Master Prompt Template:**  
+> *"Realistic 3D Pixar movie animation style, medium shot of **[Character Description & Diverse South African Team Member(s)]** wearing a crisp **emerald green (`#6DC082`) collared golf shirt and light blue denim jeans**, actively **[Specific Workplace Action / Scenario]** inside a bright, tidy South African **[Workplace Setting: e.g., warehouse receiving bay / retail stockroom / SME office]**. The environment features subtle **steel blue (`#4682B4`)** pallet racking and painted floor lines, with **soft ice blue (`#D5E3EF`)** wall accents and warm natural daylight. Expressive friendly faces, cinematic Pixar lighting, ultra-clean 3D textures, shallow depth of field, 16:9 aspect ratio, no text overlays."*
+
+### 9.6 Embedding Generated Images in BrainCert HTML & MS Word (Container Rule)
+Generated scenario images must never float unframed or use drop shadows. Always wrap scenario illustrations inside the **V8.2 Flat Image Frame** (`16px` border-radius, `2px solid #83ADCF` border, optional `#F4F8FB` caption bar):
+
+```html
+<!-- BRAINCERT HTML SCENARIO IMAGE BLOCK -->
+<div style="background-color: #F4F8FB; border: 2px solid #83ADCF; border-radius: 16px; overflow: hidden; margin: 22px 0; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
+  <img src="https://obronie.github.io/learnblended-brand/assets/scenario-placeholder.jpg" alt="South African workplace scenario" style="width: 100%; height: auto; display: block; margin: 0;" />
+  <div style="padding: 10px 16px; font-size: 13.5px; color: #4A4A4A; border-top: 1px solid #D5E3EF; background-color: #FFFFFF;">
+    <strong style="color: #4682B4; font-weight: 700;">On the Floor:</strong> Always check the physical carton count against your Purchase Order before signing the driver's delivery note.
+  </div>
+</div>
+```
+
+---
+
+## 10. ASSET VERIFICATION & VERSION CONTROL
 * **Video Reference Proof:** `renders/v8-option-a-all-blocks/v8-option-a-morphs.mp4`
 * **Symbol Set Verification:** 8 standardized PNG assets (`LMS.png`, `Learner-Guide.png`, `Practical.png`, `Assessment.png`, `Discussion.png`, `Information.png`, `MS-Teams.png`, `LB-Logo.png`).
 * **Change Governance:** This document represents **Brand Kit V8.2**. Any future modifications require formal version incrementation (`V8.3+`) and synchronization to the GitHub Pages `llms.txt` endpoint.
-

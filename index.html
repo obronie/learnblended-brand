@@ -497,6 +497,107 @@
       margin-bottom: 4px;
     }
 
+    /* Character Grid & AI Image Spec */
+    .character-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 18px;
+      margin: 20px 0;
+    }
+    .character-card {
+      background-color: var(--lb-white);
+      border: 1.5px solid var(--lb-light-blue);
+      border-radius: var(--lb-radius-md);
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: none !important;
+      transition: border-color 0.2s;
+    }
+    .character-card:hover {
+      border-color: var(--lb-blue);
+    }
+    .character-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--lb-ice-blue);
+    }
+    .character-avatar-badge {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: var(--lb-mint-tint);
+      border: 2px solid var(--lb-emerald);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      color: var(--lb-dark-emerald);
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+    .character-title-wrap {
+      flex: 1;
+    }
+    .character-name {
+      font-size: 17px;
+      font-weight: 900;
+      color: var(--lb-blue);
+      margin: 0 0 2px 0;
+    }
+    .character-role {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--lb-dark-emerald);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+    .character-details {
+      font-size: 13.5px;
+      color: var(--lb-ink);
+      line-height: 1.5;
+      margin-bottom: 14px;
+      flex: 1;
+    }
+    .character-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .char-badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+    .char-badge-green {
+      background-color: var(--lb-mint-tint);
+      color: var(--lb-dark-emerald);
+      border: 1px solid #c2e5cc;
+    }
+    .char-badge-blue {
+      background-color: var(--lb-ice-tint);
+      color: var(--lb-blue);
+      border: 1px solid #c2d7e9;
+    }
+    .prompt-preview-box {
+      background-color: var(--lb-ice-tint);
+      border: 1px solid var(--lb-light-blue);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-family: monospace;
+      font-size: 11.5px;
+      color: var(--lb-charcoal);
+      line-height: 1.45;
+      margin-bottom: 12px;
+      max-height: 90px;
+      overflow-y: auto;
+    }
+
     /* Structured Tables */
     .spec-table {
       width: 100%;
@@ -636,6 +737,7 @@
       <a href="#symbols" class="nav-btn">📐 Official Symbols</a>
       <a href="#builder" class="nav-btn">⚡ BrainCert HTML Builder</a>
       <a href="#governance" class="nav-btn">📋 Channel Governance</a>
+      <a href="#governance" class="nav-btn" onclick="openTab('tab-images')">🖼️ AI Image Prompts</a>
     </nav>
 
     <!-- TOP AI PROMPT BAR -->
@@ -647,7 +749,7 @@
         </div>
         <div class="ai-actions">
           <button class="btn btn-emerald" onclick="copyAiDirective()">
-            📋 Copy 8 Core AI Laws (System Prompt)
+            📋 Copy 10 Core AI Laws (System Prompt)
           </button>
           <button class="btn btn-blue" onclick="copyLlmsUrl()">
             🔗 Copy llms.txt URL
@@ -1043,7 +1145,7 @@
       <div class="section-title-wrap">
         <div>
           <h2 class="section-title">Live BrainCert LMS HTML Component Builder</h2>
-          <p class="section-desc">10 canonical inline HTML templates for BrainCert WYSIWYG lessons (zero &lt;style&gt; or &lt;script&gt; dependencies).</p>
+          <p class="section-desc">11 canonical inline HTML templates for BrainCert WYSIWYG lessons (zero &lt;style&gt; or &lt;script&gt; dependencies).</p>
         </div>
       </div>
 
@@ -1369,6 +1471,7 @@
         <button class="tab-btn" onclick="openTab('tab-video')">🎬 Hyperframes Video (V8.1)</button>
         <button class="tab-btn" onclick="openTab('tab-word')">📄 MS Word & Print Manuals</button>
         <button class="tab-btn" onclick="openTab('tab-code')">💻 Web, Kadence & React</button>
+        <button class="tab-btn" onclick="openTab('tab-images')">🖼️ AI Image Prompts</button>
         <button class="tab-btn" onclick="openTab('tab-ai')">🤖 AI Core Directives</button>
       </div>
 
@@ -1884,19 +1987,202 @@
         </div>
       </div>
 
+      <!-- TAB: AI IMAGE PROMPTS (SECTION 9) -->
+      <div id="tab-images" class="tab-content">
+        <div class="gov-rule-box">
+          <h4>Section 9: AI Image, Character &amp; Scene Generation Governance (V8.2)</h4>
+          <p>
+            All custom illustrations, scenario headers, and character avatars across BrainCert HTML, PowerPoint, MS Word, and Hyperframes Video Block D must strictly enforce the <strong>Realistic Pixar Studio 3D</strong> aesthetic.
+          </p>
+          <ul>
+            <li><strong>Core Visual Aesthetic:</strong> High-end Realistic Pixar/Disney 3D animation style — warm cinematic global illumination, realistic subsurface skin textures, friendly expressive faces, natural human proportions (never chibi/caricature), and crisp depth-of-field.</li>
+            <li><strong>South African Diversity:</strong> Authentic representation of Black, Coloured, Indian, and White South African team members working collaboratively.</li>
+            <li><strong>Mandatory Uniform:</strong> Protagonists MUST wear clean, well-fitted <strong>Emerald Green (<code>#6DC082</code>) collared polo/golf shirts</strong> and neat <strong>light blue denim jeans</strong>. For warehouse/receiving scenarios, add an open high-visibility reflective safety vest and steel-toe boots.</li>
+            <li><strong>Subtle Brand-Aligned Environment:</strong> Tidy South African SME workplaces featuring <strong>Steel Blue (<code>#4682B4</code>)</strong> pallet racking/walkways, <strong>Soft Ice Blue (<code>#D5E3EF</code>)</strong> wall trims, brown CHEP pallets, and UK/SA English signage.</li>
+          </ul>
+        </div>
+
+        <div style="background-color: var(--lb-ice-tint); border: 2px solid var(--lb-blue); border-radius: 14px; padding: 20px; margin: 24px 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 10px;">
+            <div>
+              <div style="font-size: 11.5px; font-weight: 900; color: var(--lb-blue); text-transform: uppercase; letter-spacing: 0.6px;">Master AI Image Prompt Formula (Section 9.5)</div>
+              <div style="font-size: 16px; font-weight: 900; color: var(--lb-ink);">Deterministic 5-Part Prompt Architecture</div>
+            </div>
+            <button class="btn btn-blue btn-sm" style="width: auto; padding: 6px 14px;" onclick="copyMasterPrompt()">📋 Copy Prompt Template</button>
+          </div>
+          <div style="background-color: #FFFFFF; border: 1px solid var(--lb-light-blue); border-radius: 10px; padding: 14px 16px; font-size: 13.5px; color: var(--lb-charcoal); line-height: 1.6;">
+            <em>"Realistic 3D Pixar movie animation style, medium shot of <strong>[Character Description &amp; Diverse South African Team Member(s)]</strong> wearing a crisp <strong>emerald green (#6DC082) collared golf shirt and light blue denim jeans</strong>, actively <strong>[Specific Workplace Action / Scenario]</strong> inside a bright, tidy South African <strong>[Workplace Setting: e.g., warehouse receiving bay / retail stockroom / SME office]</strong>. The environment features subtle <strong>steel blue (#4682B4)</strong> pallet racking and painted floor lines, with <strong>soft ice blue (#D5E3EF)</strong> wall accents and warm natural daylight. Expressive friendly faces, cinematic Pixar lighting, ultra-clean 3D textures, shallow depth of field, 16:9 aspect ratio, no text overlays."</em>
+          </div>
+        </div>
+
+        <h3 style="color: var(--lb-blue); font-size: 18px; font-weight: 900; margin: 28px 0 14px 0;">
+          The 7 Canonical Instructional Characters (Consistent Personas)
+        </h3>
+        <p style="font-size: 14px; color: var(--lb-charcoal); margin-bottom: 18px;">
+          Use these established personas for course continuity. Click any button to copy a ready-to-run prompt for Gemini Imagen, Midjourney, or DALL-E:
+        </p>
+
+        <div class="character-grid">
+          <!-- SIYA -->
+          <div class="character-card">
+            <div class="character-header">
+              <div class="character-avatar-badge">SI</div>
+              <div class="character-title-wrap">
+                <div class="character-name">Siya</div>
+                <div class="character-role">Receiving Bay Supervisor</div>
+              </div>
+            </div>
+            <div class="character-badge-row">
+              <span class="char-badge char-badge-green">Emerald Polo + Blue Jeans</span>
+              <span class="char-badge char-badge-blue">Warehouse / Receiving</span>
+            </div>
+            <div class="character-details">
+              Friendly Black South African male (early 30s, short neat fade, warm confident expression). Inspects GRVs, checks supplier delivery notes, and verifies carton condition at the receiving dock.
+            </div>
+            <button class="btn btn-blue btn-sm" onclick="copyCharacterPrompt('siya')">📋 Copy Siya Prompt</button>
+          </div>
+
+          <!-- TUMI -->
+          <div class="character-card">
+            <div class="character-header">
+              <div class="character-avatar-badge">TU</div>
+              <div class="character-title-wrap">
+                <div class="character-name">Tumi</div>
+                <div class="character-role">Operations &amp; Inventory Coordinator</div>
+              </div>
+            </div>
+            <div class="character-badge-row">
+              <span class="char-badge char-badge-green">Emerald Polo + Blue Jeans</span>
+              <span class="char-badge char-badge-blue">Stockroom / Inventory</span>
+            </div>
+            <div class="character-details">
+              Approachable Black South African female (late 20s, neatly braided hair, holding barcode scanner). Performs cycle counts, investigates variances, and manages stock bin locations.
+            </div>
+            <button class="btn btn-blue btn-sm" onclick="copyCharacterPrompt('tumi')">📋 Copy Tumi Prompt</button>
+          </div>
+
+          <!-- LAUREN -->
+          <div class="character-card">
+            <div class="character-header">
+              <div class="character-avatar-badge">LA</div>
+              <div class="character-title-wrap">
+                <div class="character-name">Lauren</div>
+                <div class="character-role">Retail &amp; Admin Supervisor</div>
+              </div>
+            </div>
+            <div class="character-badge-row">
+              <span class="char-badge char-badge-green">Emerald Polo + Blue Jeans</span>
+              <span class="char-badge char-badge-blue">SME Office / Retail</span>
+            </div>
+            <div class="character-details">
+              Organised Coloured South African female (30s, shoulder-length dark wavy hair, warm coach demeanor). Facilitates floor briefings, audits PoE evidence, and guides workplace learners.
+            </div>
+            <button class="btn btn-blue btn-sm" onclick="copyCharacterPrompt('lauren')">📋 Copy Lauren Prompt</button>
+          </div>
+
+          <!-- SIPHO -->
+          <div class="character-card">
+            <div class="character-header">
+              <div class="character-avatar-badge">SP</div>
+              <div class="character-title-wrap">
+                <div class="character-name">Sipho</div>
+                <div class="character-role">Forklift &amp; Dispatch Team Leader</div>
+              </div>
+            </div>
+            <div class="character-badge-row">
+              <span class="char-badge char-badge-green">Emerald Polo + Open Hi-Vis</span>
+              <span class="char-badge char-badge-blue">Staging / Logistics</span>
+            </div>
+            <div class="character-details">
+              Experienced Black South African male (40s, short beard with grey flecks, calm mentor presence). Enforces OHS pallet safety, supervises reach-truck operations, and verifies load strapping.
+            </div>
+            <button class="btn btn-blue btn-sm" onclick="copyCharacterPrompt('sipho')">📋 Copy Sipho Prompt</button>
+          </div>
+
+          <!-- GAIL -->
+          <div class="character-card">
+            <div class="character-header">
+              <div class="character-avatar-badge">GA</div>
+              <div class="character-title-wrap">
+                <div class="character-name">Gail</div>
+                <div class="character-role">Office &amp; Procurement Admin</div>
+              </div>
+            </div>
+            <div class="character-badge-row">
+              <span class="char-badge char-badge-green">Emerald Polo + Blue Jeans</span>
+              <span class="char-badge char-badge-blue">Admin &amp; Purchasing</span>
+            </div>
+            <div class="character-details">
+              Practical White South African female (40s, glasses, friendly professional smile). Cross-references Purchase Orders against supplier invoices, issues credit requests, and tracks POPIA logs.
+            </div>
+            <button class="btn btn-blue btn-sm" onclick="copyCharacterPrompt('gail')">📋 Copy Gail Prompt</button>
+          </div>
+
+          <!-- LERATO -->
+          <div class="character-card">
+            <div class="character-header">
+              <div class="character-avatar-badge">LE</div>
+              <div class="character-title-wrap">
+                <div class="character-name">Lerato</div>
+                <div class="character-role">Junior Store Associate &amp; Learner</div>
+              </div>
+            </div>
+            <div class="character-badge-row">
+              <span class="char-badge char-badge-green">Emerald Polo + Blue Jeans</span>
+              <span class="char-badge char-badge-blue">Frontline Learner</span>
+            </div>
+            <div class="character-details">
+              Energetic young Black South African female (early 20s, curious engaged expression). Checks stock expiry dates, unpacks shelf stock, and asks practical questions about correct bay procedures.
+            </div>
+            <button class="btn btn-blue btn-sm" onclick="copyCharacterPrompt('lerato')">📋 Copy Lerato Prompt</button>
+          </div>
+
+          <!-- THABO -->
+          <div class="character-card">
+            <div class="character-header">
+              <div class="character-avatar-badge">TH</div>
+              <div class="character-title-wrap">
+                <div class="character-name">Thabo</div>
+                <div class="character-role">Dispatch &amp; Receiving Clerk</div>
+              </div>
+            </div>
+            <div class="character-badge-row">
+              <span class="char-badge char-badge-green">Emerald Polo + Blue Jeans</span>
+              <span class="char-badge char-badge-blue">Dispatch Dock</span>
+            </div>
+            <div class="character-details">
+              Detail-oriented Black South African male (late 20s, focused meticulous demeanor). Inspects shipping labels, prepares courier waybills, and seals outgoing delivery pallets.
+            </div>
+            <button class="btn btn-blue btn-sm" onclick="copyCharacterPrompt('thabo')">📋 Copy Thabo Prompt</button>
+          </div>
+        </div>
+
+        <h3 style="color: var(--lb-blue); font-size: 18px; font-weight: 900; margin: 28px 0 12px 0;">
+          Section 9.6: Scenario Image Container Rule (BrainCert &amp; Word)
+        </h3>
+        <p style="font-size: 14px; color: var(--lb-charcoal); margin-bottom: 14px;">
+          Generated scenario images must never float unframed or use drop shadows. Always wrap illustrations inside the <strong>V8.2 Flat Image Frame</strong>:
+        </p>
+        <div style="display: flex; gap: 12px; margin-bottom: 16px;">
+          <button class="btn btn-blue btn-sm" style="width: auto; padding: 6px 14px;" onclick="copyTemplate('tpl-11')">📋 Copy Container HTML</button>
+        </div>
+      </div>
+
       <!-- TAB: AI DIRECTIVES -->
       <div id="tab-ai" class="tab-content">
         <div class="gov-rule-box">
-          <h4>The 8 Core Laws for All AI Models</h4>
-          <ol style="margin-left: 20px; font-size: 14px; line-height: 1.6;">
-            <li><strong>Clean White Canvas:</strong> Long-form content must use #FFFFFF background with #222222 reading ink.</li>
-            <li><strong>Strict Flatness:</strong> <code>box-shadow: none</code> across all mediums. Zero exceptions.</li>
-            <li><strong>Corner Geometry:</strong> 20px containers, 16px callout cards, 8-12px badges and pills.</li>
-            <li><strong>Single Font:</strong> Roboto is the exclusive brand typeface.</li>
-            <li><strong>Dual-Color Semantics:</strong> Steel Blue for structure/law; Emerald Green for action/takeaways; Validation Red for errors only.</li>
-            <li><strong>WCAG Contrast Law:</strong> Never use light emerald #6DC082 for small/medium body text. Use #1E7E34 for green headings and #222222 for reading body text.</li>
-            <li><strong>South African Voice:</strong> Direct, floor-level SA English (Grade 7-8 reading level), coach tone ("you/your").</li>
-            <li><strong>No Legal Disclaimer Law:</strong> Never insert legal disclaimers (such as "Training content, not formal legal advice") in videos, BrainCert HTML lessons, PowerPoint slides, or printed manuals.</li>
+          <h4>The 10 Core Laws for All AI Models</h4>
+          <ol style="margin-left: 20px; font-size: 14px; line-height: 1.65;">
+            <li><strong>The Clean White Reading Canvas Law:</strong> Long-form learning content MUST use a Pure White (<code>#FFFFFF</code>) background with crisp Dark Reading Ink (<code>#222222</code>) body text. Never place multi-sentence paragraphs inside heavy dark or colored boxes.</li>
+            <li><strong>The Strict Flatness Law:</strong> <code>box-shadow: none</code> across all mediums (HTML, CSS, PowerPoint, Word, Video). Depth is created strictly via borders and soft tints.</li>
+            <li><strong>The Corner Geometry Law:</strong> Outer containers = <code>20px</code> radius; Callout cards &amp; inner panels = <code>16px</code> radius; Badges, pills &amp; table wrappers = <code>8px</code> to <code>12px</code> radius.</li>
+            <li><strong>The Single Font Law:</strong> <strong>Roboto</strong> is the exclusive typeface across all digital, video, and print channels.</li>
+            <li><strong>The Dual-Color Semantic Law:</strong> Steel Blue (<code>#4682B4</code>) for structure, law, and assessment; Emerald Green (<code>#6DC082</code> graphics / <code>#1E7E34</code> text) for action, payoff, and LMS tasks; Validation Red (<code>#D9534F</code>) for errors only.</li>
+            <li><strong>The WCAG Contrast Law:</strong> Never render body text in light Emerald <code>#6DC082</code> on white. Pair <code>#6DC082</code> graphics/borders with <code>#1E7E34</code> for green headings and <code>#222222</code> for reading body copy.</li>
+            <li><strong>The South African Floor-Level Voice Law:</strong> Direct, honest South African English (UK/SA spelling) at a Grade 7–8 reading level, using a supportive workplace coach tone ("you/your").</li>
+            <li><strong>The No Legal Disclaimer Law:</strong> Never insert legal disclaimers (such as "Training content, not formal legal advice") in videos, BrainCert HTML lessons, PowerPoint slides, or printed manuals.</li>
+            <li><strong>The Bold-Prefix / Regular-Body Law:</strong> Never bold an entire sentence inside interactive options, accordion headers, process steps, or bullet lists. Bold the lead-in prefix in <code>#4682B4</code> or <code>#1E7E34</code> and keep the sentence in Regular <code>400</code> <code>#222222</code>.</li>
+            <li><strong>The Visual Illustration &amp; Character Law:</strong> All generated graphics must use the Realistic 3D Pixar aesthetic with South African workplace diversity, characters dressed in Emerald Green (<code>#6DC082</code>) collared golf shirts and light blue denim jeans in clean local work environments with Steel Blue (<code>#4682B4</code>) accents.</li>
           </ol>
         </div>
       </div>
@@ -2099,7 +2385,7 @@
 </details>`
     };
 
-    const AI_DIRECTIVE_TEXT = `When generating course content, HTML, CSS, React apps, MS Word templates, PowerPoint decks, or video blueprints for Learn:Blended, strictly enforce these 8 Core Laws:
+    const AI_DIRECTIVE_TEXT = `When generating course content, HTML, CSS, React apps, MS Word templates, PowerPoint decks, or video blueprints for Learn:Blended, strictly enforce these 10 Core Laws:
 
 1. The Clean White Reading Canvas Law: Long-form learning content MUST use a Pure White (#FFFFFF) background with crisp Dark Reading Ink (#222222) body text. Never place multi-sentence paragraphs inside heavy dark or colored boxes. Use brand colors (#4682B4 Steel Blue, #6DC082 Emerald Green, #D5E3EF Soft Ice Blue, #EAF6ED Mint Ice) strictly as structured visual enhancement blocks, callout borders, section headers, symbol cards, and summary tables.
 2. The Strict Flatness Law: box-shadow: none across all mediums. Never use drop shadows, text shadows, 3D bevels, skeuomorphic gradients, or neon glows.
@@ -2108,7 +2394,21 @@
 5. The Dual-Color Semantic Law: Steel Blue (#4682B4) for Structure, Authority, Navigation, Law, Practical Tasks, and Assessment; Emerald Green (#6DC082 graphics / #1E7E34 text) for Action, Payoff, Takeaways, Learner Guide references, Discussion, and LMS portal tasks; Validation Red (#D9534F) for Errors/Mistakes only.
 6. The WCAG Contrast Law: Never render body text in light Emerald #6DC082 on white. Pair #6DC082 graphics/borders with #1E7E34 for green headings and #222222 for reading body text.
 7. The South African Floor-Level Voice Law: Direct, honest South African English (UK/SA spelling) at a Grade 7-8 reading level, using a supportive workplace coach tone ("you/your").
-8. The No Legal Disclaimer Law: Never insert legal disclaimers (such as "Training content, not formal legal advice") in videos, BrainCert HTML lessons, PowerPoint slides, or printed manuals.`;
+8. The No Legal Disclaimer Law: Never insert legal disclaimers (such as "Training content, not formal legal advice") in videos, BrainCert HTML lessons, PowerPoint slides, or printed manuals.
+9. The Bold-Prefix / Regular-Body Law: Never bold an entire sentence inside interactive options (Option A/B/C), accordion headers (Click to Reveal), numbered process steps, or bullet lists. Always style the Lead-In Prefix (Option A:, Step 1:, Click to Reveal:) in Roboto Bold (700) using Steel Blue (#4682B4) or Dark Emerald (#1E7E34), and style the sentence following the colon in Roboto Regular (400) using Dark Reading Ink (#222222).
+10. The Visual Illustration & Character Law: Whenever generating or prompting for illustrations, scenario graphics, or character avatars, strictly enforce the Realistic Pixar 3D aesthetic: authentic South African workplace diversity, characters dressed in Emerald Green (#6DC082) collared golf shirts and light blue denim jeans, set in realistic South African work environments with Steel Blue (#4682B4) and Emerald Green accents.`;
+
+    const MASTER_PROMPT_TEMPLATE = `Realistic 3D Pixar movie animation style, medium shot of [Character Description & Diverse South African Team Member(s)] wearing a crisp emerald green (#6DC082) collared golf shirt and light blue denim jeans, actively [Specific Workplace Action / Scenario] inside a bright, tidy South African [Workplace Setting: e.g., warehouse receiving bay / retail stockroom / SME office]. The environment features subtle steel blue (#4682B4) pallet racking and painted floor lines, with soft ice blue (#D5E3EF) wall accents and warm natural daylight. Expressive friendly faces, cinematic Pixar lighting, ultra-clean 3D textures, shallow depth of field, 16:9 aspect ratio, no text overlays.`;
+
+    const CHARACTER_PROMPTS = {
+      siya: `Realistic 3D Pixar movie animation style, medium shot of Siya, a friendly Black South African male warehouse receiving supervisor in his early 30s with a neat short fade haircut and warm confident expression, wearing a crisp emerald green (#6DC082) short-sleeve collared golf shirt and light blue denim jeans with steel-toe boots, actively comparing a clipboard purchase order against sealed cartons inside a bright, tidy South African warehouse receiving bay. The background features subtle steel blue (#4682B4) pallet racking uprights, painted yellow and steel blue walkway lines, soft ice blue (#D5E3EF) wall accents, roller shutter door with warm natural daylight, expressive friendly face, cinematic Pixar lighting, ultra-clean 3D textures, shallow depth of field, 16:9 aspect ratio, no text overlays.`,
+      tumi: `Realistic 3D Pixar movie animation style, medium shot of Tumi, an approachable Black South African female inventory controller in her late 20s with braided hair tied back neatly and an engaging smile, wearing a crisp emerald green (#6DC082) short-sleeve collared golf shirt and light blue denim jeans, actively scanning barcode labels on cartons with a handheld scanner inside a modern, organized South African stockroom. The environment features subtle steel blue (#4682B4) shelving units, soft ice blue (#D5E3EF) wall accents, neat storage bins, warm natural daylight, expressive friendly face, cinematic Pixar lighting, ultra-clean 3D textures, shallow depth of field, 16:9 aspect ratio, no text overlays.`,
+      lauren: `Realistic 3D Pixar movie animation style, medium shot of Lauren, an organized Coloured South African female operations and HR supervisor in her mid-30s with shoulder-length dark wavy hair and a supportive coach demeanour, wearing a crisp emerald green (#6DC082) short-sleeve collared golf shirt and light blue denim jeans, actively reviewing a workplace logbook with a junior colleague in a bright, modern South African SME office. The environment features steel blue (#4682B4) desk accents, soft ice blue (#D5E3EF) noticeboard trim, warm natural daylight through large windows, expressive friendly face, cinematic Pixar lighting, ultra-clean 3D textures, shallow depth of field, 16:9 aspect ratio, no text overlays.`,
+      sipho: `Realistic 3D Pixar movie animation style, medium shot of Sipho, an experienced Black South African male forklift and dispatch team leader in his 40s with a short beard touched with grey and a calm mentor presence, wearing a crisp emerald green (#6DC082) collared golf shirt, light blue denim jeans, and an open high-visibility reflective safety vest, standing next to a clean warehouse staging area with wooden CHEP-style pallets. The background features steel blue (#4682B4) racking beams, roller shutter doors, soft ice blue accents, warm natural daylight, expressive friendly face, cinematic Pixar lighting, ultra-clean 3D textures, shallow depth of field, 16:9 aspect ratio, no text overlays.`,
+      gail: `Realistic 3D Pixar movie animation style, medium shot of Gail, a practical White South African female procurement administrator in her 40s wearing stylish glasses and a friendly professional smile, wearing a crisp emerald green (#6DC082) collared golf shirt and light blue denim jeans, seated at a tidy desk checking supplier invoices and goods received notes on a monitor. The modern South African office features subtle steel blue (#4682B4) folder binders, soft ice blue (#D5E3EF) wall panels, indoor green plants, warm daylight, expressive friendly face, cinematic Pixar lighting, ultra-clean 3D textures, shallow depth of field, 16:9 aspect ratio, no text overlays.`,
+      lerato: `Realistic 3D Pixar movie animation style, medium shot of Lerato, an energetic young Black South African female junior store associate and learner in her early 20s with a curious engaged expression, wearing a crisp emerald green (#6DC082) collared golf shirt and light blue denim jeans, carefully checking the expiry date and seal on a packaged goods carton in a retail stockroom. The environment features tidy shelving with subtle steel blue (#4682B4) brackets, soft ice blue (#D5E3EF) wall accents, warm daylight, expressive friendly face, cinematic Pixar lighting, ultra-clean 3D textures, shallow depth of field, 16:9 aspect ratio, no text overlays.`,
+      thabo: `Realistic 3D Pixar movie animation style, medium shot of Thabo, a detail-oriented Black South African male dispatch clerk in his late 20s with a focused, meticulous expression, wearing a crisp emerald green (#6DC082) short-sleeve collared golf shirt and light blue denim jeans, affixing a standardized barcode dispatch label onto a clean brown shipping carton in a dispatch bay. The environment features subtle steel blue (#4682B4) packing tables, soft ice blue (#D5E3EF) storage bins, warm natural daylight, expressive friendly face, cinematic Pixar lighting, ultra-clean 3D textures, shallow depth of field, 16:9 aspect ratio, no text overlays.`
+    };
 
     function showToast(message) {
       const toast = document.getElementById('toast');
@@ -2129,8 +2429,23 @@
 
     function copyAiDirective() {
       navigator.clipboard.writeText(AI_DIRECTIVE_TEXT).then(() => {
-        showToast('Copied Master AI Directive (8 Core Laws)!');
+        showToast('Copied Master AI Directive (10 Core Laws)!');
       });
+    }
+
+    function copyMasterPrompt() {
+      navigator.clipboard.writeText(MASTER_PROMPT_TEMPLATE).then(() => {
+        showToast('Copied Master 5-Part AI Prompt Formula!');
+      });
+    }
+
+    function copyCharacterPrompt(name) {
+      const prompt = CHARACTER_PROMPTS[name];
+      if (prompt) {
+        navigator.clipboard.writeText(prompt).then(() => {
+          showToast('Copied ' + name.charAt(0).toUpperCase() + name.slice(1) + ' Character Prompt!');
+        });
+      }
     }
 
     function copyLlmsUrl() {
@@ -2169,10 +2484,17 @@
     }
 
     function openTab(tabId) {
-      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('onclick') && btn.getAttribute('onclick').includes("'" + tabId + "'")) {
+          btn.classList.add('active');
+        }
+      });
       document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-      event.target.classList.add('active');
-      document.getElementById(tabId).classList.add('active');
+      const target = document.getElementById(tabId);
+      if (target) {
+        target.classList.add('active');
+      }
     }
   </script>
 </body>
