@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Learn:Blended Master Brand Portal V8.2</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <meta property="og:title" content="Learn:Blended Master Brand Portal V8.2">
+  <meta property="og:description" content="Omnichannel Brand Identity, BrainCert LMS HTML Design System, 300x300 Symbols & AI Governance Manual">
+  <meta property="og:image" content="https://obronie.github.io/learnblended-brand/brand-assets/meta/opengraph-preview.png">
+  <meta property="og:url" content="https://obronie.github.io/learnblended-brand/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Learn:Blended Master Brand Portal V8.2">
+  <meta name="twitter:description" content="Omnichannel Brand Identity, BrainCert LMS HTML Design System, 300x300 Symbols & AI Governance Manual">
+  <meta name="twitter:image" content="https://obronie.github.io/learnblended-brand/brand-assets/meta/opengraph-preview.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
@@ -497,6 +507,85 @@
       margin-bottom: 4px;
     }
 
+    /* Corporate Asset Hub */
+    .corporate-section {
+      margin-bottom: 48px;
+    }
+    .corporate-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 16px;
+      margin: 16px 0 28px 0;
+    }
+    .corporate-card {
+      background-color: var(--lb-white);
+      border: 1.5px solid var(--lb-light-blue);
+      border-radius: var(--lb-radius-md);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: none !important;
+      transition: border-color 0.2s;
+    }
+    .corporate-card:hover {
+      border-color: var(--lb-blue);
+    }
+    .corporate-preview-wrap {
+      background-color: var(--lb-ice-tint);
+      border-radius: 8px;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 12px;
+      min-height: 110px;
+    }
+    .corporate-preview-wrap.dark-bg {
+      background-color: #222222;
+    }
+    .corporate-preview-img {
+      max-width: 100%;
+      max-height: 90px;
+      object-fit: contain;
+      display: block;
+    }
+    .corporate-title {
+      font-size: 15px;
+      font-weight: 900;
+      color: var(--lb-blue);
+      margin-bottom: 4px;
+    }
+    .corporate-meta {
+      font-family: monospace;
+      font-size: 11.5px;
+      color: var(--lb-dark-emerald);
+      background-color: var(--lb-mint-tint);
+      padding: 2px 6px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+    .corporate-desc {
+      font-size: 12.5px;
+      color: var(--lb-charcoal);
+      line-height: 1.45;
+      margin-bottom: 12px;
+      flex: 1;
+    }
+    .video-archive-box {
+      background-color: var(--lb-ice-tint);
+      border: 1.5px solid var(--lb-blue);
+      border-radius: var(--lb-radius-md);
+      padding: 18px 20px;
+      margin-top: 10px;
+    }
+    .video-archive-box h4 {
+      font-size: 15px;
+      font-weight: 900;
+      color: var(--lb-blue);
+      margin-bottom: 6px;
+    }
+
     /* Character Grid & AI Image Spec */
     .character-grid {
       display: grid;
@@ -735,6 +824,7 @@
       <a href="#ai-bar" class="nav-btn">🤖 AI Directives</a>
       <a href="#palette" class="nav-btn">🎨 Palette Matrix</a>
       <a href="#symbols" class="nav-btn">📐 Official Symbols</a>
+      <a href="#corporate" class="nav-btn">🏢 Corporate Assets</a>
       <a href="#builder" class="nav-btn">⚡ BrainCert HTML Builder</a>
       <a href="#governance" class="nav-btn">📋 Channel Governance</a>
       <a href="#governance" class="nav-btn" onclick="openTab('tab-images')">🖼️ AI Image Prompts</a>
@@ -1243,6 +1333,162 @@
           </div>
         </div>
 
+      </div>
+    </section>
+
+    <!-- CORPORATE IDENTITY & PORTAL CHROME ASSET HUB -->
+    <section id="corporate" class="corporate-section">
+      <div class="section-title-wrap">
+        <div>
+          <h2 class="section-title">Corporate Identity &amp; Portal Chrome Assets</h2>
+          <p class="section-desc">Production logos, BrainCert theme navbar headers, banners, social OpenGraph cards, and virtual meeting backdrops.</p>
+        </div>
+      </div>
+
+      <div class="corporate-grid">
+
+        <!-- 1. BrainCert Logo Dark -->
+        <div class="corporate-card">
+          <div class="corporate-preview-wrap">
+            <img src="./brand-assets/logos/braincert-logo-dark.png" alt="BrainCert Navbar Logo Dark" class="corporate-preview-img" onerror="this.src='https://obronie.github.io/learnblended-brand/brand-assets/logos/braincert-logo-dark.png'">
+          </div>
+          <div class="corporate-title">BrainCert Navbar Logo (Dark)</div>
+          <div class="corporate-meta">200 × 50 px • PNG</div>
+          <div class="corporate-desc">
+            Direct URL for BrainCert LMS Custom Theme Settings. Sits over white or light grey top header navbars.
+          </div>
+          <div class="symbol-card-btns">
+            <button class="btn btn-blue btn-sm" onclick="copyCorporateUrl('brand-assets/logos/braincert-logo-dark.png')">Copy CDN URL</button>
+            <button class="btn btn-outline btn-sm" onclick="copyImgTagPath('brand-assets/logos/braincert-logo-dark.png', 'Learn:Blended Logo')">Copy &lt;img&gt; Tag</button>
+          </div>
+        </div>
+
+        <!-- 2. BrainCert Logo White/Transparent -->
+        <div class="corporate-card">
+          <div class="corporate-preview-wrap dark-bg">
+            <img src="./brand-assets/logos/braincert-logo-white-transparent.png" alt="BrainCert Navbar Logo White" class="corporate-preview-img" onerror="this.src='https://obronie.github.io/learnblended-brand/brand-assets/logos/braincert-logo-white-transparent.png'">
+          </div>
+          <div class="corporate-title">BrainCert Navbar Logo (White/Trans)</div>
+          <div class="corporate-meta">200 × 50 px • Transparent PNG</div>
+          <div class="corporate-desc">
+            Off-white wordmark on transparent background. Sits over Steel Blue (<code>#4682B4</code>) or dark LMS navigation bars.
+          </div>
+          <div class="symbol-card-btns">
+            <button class="btn btn-blue btn-sm" onclick="copyCorporateUrl('brand-assets/logos/braincert-logo-white-transparent.png')">Copy CDN URL</button>
+            <button class="btn btn-outline btn-sm" onclick="copyImgTagPath('brand-assets/logos/braincert-logo-white-transparent.png', 'Learn:Blended Logo')">Copy &lt;img&gt; Tag</button>
+          </div>
+        </div>
+
+        <!-- 3. OpenGraph Social Card -->
+        <div class="corporate-card">
+          <div class="corporate-preview-wrap">
+            <img src="./brand-assets/meta/opengraph-preview.png" alt="OpenGraph Preview Card" class="corporate-preview-img" onerror="this.src='https://obronie.github.io/learnblended-brand/brand-assets/meta/opengraph-preview.png'">
+          </div>
+          <div class="corporate-title">OpenGraph Social Preview Card</div>
+          <div class="corporate-meta">1200 × 630 px • High-Res PNG</div>
+          <div class="corporate-desc">
+            Standard 1.91:1 ratio rich preview image used when sharing Learn:Blended URLs on WhatsApp, LinkedIn, and Slack.
+          </div>
+          <div class="symbol-card-btns">
+            <button class="btn btn-emerald btn-sm" onclick="copyCorporateUrl('brand-assets/meta/opengraph-preview.png')">Copy CDN URL</button>
+            <button class="btn btn-outline btn-sm" onclick="window.open('./brand-assets/meta/opengraph-preview.png', '_blank')">View Full Size</button>
+          </div>
+        </div>
+
+        <!-- 4. Banner Name Stacked -->
+        <div class="corporate-card">
+          <div class="corporate-preview-wrap">
+            <img src="./brand-assets/banners/banner-name-stacked.png" alt="Banner Name Stacked" class="corporate-preview-img" onerror="this.src='https://obronie.github.io/learnblended-brand/brand-assets/banners/banner-name-stacked.png'">
+          </div>
+          <div class="corporate-title">Brand Banner: Name Stacked</div>
+          <div class="corporate-meta">851 × 315 px • Solid White</div>
+          <div class="corporate-desc">
+            Standard Facebook cover, LinkedIn organization banner, or catalog header displaying stacked brand typography.
+          </div>
+          <div class="symbol-card-btns">
+            <button class="btn btn-blue btn-sm" onclick="copyCorporateUrl('brand-assets/banners/banner-name-stacked.png')">Copy CDN URL</button>
+            <button class="btn btn-outline btn-sm" onclick="copyCorporateUrl('brand-assets/banners/banner-name-stacked-transparent.png')">Copy Trans Version</button>
+          </div>
+        </div>
+
+        <!-- 5. Banner With Tagline -->
+        <div class="corporate-card">
+          <div class="corporate-preview-wrap">
+            <img src="./brand-assets/banners/banner-tagline.png" alt="Banner Tagline" class="corporate-preview-img" onerror="this.src='https://obronie.github.io/learnblended-brand/brand-assets/banners/banner-tagline.png'">
+          </div>
+          <div class="corporate-title">Brand Banner: With Tagline</div>
+          <div class="corporate-meta">851 × 315 px • Solid White</div>
+          <div class="corporate-desc">
+            Features the ratified brand tagline <em>"Blending excellence for you!"</em> for website hero areas and email announcements.
+          </div>
+          <div class="symbol-card-btns">
+            <button class="btn btn-emerald btn-sm" onclick="copyCorporateUrl('brand-assets/banners/banner-tagline.png')">Copy CDN URL</button>
+            <button class="btn btn-outline btn-sm" onclick="copyCorporateUrl('brand-assets/banners/banner-tagline-transparent.png')">Copy Trans Version</button>
+          </div>
+        </div>
+
+        <!-- 6. Teams Background 1 -->
+        <div class="corporate-card">
+          <div class="corporate-preview-wrap">
+            <img src="./brand-assets/backgrounds/teams-background-1.png" alt="Teams Background 1" class="corporate-preview-img" onerror="this.src='https://obronie.github.io/learnblended-brand/brand-assets/backgrounds/teams-background-1.png'">
+          </div>
+          <div class="corporate-title">Teams Virtual Backdrop (Primary)</div>
+          <div class="corporate-meta">1280 × 720 px • HD Meeting BG</div>
+          <div class="corporate-desc">
+            Official virtual camera background for Microsoft Teams and Zoom client workshops and online learner cohorts.
+          </div>
+          <div class="symbol-card-btns">
+            <button class="btn btn-blue btn-sm" onclick="copyCorporateUrl('brand-assets/backgrounds/teams-background-1.png')">Copy CDN URL</button>
+            <button class="btn btn-outline btn-sm" onclick="window.open('./brand-assets/backgrounds/teams-background-1.png', '_blank')">View Full Size</button>
+          </div>
+        </div>
+
+        <!-- 7. Teams Background 2 -->
+        <div class="corporate-card">
+          <div class="corporate-preview-wrap">
+            <img src="./brand-assets/backgrounds/teams-background-2.png" alt="Teams Background 2" class="corporate-preview-img" onerror="this.src='https://obronie.github.io/learnblended-brand/brand-assets/backgrounds/teams-background-2.png'">
+          </div>
+          <div class="corporate-title">Teams Virtual Backdrop (Minimal)</div>
+          <div class="corporate-meta">1280 × 720 px • HD Meeting BG</div>
+          <div class="corporate-desc">
+            Alternative sleek virtual background optimized for low-bandwidth streams and high-contrast webcam lighting.
+          </div>
+          <div class="symbol-card-btns">
+            <button class="btn btn-blue btn-sm" onclick="copyCorporateUrl('brand-assets/backgrounds/teams-background-2.png')">Copy CDN URL</button>
+            <button class="btn btn-outline btn-sm" onclick="window.open('./brand-assets/backgrounds/teams-background-2.png', '_blank')">View Full Size</button>
+          </div>
+        </div>
+
+        <!-- 8. Standalone Monogram High-Res -->
+        <div class="corporate-card">
+          <div class="corporate-preview-wrap">
+            <img src="./brand-assets/logos/logo-standalone-transparent.png" alt="Standalone Monogram" class="corporate-preview-img" onerror="this.src='https://obronie.github.io/learnblended-brand/brand-assets/logos/logo-standalone-transparent.png'">
+          </div>
+          <div class="corporate-title">High-Res Monogram (Clean Trans)</div>
+          <div class="corporate-meta">1200 × 1200 px • Transparent PNG</div>
+          <div class="corporate-desc">
+            Full 1200x1200 master rounded <code>lb</code> monogram without white stroke for crisp print layout embedding.
+          </div>
+          <div class="symbol-card-btns">
+            <button class="btn btn-emerald btn-sm" onclick="copyCorporateUrl('brand-assets/logos/logo-standalone-transparent.png')">Copy CDN URL</button>
+            <button class="btn btn-outline btn-sm" onclick="copyCorporateUrl('brand-assets/logos/logo-white-border.png')">Copy White Keyline</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- VIDEO STINGS & PRESENTATION DECKS (ONEDRIVE ARCHIVE NOTICE) -->
+      <div class="video-archive-box">
+        <h4>🎬 Master Video Stings &amp; Presentation Decks (OneDrive Archive)</h4>
+        <p style="font-size: 13.5px; color: var(--lb-charcoal); line-height: 1.55; margin-bottom: 10px;">
+          To keep the public GitHub Pages repository lightweight and blazingly fast, binary video clips and PowerPoint source decks are managed directly on OneDrive at <code>C:\Users\Owner\OneDrive\LearnBlended\Marketing\Corporate Image\</code>:
+        </p>
+        <ul style="font-size: 13px; color: var(--lb-ink); line-height: 1.6; margin-left: 20px;">
+          <li><strong>LearnBlended Intro.mp4:</strong> 1080p micro video sting (359 KB) for quick video clip intros.</li>
+          <li><strong>LearnBlended Intro Video.mp4:</strong> 1080p full intro animation (1.12 MB) with sound design.</li>
+          <li><strong>LearnBlended Blue Outro Video.mp4:</strong> 1080p branded outro end screen (1.46 MB) with call-to-action.</li>
+          <li><strong>LearnBlended-Intro.pptx:</strong> Canonical 16:9 widescreen PowerPoint deck template (819 KB).</li>
+        </ul>
       </div>
     </section>
 
@@ -2584,6 +2830,22 @@
     function copyBrandkitUrl() {
       navigator.clipboard.writeText("https://obronie.github.io/learnblended-brand/brandkit-v8.2.md").then(() => {
         showToast('Copied Brand Kit URL!');
+      });
+    }
+
+    const BRAND_BASE = "https://obronie.github.io/learnblended-brand/";
+
+    function copyCorporateUrl(relPath) {
+      const url = `${BRAND_BASE}${relPath}`;
+      navigator.clipboard.writeText(url).then(() => {
+        showToast(`Copied URL: ${url}`);
+      });
+    }
+
+    function copyImgTagPath(relPath, altText) {
+      const tag = `<img src="${BRAND_BASE}${relPath}" alt="${altText}" style="max-width: 100%; height: auto; display: block;" />`;
+      navigator.clipboard.writeText(tag).then(() => {
+        showToast(`Copied <img> tag for ${relPath.split('/').pop()}!`);
       });
     }
 

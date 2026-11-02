@@ -112,6 +112,33 @@ All 11 instructional symbols share the V8.2 Unified Style 4 Frame: a flat, pixel
 | **11** | **Reflect** | `Reflect.png` | `https://obronie.github.io/learnblended-brand/symbols/Reflect.png` | Emerald Green | **Block 3** (`#6DC082` / `#EAF6ED`) | Prompts learners to pause, self-evaluate, and connect new concepts to their own workplace experience. |
 | **—** | **Brand Monogram** | `LB-Logo.png` | `https://obronie.github.io/learnblended-brand/symbols/LB-Logo.png` | Dual Brand | Cover / Header / Chrome | Official Learn:Blended rounded monogram with white keyline for headers, covers, and portal navbars. |
 
+### 3.2 Corporate Identity, Portal Chrome & Social Meta Assets (CDN Repository)
+
+These assets are hosted under the `/brand-assets/` directory to maintain separation from the 300x300 instructional symbol set. Use these canonical URLs for BrainCert theme settings, website headers, email footers, social media sharing, and virtual meeting backdrops:
+
+| Asset Category | Canonical HTTPS URL | Dimensions | Recommended Use |
+|---|---|---|---|
+| **Favicon** | `https://obronie.github.io/learnblended-brand/favicon.ico` | `.ico` | Browser tab icon for portals and landing pages. |
+| **BrainCert Logo (Dark)** | `https://obronie.github.io/learnblended-brand/brand-assets/logos/braincert-logo-dark.png` | `200 × 50 px` | BrainCert LMS top navbar logo on light/white header themes. |
+| **BrainCert Logo (White/Trans)** | `https://obronie.github.io/learnblended-brand/brand-assets/logos/braincert-logo-white-transparent.png` | `200 × 50 px` | BrainCert LMS top navbar logo on dark/colored header themes. |
+| **OpenGraph Preview Card** | `https://obronie.github.io/learnblended-brand/brand-assets/meta/opengraph-preview.png` | `1200 × 630 px` | Social media link preview image for WhatsApp, LinkedIn, Slack, Twitter. |
+| **Banner: Name Stacked** | `https://obronie.github.io/learnblended-brand/brand-assets/banners/banner-name-stacked.png` | `851 × 315 px` | Facebook cover, LinkedIn banner, email header (solid background). |
+| **Banner: Name Stacked (Trans)** | `https://obronie.github.io/learnblended-brand/brand-assets/banners/banner-name-stacked-transparent.png` | `851 × 315 px` | Transparent header banner for colored layout stages. |
+| **Banner: With Tagline** | `https://obronie.github.io/learnblended-brand/brand-assets/banners/banner-tagline.png` | `851 × 315 px` | Header banner featuring *"Blending excellence for you!"* tagline. |
+| **Banner: Tagline (Trans)** | `https://obronie.github.io/learnblended-brand/brand-assets/banners/banner-tagline-transparent.png` | `851 × 315 px` | Transparent tagline banner. |
+| **Teams Virtual Backdrop 1** | `https://obronie.github.io/learnblended-brand/brand-assets/backgrounds/teams-background-1.png` | `1280 × 720 px` | High-definition MS Teams / Zoom virtual backdrop for live facilitation. |
+| **Teams Virtual Backdrop 2** | `https://obronie.github.io/learnblended-brand/brand-assets/backgrounds/teams-background-2.png` | `1280 × 720 px` | Clean alternate 720p virtual meeting background. |
+| **Monogram: Standalone (Trans)** | `https://obronie.github.io/learnblended-brand/brand-assets/logos/logo-standalone-transparent.png` | `1200 × 1200 px` | Clean high-res monogram without white border. |
+| **Monogram: Standalone (Solid)** | `https://obronie.github.io/learnblended-brand/brand-assets/logos/logo-standalone-solid.png` | `1200 × 1200 px` | High-res monogram on solid white background. |
+| **Monogram: White Border** | `https://obronie.github.io/learnblended-brand/brand-assets/logos/logo-white-border.png` | `1200 × 1200 px` | High-res monogram with `4px` white border for colored backgrounds. |
+
+#### Corporate Video Stings & Slide Decks (OneDrive Archive)
+To maintain optimal Git repository performance and prevent binary bloat, animated video stings and master presentation decks are archived on OneDrive at `C:\Users\Owner\OneDrive\LearnBlended\Marketing\Corporate Image`:
+* `LearnBlended Intro.mp4` (1080p micro-sting)
+* `LearnBlended Intro Video.mp4` (1080p full intro sting)
+* `LearnBlended Blue Outro Video.mp4` (1080p end screen outro)
+* `LearnBlended-Intro.pptx` (Master presentation slide deck)
+
 ---
 
 ## 4. BRAINCERT LMS HTML DESIGN SYSTEM (CLEAN WHITE CANVAS + VISUAL BLOCKS)
