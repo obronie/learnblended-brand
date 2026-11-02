@@ -19,9 +19,21 @@ When any AI model (Gemini, Claude, ChatGPT, Antigravity, or Google AI Studio) ge
    * **LMS Callout Cards & Inner Nested Panels:** `16px` border-radius (`3mm` in Print/Word).
    * **Inline Badges, Pills & Table Wrappers:** `8px` to `12px` border-radius (`2mm` in Print/Word).
 4. **The Single Font Law:** **Roboto** (`font-family: 'Roboto', Arial, sans-serif`) is the exclusive typeface across all digital, video, and print channels.
-5. **The Dual-Color Semantic Law:**
-   * **Steel Blue (`#4682B4`)** signals **Structure, Authority, Navigation, Statutory Law, Practical Execution, and Assessment**.
-   * **Emerald Green (`#6DC082` graphics / `#1E7E34` accessible text)** signals **Action, Positive Payoff, Key Takeaways, Learner Guide References, Group Discussion, and LMS Portal Activities**.
+5. **The Dual-Color Semantic & Instructional Symbol Routing Law:**
+   * **Steel Blue (`#4682B4`)** signals **Structure, Authority, Navigation, Statutory Law, Practical Tasks, Incident Analysis, and Assessment**. When generating **Block 2 Steel Blue Callouts** (`#4682B4` border, `#F4F8FB` fill), pair strictly with these 6 Steel Blue instructional symbols:
+     1. `Practical.png` (`https://obronie.github.io/learnblended-brand/symbols/Practical.png`) — Hands-on workplace drills, physical floor tasks, or PoE logbook activities.
+     2. `Assessment.png` (`https://obronie.github.io/learnblended-brand/symbols/Assessment.png`) — Formative knowledge checks, summative PoE tasks, or EISA exam checkpoints.
+     3. `Information.png` (`https://obronie.github.io/learnblended-brand/symbols/Information.png`) — Essential workplace rules, key definitions, or compliance "Good to Know" notes.
+     4. `MS-Teams.png` (`https://obronie.github.io/learnblended-brand/symbols/MS-Teams.png`) — Scheduled live virtual sessions hosted on Microsoft Teams.
+     5. `Case-Study.png` (`https://obronie.github.io/learnblended-brand/symbols/Case-Study.png`) — Real-world workplace scenarios, industry incident analyses, or applied business examples.
+     6. `High-Importance.png` (`https://obronie.github.io/learnblended-brand/symbols/High-Importance.png`) — Critical safety warnings, mandatory statutory compliance requirements, or non-negotiable workplace rules.
+   * **Emerald Green (`#6DC082` graphics / `#1E7E34` accessible text)** signals **Action, Positive Payoff, Reflection, Self-Evaluation, Multimedia, and LMS Portal Tasks**. When generating **Block 3 Emerald Green Callouts** (`#6DC082` border, `#EAF6ED` fill), pair strictly with these 5 Emerald Green instructional symbols:
+     7. `LMS.png` (`https://obronie.github.io/learnblended-brand/symbols/LMS.png`) — Directs learner to an online quiz, upload, or lesson inside BrainCert LMS.
+     8. `Learner-Guide.png` (`https://obronie.github.io/learnblended-brand/symbols/Learner-Guide.png`) — Cross-reference to read a section, review a table, or complete a worksheet in the printed/PDF Learner Guide.
+     9. `Discussion.png` (`https://obronie.github.io/learnblended-brand/symbols/Discussion.png`) — Triggers group discussion, peer reflection, or facilitator-led classroom Q&A.
+     10. `Video.png` (`https://obronie.github.io/learnblended-brand/symbols/Video.png`) — Directs learner to watch an instructional video clip, screencast, or demonstration before continuing.
+     11. `Reflect.png` (`https://obronie.github.io/learnblended-brand/symbols/Reflect.png`) — Prompts learners to pause, self-evaluate, and connect new concepts to their own workplace experience.
+   * **Master Brand Monogram:** `LB-Logo.png` (`https://obronie.github.io/learnblended-brand/symbols/LB-Logo.png`) — Official Learn:Blended rounded monogram for headers, covers, and portal navbars.
    * **Validation Red (`#D9534F`)** is restricted strictly to **Error States, "Wrong Way" contrast blocks, and Quiz Feedback**—never decorative.
 6. **The WCAG Contrast Law:** Never render small or medium text in `#6DC082` (Emerald Green) on a white background (contrast is 2.35:1). Always use `#6DC082` for **borders, badges, and graphical icons**, and pair it with **`#1E7E34` (Dark Emerald)** for green headings/labels and **`#222222` (Reading Ink)** for body copy.
 7. **The South African Floor-Level Voice Law:** Write in direct, honest South African English (UK/SA spelling: *programme, organisation, labour, practise/practice*) at a **Grade 7–8 reading level**. Address the learner as *"you/your"* using a supportive workplace coach tone, never an academic examiner tone.
@@ -81,18 +93,24 @@ Every training scenario, case study, and practical drill must reflect authentic 
 
 ## 3. OFFICIAL SYMBOL & GRAPHIC ASSET SYSTEM (V8.2)
 
-All instructional symbols share the V8.2 Unified Frame: a flat white rounded square sitting over organic Steel Blue (`#4682B4`) and Emerald Green (`#6DC082`) perimeter shapes. The legacy `TalentLMS.png` icon is permanently retired and replaced by `LMS.png` featuring the rounded Learn:Blended `lb` monogram inside the green computer monitor.
+All 11 instructional symbols share the V8.2 Unified Style 4 Frame: a flat, pixel-crisp 300x300 white rounded square container paired with Steel Blue (`#4682B4`) and Emerald Green (`#6DC082`) graphic accents. The legacy `TalentLMS.png` icon is permanently retired and replaced by `LMS.png` featuring the rounded Learn:Blended `lb` monogram inside the green computer monitor.
 
-| Symbol Name | Web-Safe Filename | Accent Color | HTML / Print Container Pairing | Pedagogical Meaning & When AI Must Insert It |
-|---|---|---|---|---|
-| **1. LMS Portal** | `LMS.png` | Emerald `#6DC082` + `lb` logo | Border `#6DC082` / Fill `#EAF6ED` / Title `#1E7E34` | Directs the learner to complete an online quiz, upload, or module inside the **BrainCert LMS** portal. |
-| **2. Learner Guide**| `Learner-Guide.png` (`Learner Guide.png`) | Emerald `#6DC082` | Border `#6DC082` / Fill `#EAF6ED` / Title `#1E7E34` | Directs the learner to read a section, table, or worksheet in their printed/PDF **Learner Guide**. |
-| **3. Practical** | `Practical.png` | Steel Blue `#4682B4` | Border `#4682B4` / Fill `#F4F8FB` / Title `#4682B4` | Triggers a hands-on workplace drill, physical floor task, or PoE logbook activity. |
-| **4. Assessment** | `Assessment.png` | Steel Blue `#4682B4` | Border `#4682B4` / Fill `#D5E3EF` / Title `#4682B4` | Marks a Formative Knowledge Check, Summative PoE task, or EISA exam readiness checkpoint. |
-| **5. Discussion** | `Discussion.png` | Emerald `#6DC082` | Border `#6DC082` / Fill `#EAF6ED` / Title `#1E7E34` | Triggers a group discussion, peer reflection, or facilitator-led classroom Q&A. |
-| **6. Information** | `Information.png` | Steel Blue `#4682B4` | Border `#4682B4` / Fill `#F4F8FB` / Title `#4682B4` | Highlights an essential workplace rule, key definition, or compliance "Good to Know" note. |
-| **7. MS Teams** | `MS-Teams.png` (`MS Teams.png`) | Steel Blue `#4682B4` | Border `#4682B4` / Fill `#F4F8FB` / Title `#4682B4` | Indicates a scheduled live virtual session hosted on Microsoft Teams (for corporate clients using Teams). |
-| **8. Brand Logo** | `LB-Logo.png` (`Standalone LB Logo white border TRANSPARENT.png`) | Steel Blue `#4682B4` + Emerald `#6DC082` | Transparent with `4px` white keyline | Official Learn:Blended rounded `lb` monogram for headers, covers, portal navbars, and favicons. |
+### 3.1 The 11 Ratified Instructional Symbols + Brand Monogram
+
+| # | Symbol Name | Web-Safe Filename | Canonical HTTPS CDN URL | Semantic Group | HTML Callout Pairing | Pedagogical Role in Courseware |
+|---|---|---|---|---|---|---|
+| **1** | **LMS Portal** | `LMS.png` | `https://obronie.github.io/learnblended-brand/symbols/LMS.png` | Emerald Green | **Block 3** (`#6DC082` / `#EAF6ED`) | Directs the learner to complete an online quiz, upload, or module inside BrainCert LMS. |
+| **2** | **Learner Guide** | `Learner-Guide.png` | `https://obronie.github.io/learnblended-brand/symbols/Learner-Guide.png` | Emerald Green | **Block 3** (`#6DC082` / `#EAF6ED`) | Directs learner to read a section, table, or worksheet in their printed or PDF Learner Guide. |
+| **3** | **Practical Task** | `Practical.png` | `https://obronie.github.io/learnblended-brand/symbols/Practical.png` | Steel Blue | **Block 2** (`#4682B4` / `#F4F8FB`) | Triggers a hands-on workplace drill, physical floor task, or PoE logbook activity. |
+| **4** | **Assessment** | `Assessment.png` | `https://obronie.github.io/learnblended-brand/symbols/Assessment.png` | Steel Blue | **Block 2** (`#4682B4` / `#D5E3EF`) | Marks a Formative Knowledge Check, Summative PoE task, or EISA exam readiness checkpoint. |
+| **5** | **Discussion** | `Discussion.png` | `https://obronie.github.io/learnblended-brand/symbols/Discussion.png` | Emerald Green | **Block 3** (`#6DC082` / `#EAF6ED`) | Triggers a group discussion, peer reflection, or facilitator-led classroom syndicate Q&A. |
+| **6** | **Information** | `Information.png` | `https://obronie.github.io/learnblended-brand/symbols/Information.png` | Steel Blue | **Block 2** (`#4682B4` / `#F4F8FB`) | Highlights an essential workplace rule, key definition, or compliance "Good to Know" note. |
+| **7** | **MS Teams** | `MS-Teams.png` | `https://obronie.github.io/learnblended-brand/symbols/MS-Teams.png` | Steel Blue | **Block 2** (`#4682B4` / `#F4F8FB`) | Indicates a scheduled live virtual session hosted on Microsoft Teams for corporate clients. |
+| **8** | **Watch Video** | `Video.png` | `https://obronie.github.io/learnblended-brand/symbols/Video.png` | Emerald Green | **Block 3** (`#6DC082` / `#EAF6ED`) | Directs learner to watch an instructional video clip, screencast, or demonstration before continuing. |
+| **9** | **Case Study** | `Case-Study.png` | `https://obronie.github.io/learnblended-brand/symbols/Case-Study.png` | Steel Blue | **Block 2** (`#4682B4` / `#F4F8FB`) | Introduces a real-world workplace scenario, industry incident analysis, or applied business example. |
+| **10** | **High Importance** | `High-Importance.png` | `https://obronie.github.io/learnblended-brand/symbols/High-Importance.png` | Steel Blue | **Block 2** (`#4682B4` / `#D5E3EF`) | Flags a critical safety warning, mandatory statutory compliance requirement, or non-negotiable workplace rule. |
+| **11** | **Reflect** | `Reflect.png` | `https://obronie.github.io/learnblended-brand/symbols/Reflect.png` | Emerald Green | **Block 3** (`#6DC082` / `#EAF6ED`) | Prompts learners to pause, self-evaluate, and connect new concepts to their own workplace experience. |
+| **—** | **Brand Monogram** | `LB-Logo.png` | `https://obronie.github.io/learnblended-brand/symbols/LB-Logo.png` | Dual Brand | Cover / Header / Chrome | Official Learn:Blended rounded monogram with white keyline for headers, covers, and portal navbars. |
 
 ---
 
@@ -129,7 +147,7 @@ When authoring HTML lessons for BrainCert Enterprise LMS, AI models must never o
 </div>
 ```
 
-#### Block 2: Steel Blue Symbol Callout (`Practical.png`, `Assessment.png`, `Information.png`, `MS-Teams.png`)
+#### Block 2: Steel Blue Symbol Callout (`Practical.png`, `Assessment.png`, `Information.png`, `MS-Teams.png`, `Case-Study.png`, `High-Importance.png`)
 ```html
 <div style="display: flex; align-items: flex-start; gap: 16px; background-color: #F4F8FB; border: 2px solid #4682B4; border-radius: 16px; padding: 18px 20px; margin: 22px 0; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
   <img src="https://obronie.github.io/learnblended-brand/symbols/Practical.png" alt="Practical Activity" style="width: 56px; height: 56px; flex-shrink: 0; display: block;" />
@@ -144,7 +162,7 @@ When authoring HTML lessons for BrainCert Enterprise LMS, AI models must never o
 </div>
 ```
 
-#### Block 3: Emerald Green Symbol Callout (`LMS.png`, `Learner-Guide.png`, `Discussion.png`)
+#### Block 3: Emerald Green Symbol Callout (`LMS.png`, `Learner-Guide.png`, `Discussion.png`, `Video.png`, `Reflect.png`)
 ```html
 <div style="display: flex; align-items: flex-start; gap: 16px; background-color: #EAF6ED; border: 2px solid #6DC082; border-radius: 16px; padding: 18px 20px; margin: 22px 0; font-family: 'Roboto', Arial, sans-serif; box-sizing: border-box;">
   <img src="https://obronie.github.io/learnblended-brand/symbols/LMS.png" alt="LMS Activity" style="width: 56px; height: 56px; flex-shrink: 0; display: block;" />
@@ -563,5 +581,5 @@ Generated scenario images must never float unframed or use drop shadows. Always 
 
 ## 10. ASSET VERIFICATION & VERSION CONTROL
 * **Video Reference Proof:** `renders/v8-option-a-all-blocks/v8-option-a-morphs.mp4`
-* **Symbol Set Verification:** 8 standardized PNG assets (`LMS.png`, `Learner-Guide.png`, `Practical.png`, `Assessment.png`, `Discussion.png`, `Information.png`, `MS-Teams.png`, `LB-Logo.png`).
+* **Symbol Set Verification:** 12 standardized PNG assets (11 instructional symbols + Brand Monogram: `LMS.png`, `Learner-Guide.png`, `Practical.png`, `Assessment.png`, `Discussion.png`, `Information.png`, `MS-Teams.png`, `Video.png`, `Case-Study.png`, `High-Importance.png`, `Reflect.png`, `LB-Logo.png`).
 * **Change Governance:** This document represents **Brand Kit V8.2**. Any future modifications require formal version incrementation (`V8.3+`) and synchronization to the GitHub Pages `llms.txt` endpoint.
