@@ -610,3 +610,63 @@ Generated scenario images must never float unframed or use drop shadows. Always 
 * **Video Reference Proof:** `renders/v8-option-a-all-blocks/v8-option-a-morphs.mp4`
 * **Symbol Set Verification:** 12 standardized PNG assets (11 instructional symbols + Brand Monogram: `LMS.png`, `Learner-Guide.png`, `Practical.png`, `Assessment.png`, `Discussion.png`, `Information.png`, `MS-Teams.png`, `Video.png`, `Case-Study.png`, `High-Importance.png`, `Reflect.png`, `LB-Logo.png`).
 * **Change Governance:** This document represents **Brand Kit V8.2**. Any future modifications require formal version incrementation (`V8.3+`) and synchronization to the GitHub Pages `llms.txt` endpoint.
+
+---
+
+## 11. LEARNING METHODOLOGY & PEDAGOGICAL ARCHITECTURE (BRAINCERT COGNITIVE BLUEPRINT)
+
+Learn:Blended courseware is engineered across two distinct, audit-ready implementation streams: **Stream A (Frontline SME Microlearning)** utilizing a ~8.5-minute cognitive pipeline, and **Stream B (QCTO Accredited Occupational Qualifications)** utilizing Gagné's 9 Events ("The Story Sandwich") and granular IAC credit mapping.
+
+### 11.1 The "HR Defense Shield" & Closed-Source Grounding Protocol
+Traditional generic e-learning fails South African employers because abstract corporate concepts and legally flawed advice leave managers exposed to substantive and procedural defeat at the **CCMA (Commission for Conciliation, Mediation and Arbitration)**.
+* **The Core Boundary Law:** The generative AI model is only ever trusted with words. Every number, layout, timestamp, calculation, and file format is produced by deterministic code from those words.
+* **Closed-Source 3-Tier Research Protocol:**
+  1. **NUMBERS (The Anchor):** Exactly 1 peer-reviewed research study (Harvard Business Review, New England Journal of Medicine, etc.). Provides 100% of all statistics, percentages, and empirical research claims.
+  2. **STANDARDS (The Floor):** 0-1 South African statutes (BCEA, LRA, EEA, OHSA, POPIA, CPA) or SAQA Unit Standards. Defines the non-negotiable legal floor.
+  3. **BEHAVIOUR:** 1-2 practitioner frameworks by credible operators defining observable floor conduct only (what workers do and say). Zero statistics admitted.
+  4. **CONTEXT:** 0-1 official guidance notes (CCMA, Information Regulator, NCC).
+* **The Anti-Slop Moat:** Unverified claims enter a `requiresVerification` quarantine array and are strictly excluded from courseware.
+* **The Salt Principle:** 10% narrative / 90% technical theory. 70% operational complexity resolved by 30% strategic insight.
+* **The Story Canon:** An immutable fact sheet (characters, setting, amounts, incident, resolution fact) that all assets within a topic MUST obey for narrative continuity.
+
+### 11.2 Stream A: The ~8.5-Minute Frontline Microlearning Architecture
+Designed for frontline employees and junior supervisors in South African retail, warehousing, call centers, and SMEs (Grade 7–8 English, supportive coach voice):
+1. **Hook Video (90s):**
+   * *0:00–0:10:* Avatar on-camera cold-open with a high-stakes provocation.
+   * *0:10–1:30:* The SAME voice narrates over silent B-roll footage (Pixar characters in Emerald polos). Dramatizes a realistic workplace mistake unfolding and ends with a direct CTA.
+   * Single voice continuity across the entire topic.
+2. **Interactive Reflection Poll (30s):**
+   * CSS-only interactive widget (BrainCert strips JS). 3 choices: A (Aggressive/Risky), B (Passive/Avoidant), C (Procedural/Correct).
+   * **Consequence-First Feedback Law:** Strictly bans "Correct/Incorrect" labels. Opens immediately with the operational and legal consequences of the choice.
+3. **Theory Video / Hyperframe (4m 15s):**
+   * EXACTLY 9 structured segments following Brand Kit V8 blocks: Block D (Avatar hook), Block A/B/F (Belief destabilizer), Block F (Kinetic framework), Block QUOTE (Verbatim statutory quote), Block C (Teachable diagram), Block F (The Replay done right), Block A (Payoff art), Block E (Mandatory legal disclaimer).
+   * **Split-Attention Elimination Law:** On-screen headers capped at $\le 5$ words. Screen anchors the framework; audio carries the lesson.
+4. **BrainCert Assessment Quiz (2m):**
+   * Exactly 4 calibrated questions: 2 Recall + 2 Application.
+   * Varied question types across BrainCert types 1–6 (Fill in Blanks, Multiple Choice, Multiple True/False, Multiple Answers, True/False, Drag & Drop). Distractors reflect real workplace misconceptions. Auto-graded with coach feedback.
+5. **Read-Along HTML Twin:**
+   * Plain-text collapsible HTML twin (~350–450 words) for low-bandwidth, noisy environments, or hearing-impaired learners.
+
+### 11.3 Stream B: QCTO Accredited Content & Blended Delivery
+For full Occupational Certificates and Skills Programmes:
+* **Gagné's 9 Events / The Story Sandwich:**
+  * *Chunks 1–2 (The Hook):* Narrative immersion (Gagné 1).
+  * *Middle Chunks (The Meat):* 95% technical theory through Gagné 2–7, mapped directly to QCTO **Internal Assessment Criteria (IAC)** codes (e.g. `[IAC0103]`).
+  * *Final 2 Chunks (The Payoff):* Narrative resolution (Gagné 8–9).
+* **Granular Chunk Calibration:**
+  * Word count budget: Strictly 140–180 words per chunk.
+  * Volume calibrated to credit weight: 10–12 chunks (10–15% weight), 15–20 chunks (20–30% weight), 25–30 chunks (50%+ weight).
+  * Chunk GPS ID schema: `[Topic Code]-[Element Code]-[Chunk Number]` (e.g., `KM04-KT0101-C01`).
+* **Blended Delivery Framework (YTW Training):**
+  * *Phase 1:* Asynchronous BrainCert LMS Pre-Work (20–30 hours) - video demos, theoretical readings, milestone gateway quizzes.
+  * *Phase 2:* Live Contact Sessions (16 hours / 2-day bootcamp) - facilitator-led technical diagnostics and practical labs.
+  * *Phase 3:* Formative e-PoE & Workplace Logbook Immersion (40–50 hours).
+
+### 11.4 BrainCert Technical Integration & 16-Column Quiz CSV Specification
+* **JavaScript Stripping Guard:** BrainCert strips `<script>` tags; interactive elements must use pure CSS (`<details><summary>` or hidden radio buttons + `:checked ~ sibling`).
+* **The 16-Column BrainCert Quiz Import CSV Header:**
+  ```csv
+  Question Type Id,Question Title,Question Option,Answer,Question Explanation,Objective Id,Reference URL,Difficulty Level,Status,Include in Demo,Max word limit,Attachment,Mandatory Keywords,Mandatory Case Sensitive,Optional Keywords,Optional Case Sensitive
+  ```
+  * Multi-value options use PIPE (`|`) inside the cell (e.g. `Option A|Option B|Option C|Option D`).
+  * Types: 1 (Fill in Blanks), 2 (Multiple Choice), 3 (Multiple True/False), 4 (Multiple Answers), 5 (True/False), 6 (Drag & Drop / Matching).
