@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn:Blended Learning Methodology & BrainCert Architecture V8.2</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <meta property="og:title" content="Learn:Blended Learning Methodology & BrainCert Architecture V8.2">
+  <meta property="og:description" content="Dual-Stream Instructional Design Architecture: ~8.5-Minute Frontline Microlearning & QCTO Accredited Blended Training">
+  <meta property="og:image" content="https://obronie.github.io/learnblended-brand/brand-assets/meta/opengraph-preview.png">
+  <meta property="og:url" content="https://obronie.github.io/learnblended-brand/methodology.html">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+
+    /* ==========================================================================
+       Learn:Blended V8.2 Brand Portal Stylesheet
+       Strict Flatness: box-shadow: none !important
+       ========================================================================== */
+    :root {
+      --lb-white: #FFFFFF;
+      --lb-ink: #222222;
+      --lb-charcoal: #4A4A4A;
+      --lb-muted: #696969;
+      --lb-blue: #4682B4;
+      --lb-light-blue: #83ADCF;
+      --lb-ice: #D5E3EF;
+      --lb-ice-tint: #F4F8FB;
+      --lb-emerald: #6DC082;
+      --lb-dark-emerald: #1E7E34;
+      --lb-mint-tint: #EAF6ED;
+      --lb-red: #D9534F;
+      --lb-red-tint: #FDF2F2;
+      --lb-border-card: 2px solid #83ADCF;
+      --lb-border-blue: 2px solid #4682B4;
+      --lb-border-green: 2px solid #6DC082;
+      --lb-radius-lg: 16px;
+      --lb-radius-md: 12px;
+      --lb-radius-sm: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      box-shadow: none !important;
+    }
+
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background-color: #F4F8FB;
+      color: var(--lb-ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 60px;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    header {
+      background-color: var(--lb-white);
+      border-bottom: 3px solid var(--lb-blue);
+      padding: 24px 0;
+      margin-bottom: 30px;
+    }
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .brand-id {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .brand-logo {
+      height: 52px;
+      width: auto;
+      display: block;
+    }
+    .brand-title h1 {
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--lb-blue);
+      letter-spacing: -0.2px;
+      margin-bottom: 2px;
+    }
+    .brand-title p {
+      font-size: 13.5px;
+      color: var(--lb-muted);
+      font-style: italic;
+    }
+    .badge-v82 {
+      display: inline-flex;
+      align-items: center;
+      background-color: var(--lb-ice);
+      color: var(--lb-blue);
+      font-weight: 700;
+      font-size: 12.5px;
+      padding: 6px 14px;
+      border-radius: var(--lb-radius-sm);
+      border: 1px solid var(--lb-light-blue);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Navigation Bar */
+    .quick-nav {
+      background-color: var(--lb-white);
+      border: 1.5px solid var(--lb-light-blue);
+      border-radius: var(--lb-radius-md);
+      padding: 10px 16px;
+      margin-bottom: 28px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .quick-nav-label {
+      font-size: 12px;
+      font-weight: 900;
+      color: var(--lb-blue);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-right: 6px;
+    }
+    .nav-btn {
+      background-color: var(--lb-ice-tint);
+      border: 1px solid var(--lb-light-blue);
+      color: var(--lb-ink);
+      font-family: inherit;
+      font-size: 13.5px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: var(--lb-radius-sm);
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+    .nav-btn:hover {
+      background-color: var(--lb-ice);
+      border-color: var(--lb-blue);
+      color: var(--lb-blue);
+    }
+
+    /* Top AI Prompt Bar */
+    .ai-prompt-bar {
+      background-color: var(--lb-white);
+      border: 2px solid var(--lb-emerald);
+      border-radius: var(--lb-radius-lg);
+      padding: 20px 24px;
+      margin-bottom: 36px;
+    }
+    .ai-bar-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .ai-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 17px;
+      font-weight: 900;
+      color: var(--lb-dark-emerald);
+    }
+    .ai-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      font-family: inherit;
+      font-size: 13.5px;
+      font-weight: 700;
+      padding: 9px 16px;
+      border-radius: var(--lb-radius-sm);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: none;
+      transition: opacity 0.15s, background 0.15s;
+    }
+    .btn-emerald {
+      background-color: var(--lb-emerald);
+      color: #114420;
+    }
+    .btn-emerald:hover {
+      background-color: #5bb371;
+    }
+    .btn-blue {
+      background-color: var(--lb-blue);
+      color: var(--lb-white);
+    }
+    .btn-blue:hover {
+      background-color: #386b99;
+    }
+    .btn-outline {
+      background-color: var(--lb-white);
+      border: 1.5px solid var(--lb-light-blue);
+      color: var(--lb-blue);
+    }
+    .btn-outline:hover {
+      background-color: var(--lb-ice-tint);
+      border-color: var(--lb-blue);
+    }
+    .ai-bar-desc {
+      font-size: 14.5px;
+      color: var(--lb-charcoal);
+      margin-bottom: 12px;
+    }
+    .ai-url-display {
+      background-color: var(--lb-mint-tint);
+      border: 1px solid var(--lb-emerald);
+      border-radius: var(--lb-radius-sm);
+      padding: 10px 14px;
+      font-family: monospace;
+      font-size: 13px;
+      color: var(--lb-dark-emerald);
+      word-break: break-all;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Section Styling */
+    .section-title-wrap {
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--lb-light-blue);
+      padding-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .section-title {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--lb-blue);
+      letter-spacing: -0.2px;
+    }
+    .section-desc {
+      font-size: 14px;
+      color: var(--lb-charcoal);
+    }
+
+    /* Color Palette Grid */
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 18px;
+      margin-bottom: 44px;
+    }
+    .color-card {
+      background-color: var(--lb-white);
+      border: 1.5px solid var(--lb-light-blue);
+      border-radius: var(--lb-radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .color-swatch {
+      height: 68px;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    .color-swatch .hex-badge {
+      background-color: rgba(255, 255, 255, 0.92);
+      color: #111;
+      font-family: monospace;
+      font-weight: 700;
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      border: 1px solid rgba(0,0,0,0.15);
+    }
+    .color-swatch .hex-badge:hover {
+      background-color: #FFFFFF;
+      border-color: #000;
+    }
+    .color-info {
+      padding: 14px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .color-name {
+      font-size: 15px;
+      font-weight: 900;
+      color: var(--lb-ink);
+    }
+    .color-role {
+      font-size: 12.5px;
+      color: var(--lb-charcoal);
+      line-height: 1.4;
+    }
+    .color-specs {
+      background-color: var(--lb-ice-tint);
+      border-radius: 6px;
+      padding: 8px 10px;
+      font-size: 11.5px;
+      color: var(--lb-ink);
+      line-height: 1.5;
+    }
+    .color-specs strong {
+      color: var(--lb-blue);
+    }
+
+    /* Symbols Gallery */
+    .symbols-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 18px;
+      margin-bottom: 44px;
+    }
+    .symbol-card {
+      background-color: var(--lb-white);
+      border: 1.5px solid var(--lb-light-blue);
+      border-radius: var(--lb-radius-lg);
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .symbol-img-wrap {
+      width: 90px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #F8FAFC;
+      border: 1.5px solid var(--lb-ice);
+      border-radius: var(--lb-radius-md);
+      margin-bottom: 14px;
+      padding: 6px;
+    }
+    .symbol-img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    .symbol-title {
+      font-size: 15px;
+      font-weight: 900;
+      color: var(--lb-blue);
+      margin-bottom: 4px;
+    }
+    .symbol-filename {
+      font-family: monospace;
+      font-size: 12px;
+      color: var(--lb-dark-emerald);
+      background-color: var(--lb-mint-tint);
+      padding: 2px 8px;
+      border-radius: 4px;
+      border: 1px solid #c2e5cc;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+    .symbol-desc {
+      font-size: 12.5px;
+      color: var(--lb-charcoal);
+      line-height: 1.45;
+      margin-bottom: 12px;
+      flex: 1;
+    }
+    .symbol-card-btns {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      width: 100%;
+    }
+    .btn-sm {
+      font-size: 12px;
+      padding: 6px 10px;
+      font-weight: 700;
+      border-radius: 6px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    /* Live BrainCert LMS HTML Component Builder */
+    .lms-builder {
+      margin-bottom: 48px;
+    }
+    .template-box {
+      background-color: var(--lb-white);
+      border: 2px solid var(--lb-blue);
+      border-radius: var(--lb-radius-lg);
+      margin-bottom: 28px;
+      overflow: hidden;
+    }
+    .template-header {
+      background-color: var(--lb-ice-tint);
+      border-bottom: 1.5px solid var(--lb-light-blue);
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .template-header-info h3 {
+      font-size: 16px;
+      font-weight: 900;
+      color: var(--lb-blue);
+      margin-bottom: 2px;
+    }
+    .template-header-info p {
+      font-size: 13px;
+      color: var(--lb-charcoal);
+    }
+    .template-preview {
+      padding: 24px 20px;
+      background-color: #FFFFFF;
+    }
+
+    /* Channel Governance Tabs */
+    .gov-section {
+      margin-bottom: 44px;
+    }
+    .tabs-header {
+      display: flex;
+      gap: 6px;
+      border-bottom: 2px solid var(--lb-blue);
+      margin-bottom: 20px;
+      overflow-x: auto;
+    }
+    .tab-btn {
+      background-color: var(--lb-ice-tint);
+      border: 1.5px solid var(--lb-light-blue);
+      border-bottom: none;
+      border-radius: 8px 8px 0 0;
+      padding: 10px 18px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--lb-charcoal);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.15s, color 0.15s;
+    }
+    .tab-btn.active {
+      background-color: var(--lb-blue);
+      color: var(--lb-white);
+      border-color: var(--lb-blue);
+    }
+    .tab-content {
+      display: none;
+      background-color: var(--lb-white);
+      border: 2px solid var(--lb-blue);
+      border-radius: 0 0 var(--lb-radius-lg) var(--lb-radius-lg);
+      padding: 24px;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .gov-rule-box {
+      background-color: var(--lb-ice-tint);
+      border-left: 4px solid var(--lb-blue);
+      border-radius: var(--lb-radius-sm);
+      padding: 16px 20px;
+      margin-bottom: 18px;
+    }
+    .gov-rule-box h4 {
+      font-size: 15px;
+      font-weight: 900;
+      color: var(--lb-blue);
+      margin-bottom: 6px;
+    }
+    .gov-rule-box p, .gov-rule-box ul {
+      font-size: 14px;
+      color: var(--lb-ink);
+      line-height: 1.55;
+    }
+    .gov-rule-box ul {
+      margin-left: 20px;
+      margin-top: 6px;
+    }
+    .gov-rule-box li {
+      margin-bottom: 4px;
+    }
+
+    /* Corporate Asset Hub */
+    .corporate-section {
+      margin-bottom: 48px;
+    }
+    .corporate-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 16px;
+      margin: 16px 0 28px 0;
+    }
+    .corporate-card {
+      background-color: var(--lb-white);
+      border: 1.5px solid var(--lb-light-blue);
+      border-radius: var(--lb-radius-md);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: none !important;
+      transition: border-color 0.2s;
+    }
+    .corporate-card:hover {
+      border-color: var(--lb-blue);
+    }
+    .corporate-preview-wrap {
+      background-color: var(--lb-ice-tint);
+      border-radius: 8px;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 12px;
+      min-height: 110px;
+    }
+    .corporate-preview-wrap.dark-bg {
+      background-color: #222222;
+    }
+    .corporate-preview-img {
+      max-width: 100%;
+      max-height: 90px;
+      object-fit: contain;
+      display: block;
+    }
+    .corporate-title {
+      font-size: 15px;
+      font-weight: 900;
+      color: var(--lb-blue);
+      margin-bottom: 4px;
+    }
+    .corporate-meta {
+      font-family: monospace;
+      font-size: 11.5px;
+      color: var(--lb-dark-emerald);
+      background-color: var(--lb-mint-tint);
+      padding: 2px 6px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+    .corporate-desc {
+      font-size: 12.5px;
+      color: var(--lb-charcoal);
+      line-height: 1.45;
+      margin-bottom: 12px;
+      flex: 1;
+    }
+    .video-archive-box {
+      background-color: var(--lb-ice-tint);
+      border: 1.5px solid var(--lb-blue);
+      border-radius: var(--lb-radius-md);
+      padding: 18px 20px;
+      margin-top: 10px;
+    }
+    .video-archive-box h4 {
+      font-size: 15px;
+      font-weight: 900;
+      color: var(--lb-blue);
+      margin-bottom: 6px;
+    }
+
+    /* Character Grid & AI Image Spec */
+    .character-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 18px;
+      margin: 20px 0;
+    }
+    .character-card {
+      background-color: var(--lb-white);
+      border: 1.5px solid var(--lb-light-blue);
+      border-radius: var(--lb-radius-md);
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: none !important;
+      transition: border-color 0.2s;
+    }
+    .character-card:hover {
+      border-color: var(--lb-blue);
+    }
+    .character-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--lb-ice-blue);
+    }
+    .character-avatar-badge {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: var(--lb-mint-tint);
+      border: 2px solid var(--lb-emerald);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      color: var(--lb-dark-emerald);
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+    .character-title-wrap {
+      flex: 1;
+    }
+    .character-name {
+      font-size: 17px;
+      font-weight: 900;
+      color: var(--lb-blue);
+      margin: 0 0 2px 0;
+    }
+    .character-role {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--lb-dark-emerald);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+    .character-details {
+      font-size: 13.5px;
+      color: var(--lb-ink);
+      line-height: 1.5;
+      margin-bottom: 14px;
+      flex: 1;
+    }
+    .character-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .char-badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+    .char-badge-green {
+      background-color: var(--lb-mint-tint);
+      color: var(--lb-dark-emerald);
+      border: 1px solid #c2e5cc;
+    }
+    .char-badge-blue {
+      background-color: var(--lb-ice-tint);
+      color: var(--lb-blue);
+      border: 1px solid #c2d7e9;
+    }
+    .prompt-preview-box {
+      background-color: var(--lb-ice-tint);
+      border: 1px solid var(--lb-light-blue);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-family: monospace;
+      font-size: 11.5px;
+      color: var(--lb-charcoal);
+      line-height: 1.45;
+      margin-bottom: 12px;
+      max-height: 90px;
+      overflow-y: auto;
+    }
+
+    /* Structured Tables */
+    .spec-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin: 14px 0 20px 0;
+      font-size: 13.5px;
+      border: 1.5px solid var(--lb-light-blue);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .spec-table th {
+      background-color: var(--lb-blue);
+      color: #FFFFFF;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 700;
+    }
+    .spec-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--lb-ice);
+      color: var(--lb-ink);
+    }
+    .spec-table tr:nth-child(even) td {
+      background-color: var(--lb-ice-tint);
+    }
+    .spec-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* 16:9 Mini-Wireframe Stage Styles */
+    .wireframe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+      gap: 24px;
+      margin: 20px 0 30px 0;
+    }
+    .wireframe-card {
+      background-color: #FFFFFF;
+      border: 1.5px solid var(--lb-light-blue);
+      border-radius: var(--lb-radius-md);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .wireframe-meta h5 {
+      font-size: 15px;
+      font-weight: 900;
+      color: var(--lb-blue);
+      margin-bottom: 2px;
+    }
+    .wireframe-meta p {
+      font-size: 12.5px;
+      color: var(--lb-charcoal);
+      line-height: 1.4;
+    }
+    .wireframe-stage {
+      aspect-ratio: 16 / 9;
+      background-color: #4682B4;
+      border-radius: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+    }
+    .wireframe-dominant-card {
+      background-color: #FFFFFF;
+      border-radius: 8px;
+      width: 100%;
+      height: 100%;
+      padding: 12px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    /* Toast Notification */
+    #toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: var(--lb-ink);
+      color: var(--lb-white);
+      padding: 12px 20px;
+      border-radius: 8px;
+      border-left: 5px solid var(--lb-emerald);
+      font-size: 14px;
+      font-weight: 700;
+      z-index: 9999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease-in-out;
+    }
+    #toast.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 2px solid var(--lb-light-blue);
+      padding-top: 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--lb-muted);
+    }
+  
+
+    /* Additional Methodology Styles */
+    .methodology-hero {
+      background-color: var(--lb-white);
+      border: 2px solid var(--lb-blue);
+      border-radius: var(--lb-radius-lg);
+      padding: 28px 32px;
+      margin-bottom: 32px;
+    }
+    .methodology-tagline {
+      font-size: 15.5px;
+      color: var(--lb-charcoal);
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+    .flow-step-number {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .flow-step-blue {
+      background-color: var(--lb-blue);
+      color: #FFFFFF;
+    }
+    .flow-step-green {
+      background-color: var(--lb-emerald);
+      color: #114420;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="brand-id">
+          <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 16px;">
+            <img src="./symbols/LB-Logo.png" alt="Learn:Blended Logo" class="brand-logo" onerror="this.src='https://obronie.github.io/learnblended-brand/symbols/LB-Logo.png'">
+            <div class="brand-title">
+              <h1>Learn:Blended</h1>
+              <p>Learning Methodology &amp; BrainCert Pedagogical Architecture</p>
+            </div>
+          </a>
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+          <span class="badge-v82" style="background-color: var(--lb-mint-tint); color: var(--lb-dark-emerald); border-color: var(--lb-emerald);">
+            Pedagogy Spec V8.2
+          </span>
+          <a href="index.html" class="btn btn-outline btn-sm" style="text-decoration: none; font-weight: 700;">
+            🏠 Brand Portal Home
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- QUICK NAV -->
+    <nav class="quick-nav">
+      <span class="quick-nav-label">JUMP TO:</span>
+      <a href="index.html" class="nav-btn">🏠 Master Brand Portal</a>
+      <a href="#ai-bar" class="nav-btn">🤖 AI Directives</a>
+      <a href="#defense-shield" class="nav-btn">🛡️ HR Defense Shield</a>
+      <a href="#microlearning" class="nav-btn">⚡ ~8.5m Microlearning</a>
+      <a href="#topics-index" class="nav-btn">📋 15 Ratified Topics</a>
+      <a href="#qcto-framework" class="nav-btn">🎓 QCTO Blended Model</a>
+      <a href="#braincert-specs" class="nav-btn">⚙️ BrainCert Specs &amp; Quiz CSV</a>
+      <a href="#blueprint-schema" class="nav-btn">📑 Blueprint Schema</a>
+    </nav>
+
+    <!-- TOP HERO / AI PROMPT BAR -->
+    <section id="ai-bar" class="methodology-hero">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+        <div style="flex: 1; min-width: 300px;">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+            <span style="font-size: 26px;">🧠</span>
+            <h2 style="font-size: 24px; font-weight: 900; color: var(--lb-blue); margin: 0;">
+              Instructional Architecture &amp; BrainCert LMS Blueprint
+            </h2>
+          </div>
+          <p class="methodology-tagline">
+            The dual-stream learning methodology governing all Learn:Blended courseware. Engineered for 
+            <strong>human comprehension</strong> (clean, scannable, audit-ready) and <strong>deterministic AI generation</strong> 
+            (strict schemas, bounded prompt contracts, and zero-hallucination protocols).
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px; width: 100%; max-width: 320px;">
+          <button class="btn btn-emerald" onclick="copyMethodologyPrompt()" style="justify-content: center;">
+            📋 Copy Complete AI Methodology Prompt
+          </button>
+          <button class="btn btn-blue" onclick="copyBlueprintSchema()" style="justify-content: center;">
+            📑 Copy Topic Blueprint JSON Schema
+          </button>
+          <button class="btn btn-outline" onclick="copyQuizCsvSpec()" style="justify-content: center;">
+            📊 Copy 16-Column Quiz CSV Spec
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Summary Badges -->
+      <div style="display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap;">
+        <span style="background: var(--lb-ice-tint); border: 1px solid var(--lb-light-blue); padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; color: var(--lb-blue);">
+          Stream A: ~8.5-Minute Frontline Microlearning
+        </span>
+        <span style="background: var(--lb-mint-tint); border: 1px solid var(--lb-emerald); padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; color: var(--lb-dark-emerald);">
+          Stream B: QCTO Accredited Blended Model
+        </span>
+        <span style="background: var(--lb-ice-tint); border: 1px solid var(--lb-light-blue); padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; color: var(--lb-ink);">
+          LMS Target: BrainCert Enterprise
+        </span>
+        <span style="background: #FDF2F2; border: 1px solid var(--lb-red); padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; color: var(--lb-red);">
+          Zero-AI-Hallucination Moat
+        </span>
+      </div>
+    </section>
+
+    <!-- SECTION 1: THE CORE PHILOSOPHY & HR DEFENSE SHIELD -->
+    <section id="defense-shield" style="margin-bottom: 48px;">
+      <div class="section-title-wrap">
+        <div>
+          <h2 class="section-title">1. The Pedagogical Foundation &amp; The "HR Defense Shield"</h2>
+          <p class="section-desc">Why traditional B2B e-learning fails South African employers, and how Learn:Blended grounds every lesson.</p>
+        </div>
+      </div>
+
+      <div style="background-color: var(--lb-white); border: 1.5px solid var(--lb-light-blue); border-radius: var(--lb-radius-lg); padding: 24px; margin-bottom: 24px;">
+        <h3 style="font-size: 17px; font-weight: 900; color: var(--lb-blue); margin-bottom: 8px;">
+          The Problem on the Ground in South Africa
+        </h3>
+        <p style="font-size: 14.5px; color: var(--lb-ink); line-height: 1.6; margin-bottom: 12px;">
+          Traditional workplace training fails South African SMEs in two critical ways:
+        </p>
+        <ol style="margin-left: 20px; font-size: 14px; line-height: 1.65; color: var(--lb-charcoal); margin-bottom: 16px;">
+          <li><strong>Disconnection from Floor-Level Reality:</strong> Uses abstract American corporate jargon (<em>"synergies", "empowerment journeys"</em>) and foreign examples that frontline shop-floor and warehouse staff immediately tune out.</li>
+          <li><strong>Legal Fragility at the CCMA:</strong> SME supervisors who discipline, dock pay, or manage underperformance based on generic internet training frequently find themselves exposed to devastating procedural and substantive unfairness rulings at the <strong>CCMA (Commission for Conciliation, Mediation and Arbitration)</strong>.</li>
+        </ol>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin-top: 16px;">
+          <div style="background-color: var(--lb-ice-tint); border: 2px solid var(--lb-blue); border-radius: var(--lb-radius-md); padding: 18px;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+              <span style="font-size: 20px;">⚖️</span>
+              <h4 style="font-size: 15px; font-weight: 900; color: var(--lb-blue); margin: 0;">Pillar 1: Statutory Compliance (The Floor)</h4>
+            </div>
+            <p style="font-size: 13.5px; color: var(--lb-ink); line-height: 1.55;">
+              Every compliance, labor law, and operational course is strictly anchored in South African statutes: <strong>BCEA</strong> (Basic Conditions of Employment Act), <strong>LRA</strong> (Labour Relations Act &amp; Schedule 8), <strong>EEA</strong> (Employment Equity Act), <strong>OHSA</strong> (Occupational Health &amp; Safety Act), <strong>POPIA</strong>, and <strong>CPA</strong> (Consumer Protection Act). Statutory quotes are cited verbatim from the filed Acts.
+            </p>
+          </div>
+
+          <div style="background-color: var(--lb-mint-tint); border: 2px solid var(--lb-emerald); border-radius: var(--lb-radius-md); padding: 18px;">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+              <span style="font-size: 20px;">🔬</span>
+              <h4 style="font-size: 15px; font-weight: 900; color: var(--lb-dark-emerald); margin: 0;">Pillar 2: Empirical Workplace Science</h4>
+            </div>
+            <p style="font-size: 13.5px; color: var(--lb-ink); line-height: 1.55;">
+              All management and behavioral models are grounded strictly in peer-reviewed organizational psychology and management research (<em>Harvard Business Review</em>, <em>New England Journal of Medicine</em>, <em>Psychological Bulletin</em>). No ungrounded pop-psychology, unverified statistics, or internet trends are ever permitted.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3-TIER GROUNDING TABLE -->
+      <div style="background-color: var(--lb-white); border: 1.5px solid var(--lb-light-blue); border-radius: var(--lb-radius-lg); padding: 24px; margin-bottom: 24px;">
+        <h3 style="font-size: 17px; font-weight: 900; color: var(--lb-blue); margin-bottom: 8px;">
+          The Closed-Source 3-Tier Research Protocol
+        </h3>
+        <p style="font-size: 14px; color: var(--lb-charcoal); line-height: 1.6; margin-bottom: 14px;">
+          Before generating any course topic, an instructional designer compiles a verified <strong>Source Brief</strong>. Sources are strictly segmented into immutable roles:
+        </p>
+
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th style="width: 20%;">Source Role</th>
+              <th style="width: 14%;">Allowed Count</th>
+              <th style="width: 32%;">Permitted Sources</th>
+              <th style="width: 34%;">Instructional Scope &amp; Output</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong style="color: var(--lb-blue);">NUMBERS (The Anchor)</strong></td>
+              <td>Exactly 1</td>
+              <td>Peer-reviewed research, HBR-class empirical papers, official national statistics.</td>
+              <td>Provides 100% of all statistics, percentages, and empirical research claims in the course. Never taken from blogs.</td>
+            </tr>
+            <tr>
+              <td><strong style="color: var(--lb-blue);">STANDARDS</strong></td>
+              <td>0 – 1</td>
+              <td>South African Acts, Codes of Good Practice, SAQA Unit Standards.</td>
+              <td>Establishes the non-negotiable legal floor and required workplace competencies.</td>
+            </tr>
+            <tr>
+              <td><strong style="color: var(--lb-blue);">BEHAVIOUR</strong></td>
+              <td>1 – 2</td>
+              <td>Practitioner operational manuals by credible operators.</td>
+              <td>Observable floor conduct only—what an employee or supervisor physically says and does. Never provides statistics.</td>
+            </tr>
+            <tr>
+              <td><strong style="color: var(--lb-blue);">CONTEXT</strong></td>
+              <td>0 – 1</td>
+              <td>Official Guidance Notes (CCMA, Information Regulator, National Consumer Commission).</td>
+              <td>Authoritative interpretation of the legal standard in South African work environments.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- GOVERNING RULES LIST -->
+        <div class="gov-rule-box" style="margin-top: 18px;">
+          <h4>The Core Boundary Law &amp; Anti-Slop Principles</h4>
+          <ul>
+            <li><strong>The Core Boundary Law:</strong> <em>"The generative AI model is only ever trusted with words. Every number, layout, timestamp, calculation, and file format is produced by deterministic code from those words."</em></li>
+            <li><strong>Verification Happens Before Generation:</strong> The Source Brief is human-audited in NotebookLM prior to generation. Any claim the AI model cannot trace directly to the brief is placed into a <code>requiresVerification</code> quarantine array and permanently excluded from course content.</li>
+            <li><strong>The Salt Principle:</strong> 10% narrative drama / 90% technical instructional theory. 70% operational complexity resolved by 30% strategic insight.</li>
+            <li><strong>The Story Canon:</strong> All assets in a topic (hook video, poll, theory cards, quiz) MUST obey a single immutable fact sheet (characters, setting, amounts, incident, resolution fact) to guarantee complete cross-asset narrative alignment.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: STREAM A — THE ~8.5-MINUTE FRONTLINE MICROLEARNING ARCHITECTURE -->
+    <section id="microlearning" style="margin-bottom: 48px;">
+      <div class="section-title-wrap">
+        <div>
+          <h2 class="section-title">2. Stream A: The ~8.5-Minute Frontline Microlearning Architecture</h2>
+          <p class="section-desc">Four-stage cognitive sequence engineered for frontline retail, logistics, hospitality, and SME workers.</p>
+        </div>
+      </div>
+
+      <!-- 4-STAGE PIPELINE CARDS -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-bottom: 28px;">
+        
+        <!-- Stage 1 -->
+        <div style="background-color: var(--lb-white); border: 1.5px solid var(--lb-light-blue); border-top: 5px solid var(--lb-blue); border-radius: var(--lb-radius-md); padding: 18px; display: flex; flex-direction: column;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="flow-step-number flow-step-blue">1</span>
+              <span style="font-size: 13px; font-weight: 900; color: var(--lb-blue); text-transform: uppercase;">Hook Video</span>
+            </div>
+            <span style="background-color: var(--lb-ice); color: var(--lb-blue); font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 4px;">~90s</span>
+          </div>
+          <p style="font-size: 13px; color: var(--lb-charcoal); line-height: 1.55; flex: 1;">
+            <strong>0:00–0:10:</strong> Avatar on-camera cold-open with an urgent, high-stakes provocation.<br>
+            <strong>0:10–1:30:</strong> The SAME voice narrates over silent B-roll footage (Pixar characters in Emerald polos). Dramatizes a realistic workplace mistake unfolding and ends with a direct Call-to-Action to decide the next step in the poll below.
+          </p>
+          <div style="margin-top: 10px; font-size: 11.5px; color: var(--lb-blue); font-weight: 700; background: var(--lb-ice-tint); padding: 6px 8px; border-radius: 4px;">
+            ✓ Single voice continuity across the topic
+          </div>
+        </div>
+
+        <!-- Stage 2 -->
+        <div style="background-color: var(--lb-white); border: 1.5px solid var(--lb-light-blue); border-top: 5px solid var(--lb-emerald); border-radius: var(--lb-radius-md); padding: 18px; display: flex; flex-direction: column;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="flow-step-number flow-step-green">2</span>
+              <span style="font-size: 13px; font-weight: 900; color: var(--lb-dark-emerald); text-transform: uppercase;">Reflection Poll</span>
+            </div>
+            <span style="background-color: var(--lb-mint-tint); color: var(--lb-dark-emerald); font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 4px;">~30s</span>
+          </div>
+          <p style="font-size: 13px; color: var(--lb-charcoal); line-height: 1.55; flex: 1;">
+            CSS-only interactive poll (BrainCert strips JS). 3 choices: <em>A (Aggressive/Risky)</em>, <em>B (Passive/Avoidant)</em>, <em>C (Procedural/Correct)</em>.<br>
+            <strong>Consequence-First Feedback Law:</strong> Strictly bans "Correct/Incorrect" verdicts. Opens immediately with the operational consequences. Appends transition to theory.
+          </p>
+          <div style="margin-top: 10px; font-size: 11.5px; color: var(--lb-dark-emerald); font-weight: 700; background: var(--lb-mint-tint); padding: 6px 8px; border-radius: 4px;">
+            ✓ Induces cognitive conflict before theory
+          </div>
+        </div>
+
+        <!-- Stage 3 -->
+        <div style="background-color: var(--lb-white); border: 1.5px solid var(--lb-light-blue); border-top: 5px solid var(--lb-blue); border-radius: var(--lb-radius-md); padding: 18px; display: flex; flex-direction: column;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="flow-step-number flow-step-blue">3</span>
+              <span style="font-size: 13px; font-weight: 900; color: var(--lb-blue); text-transform: uppercase;">Theory Video</span>
+            </div>
+            <span style="background-color: var(--lb-ice); color: var(--lb-blue); font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 4px;">~4m 15s</span>
+          </div>
+          <p style="font-size: 13px; color: var(--lb-charcoal); line-height: 1.55; flex: 1;">
+            EXACTLY 9 structured segments following Brand Kit V8 blocks: Hook, Belief Destabilizer, Kinetic Framework Cards, Verbatim Statutory Quote, Diagram, and The Replay Done Right.<br>
+            <strong>Split-Attention Elimination:</strong> Headers capped at ≤5 words. Screen anchors; voice teaches.
+          </p>
+          <div style="margin-top: 10px; font-size: 11.5px; color: var(--lb-blue); font-weight: 700; background: var(--lb-ice-tint); padding: 6px 8px; border-radius: 4px;">
+            ✓ Clean visual anchors + kinetic reveals
+          </div>
+        </div>
+
+        <!-- Stage 4 -->
+        <div style="background-color: var(--lb-white); border: 1.5px solid var(--lb-light-blue); border-top: 5px solid var(--lb-emerald); border-radius: var(--lb-radius-md); padding: 18px; display: flex; flex-direction: column;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="flow-step-number flow-step-green">4</span>
+              <span style="font-size: 13px; font-weight: 900; color: var(--lb-dark-emerald); text-transform: uppercase;">BrainCert Quiz</span>
+            </div>
+            <span style="background-color: var(--lb-mint-tint); color: var(--lb-dark-emerald); font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 4px;">~2m 00s</span>
+          </div>
+          <p style="font-size: 13px; color: var(--lb-charcoal); line-height: 1.55; flex: 1;">
+            <strong>Quiz:</strong> Exactly 4 questions (2 Recall + 2 Application). Varied question types across BrainCert types 1–6. Distractors represent real workplace misconceptions.<br>
+            <strong>Read-Along:</strong> Plain-text collapsible HTML twin (~350–450 words) for low-bandwidth or no-audio learners.
+          </p>
+          <div style="margin-top: 10px; font-size: 11.5px; color: var(--lb-dark-emerald); font-weight: 700; background: var(--lb-mint-tint); padding: 6px 8px; border-radius: 4px;">
+            ✓ Auto-graded with coach-tone feedback
+          </div>
+        </div>
+
+      </div>
+
+      <!-- THE 9 THEORY SEGMENT SLOTS -->
+      <div style="background-color: var(--lb-white); border: 1.5px solid var(--lb-light-blue); border-radius: var(--lb-radius-lg); padding: 24px; margin-bottom: 24px;">
+        <h3 style="font-size: 17px; font-weight: 900; color: var(--lb-blue); margin-bottom: 8px;">
+          The 9 Fixed Segments of the Theory Hyperframe Video
+        </h3>
+        <p style="font-size: 14px; color: var(--lb-charcoal); line-height: 1.6; margin-bottom: 14px;">
+          The theory video avoids monolithic monologues by breaking content into 9 modular template slots with strict word budgets:
+        </p>
+
+        <table class="spec-table" style="font-size: 13px;">
+          <thead>
+            <tr>
+              <th style="width: 10%;">Segment</th>
+              <th style="width: 15%;">Brand Block</th>
+              <th style="width: 15%;">Word Budget</th>
+              <th style="width: 60%;">Instructional Purpose &amp; Mechanics</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Seg 1</strong></td>
+              <td><code>Block D</code> (Avatar + Script)</td>
+              <td>~50 words</td>
+              <td>Presenter avatar bridges from the poll to the law. Acknowledges the floor tension and sets up the learning objective.</td>
+            </tr>
+            <tr>
+              <td><strong>Seg 2</strong></td>
+              <td><code>Block A / B / F</code></td>
+              <td>~60 words</td>
+              <td><strong>The Belief Destabilizer:</strong> Destabilizes a common false floor assumption in ~25s (e.g. <em>Myth vs Reality, Price Tag, Two Doors</em>). Opener pattern rotates across topics.</td>
+            </tr>
+            <tr>
+              <td><strong>Seg 3</strong></td>
+              <td><code>Block F</code> (Kinetic Card)</td>
+              <td>~110 words</td>
+              <td><strong>The Core Framework (Part 1):</strong> Title + ≤4 kinetic items (headers ≤5 words). Screen shows anchors at rest; voice triggers one kinetic item per fire.</td>
+            </tr>
+            <tr>
+              <td><strong>Seg 4</strong></td>
+              <td><code>Block F</code> (Kinetic Card)</td>
+              <td>~110 words</td>
+              <td><strong>The Core Framework (Part 2):</strong> Secondary procedural steps or escalation protocol. If framework has ≤4 total steps, merged into Seg 3.</td>
+            </tr>
+            <tr>
+              <td><strong>Seg 5</strong></td>
+              <td><code>Block QUOTE</code></td>
+              <td>~50 words</td>
+              <td><strong>Statutory Authority:</strong> Verbatim quote from the filed Act or Code. Voiceover translates it into plain Grade 7–8 floor language.</td>
+            </tr>
+            <tr>
+              <td><strong>Seg 6</strong></td>
+              <td><code>Block C</code> (Split + Diagram)</td>
+              <td>~85 words</td>
+              <td><strong>Visual Model:</strong> Visualizes process flow, comparison split, or decision matrix. Audio chunk fires with each diagram highlight.</td>
+            </tr>
+            <tr>
+              <td><strong>Seg 7</strong></td>
+              <td><code>Block F</code> (The Replay)</td>
+              <td>~85 words</td>
+              <td><strong>The Shift Replayed Right:</strong> Rebuilds the opening crisis using the taught framework. Resolves the dilemma innocently and procedurally.</td>
+            </tr>
+            <tr>
+              <td><strong>Seg 8</strong></td>
+              <td><code>Block A</code> (Art + Summary)</td>
+              <td>~60 words</td>
+              <td><strong>Payoff &amp; Handoff:</strong> Pixar scene illustration of characters working productively. Summarizes key benefit and hands off directly to the quiz.</td>
+            </tr>
+            <tr>
+              <td><strong>Seg 9</strong></td>
+              <td><code>Block E</code> (Legal Close)</td>
+              <td>0 words (Code)</td>
+              <td><strong>Compliance Disclaimer:</strong> Code-injected closing panel held ≥3 seconds: <em>"Training content, not formal legal advice."</em></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SECTION 3: THE 15 RATIFIED TOPICS TABLE -->
+    <section id="topics-index" style="margin-bottom: 48px;">
+      <div class="section-title-wrap">
+        <div>
+          <h2 class="section-title">3. The 15 Ratified Microlearning Topics &amp; Citation Index</h2>
+          <p class="section-desc">Every micro-course topic is calibrated to an explicit South African statutory provision and empirical literature anchor.</p>
+        </div>
+      </div>
+
+      <div style="background-color: var(--lb-white); border: 1.5px solid var(--lb-light-blue); border-radius: var(--lb-radius-lg); padding: 24px;">
+        <div style="overflow-x: auto;">
+          <table class="spec-table" style="font-size: 13px;">
+            <thead>
+              <tr>
+                <th style="width: 4%;">#</th>
+                <th style="width: 28%;">Topic Title</th>
+                <th style="width: 18%;">Domain</th>
+                <th style="width: 25%;">Statutory Floor</th>
+                <th style="width: 25%;">Academic / Empirical Anchor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1</strong></td>
+                <td><strong>The Value of Good Customer Service</strong></td>
+                <td>Customer Experience</td>
+                <td>Consumer Protection Act 68 of 2008</td>
+                <td><em>The Service-Profit Chain</em> (Heskett et al. 1994, HBR)</td>
+              </tr>
+              <tr>
+                <td><strong>2</strong></td>
+                <td><strong>De-escalating Angry Customers</strong></td>
+                <td>Conflict &amp; Service</td>
+                <td>CPA s54 (Consumer Rights to Service)</td>
+                <td><em>Interactional Justice &amp; HEAT Model</em> (Bies &amp; Moag)</td>
+              </tr>
+              <tr>
+                <td><strong>3</strong></td>
+                <td><strong>Service Recovery</strong></td>
+                <td>Customer Retention</td>
+                <td>CPA Part H (Right to Fair Value)</td>
+                <td><em>Service Recovery Paradox</em> (Smith, Bolton &amp; Wagner 1999)</td>
+              </tr>
+              <tr>
+                <td><strong>4</strong></td>
+                <td><strong>From Peer to Supervisor</strong></td>
+                <td>Leadership</td>
+                <td>LRA Schedule 8 (Fair Supervisory Practice)</td>
+                <td><em>Stages of Group Development</em> (Tuckman 1965)</td>
+              </tr>
+              <tr>
+                <td><strong>5</strong></td>
+                <td><strong>Giving Constructive Feedback</strong></td>
+                <td>Performance Management</td>
+                <td>LRA Schedule 8 Item 4</td>
+                <td><em>Situation-Behavior-Impact (SBI)</em> (Kluger &amp; DeNisi 1996)</td>
+              </tr>
+              <tr>
+                <td><strong>6</strong></td>
+                <td><strong>Managing Underperformance</strong></td>
+                <td>HR &amp; CCMA Compliance</td>
+                <td>LRA Schedule 8 Item 9 (Incapacity vs Misconduct)</td>
+                <td><em>GROW Model over Goal-Setting Theory</em> (Locke &amp; Latham)</td>
+              </tr>
+              <tr>
+                <td><strong>7</strong></td>
+                <td><strong>Investigating Workplace Transgressions</strong></td>
+                <td>Procedural Fairness</td>
+                <td>LRA 66 of 1995 Schedule 8 Item 4</td>
+                <td><em>Procedural Justice in Investigations</em> (Lind &amp; Tyler)</td>
+              </tr>
+              <tr>
+                <td><strong>8</strong></td>
+                <td><strong>POPIA for Frontline Staff</strong></td>
+                <td>Regulatory Compliance</td>
+                <td>Protection of Personal Information Act 4 of 2013</td>
+                <td><em>Information Regulator Frontline Guidance Notes</em></td>
+              </tr>
+              <tr>
+                <td><strong>9</strong></td>
+                <td><strong>Consumer Protection Act Essentials</strong></td>
+                <td>Retail &amp; Commercial</td>
+                <td>Consumer Protection Act 68 of 2008, ss 53–56</td>
+                <td><em>Implied Warranty of Quality Protocol</em></td>
+              </tr>
+              <tr>
+                <td><strong>10</strong></td>
+                <td><strong>Health &amp; Safety (OHSA Basics)</strong></td>
+                <td>Operational Safety</td>
+                <td>Occupational Health &amp; Safety Act 85 of 1993, ss 8 &amp; 14</td>
+                <td><em>Safety Climate &amp; Employee Duty of Care</em> (Zohar)</td>
+              </tr>
+              <tr>
+                <td><strong>11</strong></td>
+                <td><strong>Understanding the BCEA</strong></td>
+                <td>Employment Standards</td>
+                <td>Basic Conditions of Employment Act 75 of 1997</td>
+                <td><em>Limits on Working Hours, Overtime &amp; Leave Accrual</em></td>
+              </tr>
+              <tr>
+                <td><strong>12</strong></td>
+                <td><strong>Preventing Harassment &amp; Discrimination</strong></td>
+                <td>Workplace Equity</td>
+                <td>EEA 55 of 1998 + 2022 Harassment Code</td>
+                <td><em>Active Bystander Intervention Model</em> (Latane &amp; Darley)</td>
+              </tr>
+              <tr>
+                <td><strong>13</strong></td>
+                <td><strong>The Importance of SOPs</strong></td>
+                <td>Operational Excellence</td>
+                <td>Quality Management Systems</td>
+                <td><em>The Checklist Effect</em> (Haynes, Gawande et al. 2009, NEJM)</td>
+              </tr>
+              <tr>
+                <td><strong>14</strong></td>
+                <td><strong>Time Management for Shift Workers</strong></td>
+                <td>Productivity</td>
+                <td>BCEA s7–s12 (Shift Regulations)</td>
+                <td><em>Implementation Intentions</em> (Gollwitzer 1999)</td>
+              </tr>
+              <tr>
+                <td><strong>15</strong></td>
+                <td><strong>Handling Internal Conflict</strong></td>
+                <td>Team Cohesion</td>
+                <td>LRA Alternative Dispute Resolution</td>
+                <td><em>Interest-Based Relational (IBR) Negotiation</em> (Fisher &amp; Ury)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: STREAM B — QCTO ACCREDITED CONTENT & BLENDED DELIVERY -->
+    <section id="qcto-framework" style="margin-bottom: 48px;">
+      <div class="section-title-wrap">
+        <div>
+          <h2 class="section-title">4. Stream B: QCTO Accredited Qualifications &amp; Blended Strategy</h2>
+          <p class="section-desc">Gagné’s 9 Events, granular IAC chunking, and the front-loaded blended delivery architecture.</p>
+        </div>
+      </div>
+
+      <div style="background-color: var(--lb-white); border: 1.5px solid var(--lb-light-blue); border-radius: var(--lb-radius-lg); padding: 24px; margin-bottom: 24px;">
+        <h3 style="font-size: 17px; font-weight: 900; color: var(--lb-blue); margin-bottom: 8px;">
+          Gagné’s 9 Events of Instruction &amp; The "Story Sandwich"
+        </h3>
+        <p style="font-size: 14px; color: var(--lb-charcoal); line-height: 1.6; margin-bottom: 14px;">
+          For full Occupational Certificates (e.g. <em>ICT Computer Technician</em> NQF 5, 282 credits) and accredited Skills Programmes, curriculum text is generated as granular microlearning chunks calibrated to South African National Qualifications Framework (NQF) standards:
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 18px 0;">
+          <div style="background-color: var(--lb-ice-tint); border: 1.5px solid var(--lb-blue); border-radius: 8px; padding: 16px;">
+            <div style="font-size: 12px; font-weight: 900; color: var(--lb-blue); text-transform: uppercase; margin-bottom: 4px;">Chunks 1–2 (The Hook)</div>
+            <h4 style="font-size: 15px; font-weight: 900; color: var(--lb-ink); margin-bottom: 6px;">Heavy Narrative Immersion</h4>
+            <p style="font-size: 13px; color: var(--lb-charcoal); line-height: 1.5;">
+              Gagné Event 1 (Gain Attention). Connects to character arcs (e.g. Siya in the warehouse) and bridges operational tension from the preceding Knowledge Topic.
+            </p>
+          </div>
+
+          <div style="background-color: var(--lb-mint-tint); border: 1.5px solid var(--lb-emerald); border-radius: 8px; padding: 16px;">
+            <div style="font-size: 12px; font-weight: 900; color: var(--lb-dark-emerald); text-transform: uppercase; margin-bottom: 4px;">Middle Chunks (The Meat)</div>
+            <h4 style="font-size: 15px; font-weight: 900; color: var(--lb-ink); margin-bottom: 6px;">95% Technical Theory &amp; IAC Mapping</h4>
+            <p style="font-size: 13px; color: var(--lb-charcoal); line-height: 1.5;">
+              Executes Gagné Events 2–7. Every chunk explicitly satisfies a QCTO <strong>Internal Assessment Criterion (IAC)</strong> code (e.g., <code>[IAC0103] [Gagne 4]</code>).
+            </p>
+          </div>
+
+          <div style="background-color: var(--lb-ice-tint); border: 1.5px solid var(--lb-blue); border-radius: 8px; padding: 16px;">
+            <div style="font-size: 12px; font-weight: 900; color: var(--lb-blue); text-transform: uppercase; margin-bottom: 4px;">Final 2 Chunks (The Payoff)</div>
+            <h4 style="font-size: 15px; font-weight: 900; color: var(--lb-ink); margin-bottom: 6px;">Narrative Resolution</h4>
+            <p style="font-size: 13px; color: var(--lb-charcoal); line-height: 1.5;">
+              Gagné Events 8–9. Demonstrates the character successfully applying the technical skills to solve the operational crisis.
+            </p>
+          </div>
+        </div>
+
+        <!-- CHUNK BUDGET TABLE -->
+        <h4 style="font-size: 15px; font-weight: 900; color: var(--lb-blue); margin: 24px 0 8px 0;">
+          Granular Chunk Budgeting &amp; Calibration Formula
+        </h4>
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th>Curriculum Topic Weighting</th>
+              <th>Generated Output Budget</th>
+              <th>Instructional &amp; Audit Focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>10% – 15% Weight</strong></td>
+              <td>10 – 12 chunks (140–180 words/chunk)</td>
+              <td>Core fundamentals, foundational terminology, and statutory definitions.</td>
+            </tr>
+            <tr>
+              <td><strong>20% – 30% Weight</strong></td>
+              <td>15 – 20 chunks (140–180 words/chunk)</td>
+              <td>Applied technical procedures, diagnostic routines, and secondary compliance.</td>
+            </tr>
+            <tr>
+              <td><strong>50%+ Weight</strong></td>
+              <td>25 – 30 chunks (140–180 words/chunk)</td>
+              <td>Mastery, high-stakes outcomes, branching scenario logic, and formative e-PoE tasks.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- BLENDED TIMELINE -->
+        <h4 style="font-size: 15px; font-weight: 900; color: var(--lb-blue); margin: 24px 0 8px 0;">
+          The YTW Blended Delivery Architecture &amp; Front-Loaded Model
+        </h4>
+        <div style="background-color: var(--lb-ice-tint); border-left: 4px solid var(--lb-blue); padding: 16px 20px; border-radius: 6px;">
+          <p style="font-size: 13.5px; color: var(--lb-ink); line-height: 1.6; margin-bottom: 8px;">
+            Formal qualification delivery utilizes a front-loaded blended architecture balancing asynchronous digital platform metrics with intensive live contact:
+          </p>
+          <ul style="font-size: 13px; color: var(--lb-charcoal); line-height: 1.6; margin-left: 18px;">
+            <li><strong>Phase 1: LMS Asynchronous Pre-Work (20–30 Hours):</strong> Prior to live blocks, learners interact with video demonstrations, read theoretical overviews, and pass gateway milestone quizzes in BrainCert.</li>
+            <li><strong>Phase 2: Live Contact Technical Sessions (16 Hours over 2 Days):</strong> Led by technical specialists, focusing exclusively on diagnostic labs, hardware configurations, and troubleshooting scenarios.</li>
+            <li><strong>Phase 3: Formative Assignments &amp; e-PoE Compilation (40–50 Hours):</strong> Workplace simulation exercises, mentor sign-offs, and digital portfolio compilation in BrainCert.</li>
+            <li><strong>Front-Loading Rationale:</strong> Year 1 clears all foundational theory and lab modules; Year 2 is dedicated to workplace rotations, logbook completion, and EISA (External Integrated Summative Assessment) preparation.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: BRAINCERT TECHNICAL SPECIFICATIONS & LMS INTEGRATION -->
+    <section id="braincert-specs" style="margin-bottom: 48px;">
+      <div class="section-title-wrap">
+        <div>
+          <h2 class="section-title">5. BrainCert Technical Specifications &amp; LMS Integration</h2>
+          <p class="section-desc">Strict environment rules, CSS-only engineering, and the official 16-column quiz CSV spec.</p>
+        </div>
+      </div>
+
+      <div style="background-color: var(--lb-white); border: 1.5px solid var(--lb-light-blue); border-radius: var(--lb-radius-lg); padding: 24px; margin-bottom: 24px;">
+        <h3 style="font-size: 17px; font-weight: 900; color: var(--lb-blue); margin-bottom: 8px;">
+          BrainCert Environmental Constraints
+        </h3>
+        <p style="font-size: 14px; color: var(--lb-charcoal); line-height: 1.6; margin-bottom: 14px;">
+          BrainCert LMS enforces strict sanitization on uploaded content. All AI generators and content creators must design around these immutable platform behaviors:
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px; margin-bottom: 20px;">
+          <div style="background-color: #FDF2F2; border: 1.5px solid var(--lb-red); border-radius: 8px; padding: 16px;">
+            <div style="font-size: 12px; font-weight: 900; color: var(--lb-red); text-transform: uppercase; margin-bottom: 4px;">Guard 1: JavaScript Stripping</div>
+            <h4 style="font-size: 15px; font-weight: 900; color: var(--lb-ink); margin-bottom: 6px;">Zero JavaScript Permitted</h4>
+            <p style="font-size: 13px; color: var(--lb-charcoal); line-height: 1.5;">
+              BrainCert strips all <code>&lt;script&gt;</code> tags. All interactive polls, accordions, and checks must be engineered in <strong>pure CSS</strong> (using <code>&lt;details&gt;&lt;summary&gt;</code> or hidden radio buttons + sibling selectors).
+            </p>
+          </div>
+
+          <div style="background-color: var(--lb-ice-tint); border: 1.5px solid var(--lb-blue); border-radius: 8px; padding: 16px;">
+            <div style="font-size: 12px; font-weight: 900; color: var(--lb-blue); text-transform: uppercase; margin-bottom: 4px;">Guard 2: Typographic Isolation</div>
+            <h4 style="font-size: 15px; font-weight: 900; color: var(--lb-ink); margin-bottom: 6px;">Explicit Roboto Wrapper</h4>
+            <p style="font-size: 13px; color: var(--lb-charcoal); line-height: 1.5;">
+              All HTML code must be wrapped in <code>&lt;div style="font-family: 'Roboto', Arial, sans-serif;"&gt;</code> to prevent BrainCert’s WYSIWYG editor from defaulting to generic serif fonts.
+            </p>
+          </div>
+
+          <div style="background-color: var(--lb-mint-tint); border: 1.5px solid var(--lb-emerald); border-radius: 8px; padding: 16px;">
+            <div style="font-size: 12px; font-weight: 900; color: var(--lb-dark-emerald); text-transform: uppercase; margin-bottom: 4px;">Guard 3: Single Voice Authority</div>
+            <h4 style="font-size: 15px; font-weight: 900; color: var(--lb-ink); margin-bottom: 6px;">One Cast Voice per Topic</h4>
+            <p style="font-size: 13px; color: var(--lb-charcoal); line-height: 1.5;">
+              Avatar open, scenario voiceover, and theory narration must use the exact same voice talent to maintain unified instructional credibility.
+            </p>
+          </div>
+        </div>
+
+        <!-- LIVE WORKING BRAINCERT CSS COMPONENT PREVIEWS -->
+        <h4 style="font-size: 15px; font-weight: 900; color: var(--lb-blue); margin: 28px 0 12px 0;">
+          Working CSS-Only Interactive Component Previews (Zero JavaScript)
+        </h4>
+
+        <!-- Component 1: Reflection Poll -->
+        <div style="background-color: #F8FAFC; border: 1.5px solid var(--lb-light-blue); border-radius: 12px; padding: 18px; margin-bottom: 18px;">
+          <div style="font-size: 12px; font-weight: 900; color: var(--lb-blue); text-transform: uppercase; margin-bottom: 6px;">
+            BrainCert CSS-Only Interactive Reflection Poll • Live Preview
+          </div>
+          
+          <div style="background-color: #FFFFFF; border: 2px solid #4682B4; border-radius: 14px; padding: 18px; font-family: 'Roboto', Arial, sans-serif;">
+            <div style="font-size: 12px; font-weight: 900; text-transform: uppercase; color: #4682B4; margin-bottom: 4px;">
+              Reflection Poll • Make Your Call
+            </div>
+            <div style="font-size: 16px; font-weight: 700; color: #222222; margin-bottom: 14px;">
+              The till is R350 short after the backup battery failed. What should the supervisor do first?
+            </div>
+
+            <details style="margin-bottom: 10px; border: 1.5px solid #83ADCF; border-radius: 8px; background-color: #F4F8FB; overflow: hidden;">
+              <summary style="padding: 12px 14px; font-size: 14px; font-weight: 700; color: #222222; cursor: pointer; outline: none;">
+                Option A: Deduct the R350 from the cashier's pay immediately.
+              </summary>
+              <div style="background-color: #FDF2F2; border-top: 1.5px solid #D9534F; padding: 12px 14px; font-size: 13.5px; color: #222222; line-height: 1.5;">
+                <strong style="color: #D9534F; display: block; margin-bottom: 4px;">OPERATIONAL &amp; LEGAL CONSEQUENCE:</strong>
+                That deduction breaks Section 34 of the BCEA—no deduction without written agreement or a fair process. The employee now has a winning CCMA claim. <em>Let's look at the exact framework in the theory video below.</em>
+              </div>
+            </details>
+
+            <details style="margin-bottom: 10px; border: 1.5px solid #83ADCF; border-radius: 8px; background-color: #F4F8FB; overflow: hidden;">
+              <summary style="padding: 12px 14px; font-size: 14px; font-weight: 700; color: #222222; cursor: pointer; outline: none;">
+                Option B: Say nothing and quietly hope the money balances tomorrow.
+              </summary>
+              <div style="background-color: #FDF2F2; border-top: 1.5px solid #D9534F; padding: 12px 14px; font-size: 13.5px; color: #222222; line-height: 1.5;">
+                <strong style="color: #D9534F; display: block; margin-bottom: 4px;">OPERATIONAL &amp; LEGAL CONSEQUENCE:</strong>
+                The shortage stays unexplained, the system fault is never logged, and the next loss lands on the next shift. Problems ignored always repeat. <em>Let's look at the exact framework in the theory video below.</em>
+              </div>
+            </details>
+
+            <details style="border: 1.5px solid #83ADCF; border-radius: 8px; background-color: #F4F8FB; overflow: hidden;">
+              <summary style="padding: 12px 14px; font-size: 14px; font-weight: 700; color: #222222; cursor: pointer; outline: none;">
+                Option C: Recount with a second person, check manual sales sheets, then meet in private.
+              </summary>
+              <div style="background-color: #EAF6ED; border-top: 1.5px solid #6DC082; padding: 12px 14px; font-size: 13.5px; color: #222222; line-height: 1.5;">
+                <strong style="color: #1E7E34; display: block; margin-bottom: 4px;">OPERATIONAL &amp; LEGAL CONSEQUENCE:</strong>
+                That is the defensible procedural route—facts first, employee dignity protected, and every step compliant with Schedule 8 of the LRA. <em>Let's look at the exact framework in the theory video below.</em>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <!-- 16-COLUMN QUIZ CSV SPEC -->
+        <h4 style="font-size: 15px; font-weight: 900; color: var(--lb-blue); margin: 28px 0 10px 0;">
+          The Official 16-Column BrainCert Quiz Import CSV Specification
+        </h4>
+        <div style="overflow-x: auto;">
+          <table class="spec-table" style="font-size: 12.5px;">
+            <thead>
+              <tr>
+                <th>Col</th>
+                <th>Field Name</th>
+                <th>Format &amp; Semantics</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1</strong></td>
+                <td><code>Question Type Id</code></td>
+                <td><strong>1</strong> (Fill in Blank) • <strong>2</strong> (Multiple Choice) • <strong>3</strong> (Multiple True/False) • <strong>4</strong> (Multiple Answers) • <strong>5</strong> (True/False) • <strong>6</strong> (Drag &amp; Drop / Matching)</td>
+              </tr>
+              <tr>
+                <td><strong>2</strong></td>
+                <td><code>Question Title</code></td>
+                <td>The question prompt in plain Grade 7–8 English.</td>
+              </tr>
+              <tr>
+                <td><strong>3</strong></td>
+                <td><code>Question Option</code></td>
+                <td>Multi-value options separated by PIPE (<code>|</code>). <em>Types 1 &amp; 5: empty. Type 2: 4 options ("A|B|C|D"). Type 3: statements. Type 6: left-side stems.</em></td>
+              </tr>
+              <tr>
+                <td><strong>4</strong></td>
+                <td><code>Answer</code></td>
+                <td><em>Type 1: exact text. Type 2: exact text of correct option. Type 3: "1|0|1|0". Type 4: all correct options joined by "|". Type 5: "1" (true) or "0" (false). Type 6: right-side matches joined by "|".</em></td>
+              </tr>
+              <tr>
+                <td><strong>5</strong></td>
+                <td><code>Question Explanation</code></td>
+                <td>Supportive coach-tone feedback explaining WHY the answer is correct, citing the statutory clause or framework step.</td>
+              </tr>
+              <tr>
+                <td><strong>6</strong></td>
+                <td><code>Objective Id</code></td>
+                <td>The BrainCert Objective ID. Code fills <code>INSERT-OBJECTIVE-ID</code> if unassigned during generation.</td>
+              </tr>
+              <tr>
+                <td><strong>7</strong></td>
+                <td><code>Reference URL</code></td>
+                <td>Optional statutory reference link (or left empty).</td>
+              </tr>
+              <tr>
+                <td><strong>8</strong></td>
+                <td><code>Difficulty Level</code></td>
+                <td>Default: <code>3</code> (Medium).</td>
+              </tr>
+              <tr>
+                <td><strong>9</strong></td>
+                <td><code>Status</code></td>
+                <td>Default: <code>1</code> (Active).</td>
+              </tr>
+              <tr>
+                <td><strong>10–16</strong></td>
+                <td><code>Include in Demo</code>, <code>Max word limit</code>, <code>Attachment</code>, etc.</td>
+                <td>Columns 10 through 16 are left blank, preserving exact CSV column indexing.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: MACHINE-READABLE BLUEPRINT SCHEMA & PROMPTS -->
+    <section id="blueprint-schema" style="margin-bottom: 48px;">
+      <div class="section-title-wrap">
+        <div>
+          <h2 class="section-title">6. Machine-Readable Course Blueprint Schema (v1.0)</h2>
+          <p class="section-desc">Strict JSON contract for automated courseware generation by AI agents.</p>
+        </div>
+      </div>
+
+      <div style="background-color: var(--lb-white); border: 1.5px solid var(--lb-light-blue); border-radius: var(--lb-radius-lg); padding: 24px; margin-bottom: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 10px;">
+          <h3 style="font-size: 16px; font-weight: 900; color: var(--lb-blue); margin: 0;">
+            JSON Schema v1.0 Contract
+          </h3>
+          <button class="btn btn-blue btn-sm" onclick="copyBlueprintSchema()" style="width: auto;">
+            📋 Copy JSON Schema
+          </button>
+        </div>
+        
+        <div class="prompt-preview-box" style="max-height: 280px; font-size: 12px; background: #F8FAFC;">
+<pre>{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LearnBlendedTopicBlueprint",
+  "type": "object",
+  "required": ["schemaVersion", "topicMeta", "storyCanon", "hookPackage", "reflectionPoll", "theorySegments", "quiz", "braincertListing"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "1.0" },
+    "topicMeta": {
+      "type": "object",
+      "required": ["topicId", "topicTitle", "engine", "industry"],
+      "properties": {
+        "topicId": { "type": "string" },
+        "topicTitle": { "type": "string" },
+        "engine": { "type": "string", "enum": ["COMPLIANCE", "SOFT_SKILLS"] },
+        "industry": { "type": "string" }
+      }
+    },
+    "storyCanon": {
+      "type": "object",
+      "required": ["mainCharacter", "supporting", "setting", "keyObjects", "amount", "incident", "resolutionFact"],
+      "properties": {
+        "mainCharacter": { "type": "string" },
+        "supporting": { "type": "array", "items": { "type": "string" } },
+        "setting": { "type": "string" },
+        "keyObjects": { "type": "array", "items": { "type": "string" } },
+        "amount": { "type": ["string", "null"] },
+        "incident": { "type": "string" },
+        "resolutionFact": { "type": "string" }
+      }
+    },
+    "hookPackage": {
+      "type": "object",
+      "required": ["avatarOpenLine", "hookVoiceover", "scenePrompts", "deliveryNotes"],
+      "properties": {
+        "avatarOpenLine": { "type": "string", "maxLength": 160 },
+        "hookVoiceover": { "type": "string" },
+        "scenePrompts": { "type": "array", "items": { "type": "string" } },
+        "deliveryNotes": { "type": "string" }
+      }
+    },
+    "reflectionPoll": {
+      "type": "object",
+      "required": ["question", "choices", "correctKey"],
+      "properties": {
+        "question": { "type": "string" },
+        "choices": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["key", "archetype", "label", "feedback"],
+            "properties": {
+              "key": { "type": "string", "enum": ["A", "B", "C"] },
+              "archetype": { "type": "string", "enum": ["AGGRESSIVE", "PASSIVE", "PROCEDURAL"] },
+              "label": { "type": "string" },
+              "feedback": { "type": "string" }
+            }
+          }
+        },
+        "correctKey": { "type": "string", "const": "C" }
+      }
+    },
+    "theorySegments": {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9,
+      "items": {
+        "type": "object",
+        "required": ["seg", "block", "title", "voiceoverChunks"],
+        "properties": {
+          "seg": { "type": "integer", "minimum": 1, "maximum": 9 },
+          "block": { "type": "string", "enum": ["A", "B", "C", "D", "E", "F", "QUOTE"] },
+          "title": { "type": "string" },
+          "voiceoverChunks": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "quiz": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["qNo", "cognitiveType", "questionTypeId", "question", "options", "answer", "feedback"],
+        "properties": {
+          "qNo": { "type": "integer" },
+          "cognitiveType": { "type": "string", "enum": ["RECALL", "APPLICATION"] },
+          "questionTypeId": { "type": "integer", "minimum": 1, "maximum": 6 },
+          "question": { "type": "string" },
+          "options": { "type": "array", "items": { "type": "string" } },
+          "feedback": { "type": "string" }
+        }
+      }
+    }
+  }
+}</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p><strong>Learn:Blended Master Brand Portal V8.2</strong> • Learning Methodology &amp; BrainCert Architecture</p>
+    </footer>
+
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast">Copied to clipboard!</div>
+
+  <script>
+    const METHODOLOGY_PROMPT_TEXT = `ROLE: Master Instructional Designer & Course Architect for Learn:Blended (learnblended.co.za).
+
+GOVERNING DOCTRINE:
+1. The Core Boundary Law: The generative AI model is only ever trusted with words. Every number, layout, timestamp, calculation, and file format is produced by deterministic code from those words.
+2. The Anti-Slop Moat: Ground content strictly in verified source briefs. Pillar 1: South African statutory floor (BCEA, LRA, EEA, OHSA, POPIA, CPA). Pillar 2: Peer-reviewed empirical science (HBR, NEJM). Quarantined claims go to requiresVerification and never enter content.
+3. Voice & Tone: Grade 7-8 South African English (UK/SA spelling). Floor-level, supportive coach tone ("you/your"), never academic examiner tone.
+4. The 4-Stage ~8.5-Minute Cognitive Architecture:
+   - Stage 1: Hook Video (90s) - Provocative avatar stakes open (0-10s) + narration over silent B-roll with Pixar-style characters in Emerald polos. Single voice across topic.
+   - Stage 2: Reflection Poll (30s) - CSS-only, 3 choices (A Aggressive, B Passive, C Procedural). CONSEQUENCE-FIRST feedback: strictly ban "Correct/Incorrect" labels.
+   - Stage 3: Theory Hyperframe (4:15) - 9 structured segments following Brand Kit V8 blocks. Split-attention elimination: headers capped at <=5 words. Verbatim statutory quote. Innocent replay resolution.
+   - Stage 4: BrainCert Assessment Quiz (2m) - Exactly 4 questions (2 Recall + 2 Application), BrainCert question types 1-6. Plausible workplace distractors. Auto-graded with coach feedback.
+   - Auxiliary: Read-Along HTML Twin (~350-450 words) for low data or no-audio learners.
+5. The Story Canon: All assets obey an immutable fact sheet (main character, supporting, setting, key objects, amount, incident, resolution fact).
+6. The Salt Principle: 10% narrative / 90% technical theory. 70% operational complexity resolved by 30% strategic insight.`;
+
+    const BLUEPRINT_SCHEMA_TEXT = `{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LearnBlendedTopicBlueprint",
+  "type": "object",
+  "required": ["schemaVersion", "topicMeta", "storyCanon", "hookPackage", "reflectionPoll", "theorySegments", "quiz", "braincertListing"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "1.0" },
+    "topicMeta": {
+      "type": "object",
+      "required": ["topicId", "topicTitle", "engine", "industry"],
+      "properties": {
+        "topicId": { "type": "string" },
+        "topicTitle": { "type": "string" },
+        "engine": { "type": "string", "enum": ["COMPLIANCE", "SOFT_SKILLS"] },
+        "industry": { "type": "string" }
+      }
+    },
+    "storyCanon": {
+      "type": "object",
+      "required": ["mainCharacter", "supporting", "setting", "keyObjects", "amount", "incident", "resolutionFact"],
+      "properties": {
+        "mainCharacter": { "type": "string" },
+        "supporting": { "type": "array", "items": { "type": "string" } },
+        "setting": { "type": "string" },
+        "keyObjects": { "type": "array", "items": { "type": "string" } },
+        "amount": { "type": ["string", "null"] },
+        "incident": { "type": "string" },
+        "resolutionFact": { "type": "string" }
+      }
+    },
+    "hookPackage": {
+      "type": "object",
+      "required": ["avatarOpenLine", "hookVoiceover", "scenePrompts", "deliveryNotes"],
+      "properties": {
+        "avatarOpenLine": { "type": "string", "maxLength": 160 },
+        "hookVoiceover": { "type": "string" },
+        "scenePrompts": { "type": "array", "items": { "type": "string" } },
+        "deliveryNotes": { "type": "string" }
+      }
+    },
+    "reflectionPoll": {
+      "type": "object",
+      "required": ["question", "choices", "correctKey"],
+      "properties": {
+        "question": { "type": "string" },
+        "choices": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["key", "archetype", "label", "feedback"],
+            "properties": {
+              "key": { "type": "string", "enum": ["A", "B", "C"] },
+              "archetype": { "type": "string", "enum": ["AGGRESSIVE", "PASSIVE", "PROCEDURAL"] },
+              "label": { "type": "string" },
+              "feedback": { "type": "string" }
+            }
+          }
+        },
+        "correctKey": { "type": "string", "const": "C" }
+      }
+    },
+    "theorySegments": {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9,
+      "items": {
+        "type": "object",
+        "required": ["seg", "block", "title", "voiceoverChunks"],
+        "properties": {
+          "seg": { "type": "integer", "minimum": 1, "maximum": 9 },
+          "block": { "type": "string", "enum": ["A", "B", "C", "D", "E", "F", "QUOTE"] },
+          "title": { "type": "string" },
+          "voiceoverChunks": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "quiz": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["qNo", "cognitiveType", "questionTypeId", "question", "options", "answer", "feedback"],
+        "properties": {
+          "qNo": { "type": "integer" },
+          "cognitiveType": { "type": "string", "enum": ["RECALL", "APPLICATION"] },
+          "questionTypeId": { "type": "integer", "minimum": 1, "maximum": 6 },
+          "question": { "type": "string" },
+          "options": { "type": "array", "items": { "type": "string" } },
+          "feedback": { "type": "string" }
+        }
+      }
+    }
+  }
+}`;
+
+    const QUIZ_CSV_SPEC_TEXT = `Question Type Id,Question Title,Question Option,Answer,Question Explanation,Objective Id,Reference URL,Difficulty Level,Status,Include in Demo,Max word limit,Attachment,Mandatory Keywords,Mandatory Case Sensitive,Optional Keywords,Optional Case Sensitive
+2,A courier arrives with 12 cartons but 2 are wet. What is your required action?,Sign POD now and take photos later|Note variance on POD and GRV and obtain driver counter-signature in ink|Refuse the entire delivery and send truck away|Hide the damaged cartons in the skip,Note variance on POD and GRV and obtain driver counter-signature in ink,Endorsing shortages in ink with driver counter-signature protects the company against liability under Section 54 of the CPA.,INSERT-OBJECTIVE-ID,,3,1,,,,,,
+`;
+
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      toast.innerText = message;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2400);
+    }
+
+    function copyMethodologyPrompt() {
+      navigator.clipboard.writeText(METHODOLOGY_PROMPT_TEXT).then(() => {
+        showToast('Copied Master AI Methodology Directive Prompt!');
+      });
+    }
+
+    function copyBlueprintSchema() {
+      navigator.clipboard.writeText(BLUEPRINT_SCHEMA_TEXT).then(() => {
+        showToast('Copied Topic Blueprint JSON Schema v1.0!');
+      });
+    }
+
+    function copyQuizCsvSpec() {
+      navigator.clipboard.writeText(QUIZ_CSV_SPEC_TEXT).then(() => {
+        showToast('Copied 16-Column BrainCert Quiz CSV Header Spec!');
+      });
+    }
+  </script>
+</body>
+</html>

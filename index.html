@@ -810,7 +810,8 @@
           <p>"Blending excellence for you!" — Omnichannel V8.2 Hub</p>
         </div>
       </div>
-      <div>
+      <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+        <a href="methodology.html" class="badge-v82" style="text-decoration: none; background-color: var(--lb-mint-tint); color: var(--lb-dark-emerald); border-color: var(--lb-emerald); font-weight: 900;">🧠 Learning Methodology Page ↗</a>
         <span class="badge-v82">Ratified V8.2 System</span>
       </div>
     </div>
@@ -827,7 +828,8 @@
       <a href="#corporate" class="nav-btn">🏢 Corporate Assets</a>
       <a href="#builder" class="nav-btn">⚡ BrainCert HTML Builder</a>
       <a href="#governance" class="nav-btn">📋 Channel Governance</a>
-      <a href="#governance" class="nav-btn" onclick="openTab('tab-methodology')">🧠 Learning Methodology</a>
+      <a href="methodology.html" class="nav-btn" style="background-color: var(--lb-mint-tint); border-color: var(--lb-emerald); color: var(--lb-dark-emerald); font-weight: 700;">🧠 Learning Methodology Page ↗</a>
+      <a href="#governance" class="nav-btn" onclick="openTab('tab-methodology')">🧠 Methodology Tab</a>
       <a href="#governance" class="nav-btn" onclick="openTab('tab-images')">🖼️ AI Image Prompts</a>
     </nav>
 
@@ -839,7 +841,10 @@
           Machine-Readable AI System Directives (V8.2)
         </div>
         <div class="ai-actions">
-          <button class="btn btn-emerald" onclick="copyAiDirective()">
+          <a href="methodology.html" class="btn btn-emerald" style="text-decoration: none;">
+            🧠 Learning Methodology Spec ↗
+          </a>
+          <button class="btn btn-blue" onclick="copyAiDirective()">
             📋 Copy 10 Core AI Laws (System Prompt)
           </button>
           <button class="btn btn-blue" onclick="copyLlmsUrl()">
